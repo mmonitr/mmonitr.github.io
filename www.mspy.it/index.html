@@ -1,0 +1,1105 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie7 ie-lt9" lang="it-it"><![endif]-->
+<!--[if IE 8]><html class="ie8 ie-lt9" lang="it-it"><![endif]-->
+<!--[if !IE]><!--><html lang="it-it"><!--<![endif]-->
+
+<!-- Mirrored from www.mspy.it/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:13:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Software di Monitoraggio per Cellulari, Spiare Cellulare | mSpy™</title>
+<meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="M3pTSFVUTy5hCT9.F2cJRH5MZiEFEBhefjUWZRciPGdaE2AgPxEaeA==">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#42afc7">
+
+<meta name="msapplication-navbutton-color" content="#42afc7">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="#42afc7">
+<meta name="google-site-verification" content="ou5XK854WnxtqhGRjvgfE5BX9_hghNhmj2tM-2JZZ0o" />
+<script>dataLayer = [{'ueia': 'ireahleoooeahn'}];</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M9M6BN');</script>
+ <script>
+(function(protocol, host){
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    //example http(s)://mspy.com/mspy.js?url=urlencodedrequest&get=urlencodedgetarray
+    var paramString = protocol + '://' + host + '/mspy.js?' + '&url=' + encodeURIComponent(location.href) + '&get=' + encodeURIComponent(location.search);
+    var sequence = readCookie('sequence');
+    var _ga = readCookie('_ga');
+    var gclid = readCookie('gclid');
+    var gcl = readCookie('_gcl_aw');
+
+    if (!gclid && gcl) {
+        var _gcl = gcl.split('.');
+        gclid = _gcl.pop();
+    }
+
+    paramString += (sequence != null) ? '&sequence='+sequence : '';
+    paramString += (_ga != null) ? '&_ga='+encodeURIComponent(_ga) : '';
+    paramString += (gclid != null) ? '&gclid='+gclid : '';
+    paramString += (gcl != null) ? '&_gcl_aw='+gcl : '';
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = encodeURI(paramString);
+    script.async = 1;
+    //append script to head
+    document.getElementsByTagName('head')[0].appendChild(script);
+})('https', 'tracker.mspy.com' );
+</script>
+<link rel="apple-touch-icon" sizes="152x152" href="http://static.mspy.com/assets/static/img/touch-icon-ipad-retina.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://static.mspy.com/assets/static/img/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://static.mspy.com/assets/static/img/touch-icon-ipad.png">
+<link rel="apple-touch-icon" href="http://static.mspy.com/assets/static/img/touch-icon-iphone.png">
+<link rel="shortcut icon" href="http://static.mspy.com/assets/static/img/favicon.ico">
+<meta name="keywords" content="monitoraggio per cellulari, mSpy">
+<meta name="description" content="Software di monitoraggio per cellulari, per spiare SMS, Email, Posizione attuale e Chiamate! È la migliore app spia per cellulari per tenere al sicuro la tua azienda e la tua famiglia.">
+<meta name="robots" content="index, follow">
+<link href="https://static.mspy.com/assets/app-d1af04dbd8bee68cbb3a5a5409e0d2aa.css" rel="stylesheet">
+<script type="text/javascript">window.jQueryFallbackUrl = '//static.mspy.com/assets/static/js/jquery.min.js'</script>
+<link rel="alternate" hreflang="en-us" href="../www.mspy.com/index.html">
+<link rel="alternate" hreflang="de-de" href="../www.mspy.com.de/index.html">
+<link rel="alternate" hreflang="es-es" href="../www.mspy.com.es/index.html">
+<link rel="alternate" hreflang="fr-fr" href="../www.mspy.fr/index.html">
+<link rel="alternate" hreflang="it-it" href="index.html">
+<link rel="alternate" hreflang="pt-br" href="../www.mspy.com.br/index.html">
+<link rel="alternate" hreflang="tr-tr" href="../tr.mspy.com/index.html">
+<link rel="alternate" hreflang="ko-kr" href="../kr.mspy.com/index.html">
+<link rel="alternate" hreflang="ja-jp" href="../www.mspy.jp/index.html">
+<link rel="alternate" hreflang="ar-ae" href="../ar.mspy.com/index.html">
+<script>
+var stats_pgs = '1549638624.035';
+var stats_route = 'home/index';
+var textStrings = {
+    //activation.html messages
+    activationResultEmailError: 'L’indirizzo email e l’indirizzo email di conferma non coincidono',
+    activationResultError: 'Si è verificato un errore. Si prega di riprovare più tardi o di ricaricare lo stesso link con un altro browser.',
+    activationResultSuccess: 'Grazie per la tua registrazione!<br><br> Un’email è stata inviata a {your@email.com} con i dettagli su come attivare il tuo account. Controlla la tua posta in arrivo e clicca sul link di conferma prima di installare e utilizzare il nostro programma.<br><br> Se dovessi avere qualche domanda, potrai contattarci in qualsiasi momento.',
+    activationResultAlready: 'Il tuo nuovo abbonamento è stato attivato ed aggiunto al tuo account esistente su mspyonline.com.<br><br> Se non ricordi la tua password e non riesci ad accedere al tuo vecchio account, per favore attiva la funzione <a href="https://mspyonline.com/login.forgotpassword.html">Password Dimenticata</a>. Una volta fatto, la nuova password sarà generata e ti sarà inviata via email.',
+    activationResultOther: 'C’è qualcosa che non va. Per favore, contatta l’assistenza +1 855 896 0041.',
+    
+    //compatibility.html messages
+    searchResultMessageSuccess: 'Congratulazioni! {device_name} è supportato',
+    searchResultMessageSuccessNoSupport: 'Siamo lieti di farti sapere che {device_name} è ora supportato dalla <a href=https://www.mspy.it/no-jailbreak.html>Soluzione senza jailbreak!</a>',
+    searchResultMessageFail: 'Siamo spiacenti ma il tuo dispositivo non è ancora supportato. Potrebbe trattarsi di un errore. Per favore, contatta il nostro servizio clienti.',
+    searchResultMessageLength: 'La frase di ricerca è troppo breve',
+    searchResultMessageNoResult: 'Dispositivo non riconosciuto. Si prega di contattare la nostra assistenza per ulteriori informazioni sulla compatibilità',
+    
+    searchFieldText: ['Modello dispositivo','Versione OS'],
+    viewResultBtn: ['Guarda i modelli più diffusi','Visualizza versione OS'],
+
+    //Footer more text
+    moreTextEllipses: '...',
+    moreTextMore: 'più',
+    moreTextLess: 'meno'
+}
+</script>
+<script>
+var comBlockImageText = {
+    android: ['Samsung Galaxy S3, S4','Sony Xperia, HTC One'],
+    ios: ['iPad Air, iPad Mini','iPhone 5S, 5C'],
+};
+var comBlockMainTitle = {
+    android: [''],
+    apple: [''],
+    defaultText: ['Compatibile con tutti i dispositivi più diffusi']
+};
+
+var phones = {
+    us: '+1 855 896 0041',
+    pt: '+351 308 802 223',
+    br: '0 800 591 5100',
+    tr: '+90 850 252 6514',
+    fr: '+33 970 738115'
+};
+
+var phonesText = {
+    pt: '12:00 - 22:00',
+    br: '8:00 - 19:00'
+}
+
+var suppportOs = {
+    ios: ['6', '9.0.2'],
+    android: '4.0',
+};
+
+var buyPage = 'https://www.mspy.it/buynow.html';
+
+if (typeof ga != "undefined")  {
+    ga(function(tracker) {
+        gaLinkerParam = tracker.get('linkerParam');
+    });
+} else {
+    gaLinkerParam = '';
+}
+
+var currency = 'EUR';
+var currencySymbol = '€';
+var locale = 'it';
+
+var siteStatus = 'prod';
+
+var trackerUrl =  'https://www.mspy.it/tracker.mspy.com'
+</script>
+</head>
+<body class=" home-page cur-eur lang-it count-it ">
+
+<noscript><iframe src="../www.googletagmanager.com/nsb11a.html?id=GTM-M9M6BN"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<main class="page-container " id="pageContainer">
+<section class="main" id="mainBlock">
+
+<style>
+    body {
+        background-color: #ECECEC;
+    }
+
+    .footer {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+</style>
+<div class="h-p home-promo" id="homePage">
+<div class="banner-wr">
+</div>
+<section class="h-p__top-b">
+<aside class="h-p__top-b__c">
+<div class="wrapper">
+<div class="row">
+<div class="col-md-7 col-sm-7">
+<div class="tablecell">
+<h1 class="h-p__top-b__t-m">Software <br> di monitoraggio definitivo per <br> il controllo parentale</h1>
+<div class="h-p__top-b__tx">
+<p>Monitora e controlla da remoto ogni attività dei tuoi figli su qualsiasi smartphone</p>
+</div>
+<div class="h-p__top-b__btn-wrap">
+<a class="btn __imp __mid js-buyBtn" href="https://www.mspy.it/buynow.html">Acquista Ora</a>
+<span class="h-p__top-b__btn-wrap__tx">o</span>
+<a class="h-p__top-b__btn-wrap__demo" href="https://demo.mspy.com/it/">Guarda Demo</a>
+</div>
+</div>
+</div>
+<div class="col-md-5 col-sm-5">
+<div class="tablecell">
+<ul class="h-p__top-b__list">
+<li class="sp-li-b">Monitoraggio di WhatsApp, SMS, registro chiamate, posizione e 25 altre funzionalità</li>
+<li class="sp-li-b">Compatibile con Android, iOS</li>
+<li class="sp-li-b">Accessibile da qualsiasi browser internet</li>
+<li class="sp-li-b">Supporto multilingua 24/7</li>
+<li class="sp-li-b">Assistenza online gratuita per l'installazione iniziale</li>
+</ul>
+<div class="h-p__top-b__btn-wrap-m">
+<a class="btn __imp __mid js-buyBtn" href="https://www.mspy.it/buynow.html">Acquista Ora</a>
+<a class="h-p__top-b__btn-wrap__demo h-p__top-b__btn-wrap-m__demo" href="https://demo.mspy.com/it/">Guarda Demo</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<aside class="h-p__top-b__video">
+<i style="background-image: url(http://static.mspy.com/assets/static/img/landing/home/home-v5-head.jpg); background-repeat: no-repeat; background-size: cover; display: inline-block; width: 1680px; height: 500px;"></i>
+</aside>
+</section>
+<section class="h-p__b h-p__work-b">
+<div class="h-p__work-b__bg-wrap">
+<i class="h-p__work-b__bg sp-inb-1 __1"></i>
+<i class="h-p__work-b__bg sp-inb-2 __2"></i>
+<i class="h-p__work-b__bg sp-inb-3 __3"></i>
+</div>
+<div class="wrapper">
+<div class="row">
+<div class="col-md-7 col-sm-7">
+<h2 class="h-p__work-b__t-s">Che cos'è mSpy?</h2>
+<p class="h-p__work-b__t-m">mSpy è il leader mondiale nel campo delle soluzioni di monitoraggio, in grado di soddisfare ogni esigenza del cliente per questioni di sicurezza e di praticità.</p>
+<p class="h-p__work-b__t-m">mSpy - Conosci. Previeni. Proteggi.</p>
+<a class="h-p__work-b__link" data-tooltip="mSpy è l'applicazione di monitoraggio più diffusa sul mercato, con milioni di clienti soddisfatti in tutto il mondo. Il nostro software di monitoraggio funziona in secondo piano, raccogliendo informazioni sul dispositivo controllato, come la posizione GPS, la cronologia di navigazione, le immagini, i video, le email, gli SMS, Skype, WhatsApp, ogni tasto premuto e molto altro. Il Pannello di Controllo semplice da utilizzare e l'assistenza clienti dal vivo disponibile 24/7 fanno di mSpy la migliore soluzione per controllare al meglio i tuoi figli e i tuoi dipendenti.">Come funziona</a>
+</div>
+<div class="col-md-5 col-sm-5">
+<aside class="h-p__work-b__video-b">
+<i class="img" style="background-image: url(http://static.mspy.com/assets/static/img/landing/home/home-howItWorks-video-bg.png); display: inline-block; width: 378px; height: 198px;"></i>
+<a class="video-btn js-videoMobal" data-modal="homeVideo" data-yootube="SWEAY41EPQs" href="https://youtu.be/SWEAY41EPQs" target="_blank"></a>
+</aside>
+</div>
+</div>
+</div>
+</section>
+<section class="h-p__b">
+<div class="wrapper">
+<h2 class="h-p__b__t">Sfrutta tutto il potenziale di questo software di monitoraggio per cellulari</h2>
+<div class="h-p__info">
+<div class="row">
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-mn __1"></i>
+<h3 class="h-p__info__t">Controlla i software di messaggistica</h3>
+<p>Accedi a tutte le conversazioni e le app di messaggistica istantanee presenti sul dispositivo monitorato.</p>
+</div>
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-cn __2"></i>
+<h3 class="h-p__info__t">Contattaci 24/7</h3>
+<p>Il nostro servizio di assistenza dedicato può essere contattato tramite email, chat o telefonicamente.</p>
+</div>
+<i class="h-p__info__separator-m"></i>
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-st __3"></i>
+<h3 class="h-p__info__t">Conserva i tuoi dati</h3>
+<p>Tieni al sicuro i tuoi dati, effettuane il backup o esportali.</p>
+</div>
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-tr __4"></i>
+<h3 class="h-p__info__t">Controlla più dispositivi</h3>
+<p>Puoi monitorare contemporamente sia smartphone (Android, iOS) che computer</p>
+</div>
+</div>
+<div class="h-p__b__btn-wrap">
+<a class="btn __imp-tr __mid" href="https://www.mspy.it/buynow.html">Guarda i nostri prezzi</a>
+</div>
+</div>
+</div>
+</section>
+<div class="h-p__b__separate"></div>
+<section class="h-p__b">
+<div class="wrapper">
+<h2 class="h-p__b__t">Controlla grazie a mSpy</h2>
+<div class="h-p__tab">
+<div class="h-p__tab__c" style="max-width: 300px;display: flex;justify-content: center;flex-wrap: wrap;margin: 0 auto;">
+<a class="h-p__tab__i on" href="#tab-phone">
+<span class="h-p__tab__i__tx">mSpy per cellulari</span>
+</a>
+</div>
+</div>
+<section class="h-p__f-b __animate on" data-tab="phone">
+<div class="h-p__f-b__wrap js-gaHomeFeatures">
+<div class="h-p__f-b__row">
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/sent-received-sms.html">
+<i class="h-p__f-b__ic sp-fn-tm"></i>
+<h4 class="h-p__f-b__t">SMS</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Guarda qualsiasi SMS inviato o ricevuto dal dispositivo monitorato</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __1"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/social.html">
+<i class="h-p__f-b__ic sp-fn-sc"></i>
+<h4 class="h-p__f-b__t">Social Network</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Resta al corrente di tutte le comunicazioni che avvengono sui social network utilizzati con il dispositivo monitorato</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __2"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/whatsapp.html">
+<i class="h-p__f-b__ic sp-fn-wt"></i>
+<h4 class="h-p__f-b__t">WhatsApp</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Controlla le app di messaggistica più diffuse, come WhatsApp</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __3"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/current-gps-location.html">
+<i class="h-p__f-b__ic sp-fn-gl"></i>
+<h4 class="h-p__f-b__t">Localizzazione GPS</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Controlla dove si trovano i tuoi figli o i tuoi dipendenti</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __4"></span>
+</aside>
+</div>
+<div class="h-p__f-b__row">
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/call-logs.html">
+<i class="h-p__f-b__ic sp-fn-cl"></i>
+<h4 class="h-p__f-b__t">Chiamate</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Ottieni il resoconto completo di tutte le chiamate effettuate e ricevute</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __5"></span>
+ </aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/photos.html">
+<i class="h-p__f-b__ic sp-fn-vd"></i>
+<h4 class="h-p__f-b__t">Foto & Video</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Guarda tutte le foto e i video presenti sul dispositivo monitorato</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __6"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/instagram.html">
+<i class="h-p__f-b__ic sp-fn-em"></i>
+<h4 class="h-p__f-b__t">Instagram</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Look through all the content shared in Instagram direct messages</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __7"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://www.mspy.it/features.html">
+<i class="h-p__f-b__ic sp-fn-va"></i>
+<h4 class="h-p__f-b__t">Visualizza tutte le funzionalità</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Scopri tutte le funzionalità di mSpy</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __8"></span>
+</aside>
+</div>
+</div>
+<div class="h-p__f-b__btn-wrap h-p__b__btn-wrap">
+<a class="btn __trn __mid" href="https://www.mspy.it/buynow.html" data-ga="Mobile">Guarda i nostri prezzi</a>
+</div>
+</section>
+</div>
+</section>
+<section class="h-p__stat-b">
+<div class="wrapper">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-6">
+<div class="h-p__stat-b__num">
+24<sub>/7</sub>
+</div>
+<h3 class="h-p__stat-b__t">Supporto internazionale al cliente 24/7</h3>
+<p>mSpy presta attenzione alle esigenze di ogni singolo cliente, attraverso il suo servizio di assistenza attivo 24/7</p>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-6 snowflake-left">
+<div class="h-p__stat-b__num">
+95<sup>%</sup>
+</div>
+<h3 class="h-p__stat-b__t">Soddisfazione Clienti pari al 95%</h3>
+<p>La soddisfazione di ogni cliente è la cosa più importante per mSpy. Il 95% dei clienti di mSpy si ritiene soddisfatto dal servizio e sarebbe disposto ad usufruirne nuovamente.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="h-p__b __bg-grey">
+<h2 class="h-p__b__t">mSpy rende felici i propri clienti</h2>
+<div class="h-p__sl" id="sincSlider-slider" data-directionnav="true">
+<ul class="slides">
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>Dopo aver provato mSpy, questo programma è diventato un alleato insostituibile per me. Mi permette di sapere sempre quello che fanno i miei figli, così posso anche assicurarmi che stiano bene. Mi piace anche il fatto di poter regolare varie impostazioni, per decidere quali contatti, siti o app far utilizzare o no.</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>mSpy è un'app che mi permette di tenere sotto controllo tutto ciò che fa mio figlio su internet. Posso anche bloccare qualsiasi contatto sospetto, se dovessero essercene. È una scelta intelligente per un genitore moderno.</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>Tenere al sicuro i propri figli è fondamentale per qualsiasi genitore. mSpy mi aiuta a tenere d'occhio mia figlia quando non posso stare con lei. La consiglio senza alcun dubbio!</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>Mio figlio passa le sue intere giornate al telefono, quindi è meglio che ogni tanto io controlli che non combini niente di male. mSpy mi permette di sapere sempre tutto ciò che fa, senza perdermi nulla.</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>Stavo cercando un'app che potesse tenere d'occhio i miei figli quando io non posso stare con loro. Un'amico mi ha consigliato mSpy. Mi piace! Mi aiuta a tenere sotto controllo i miei figli da tutti i pericoli della rete.</q>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="align-center">
+<div class="h-p__sl-cn" id="sincSlider-carousel" data-minitems="5">
+<ul class="slides">
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-1.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Owen, USA</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-2.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Elijah, Canada</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-3.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Ashley, Francia</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-4.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Aiden, Germania</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-5.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Emma, USA</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="h-p__b">
+<div class="wrapper">
+<h2 class="h-p__b__t">Sponsorizzazione</h2>
+<div class="h-p__press-b">
+<div class="table-overflow">
+<table>
+<tr>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_cnet"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_huffingtonpost"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_abc"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_forbes"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_tnw"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_fox"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_dailymail"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_cnn"></i>
+</td>
+</tr>
+</table>
+</div>
+<p class="h-p__press-b__tx">
+<q>Quest'app è concepita esclusivamente per utilizzi legali e solo se si hanno determinate ragioni per utilizzare un software di monitoraggio. Le compagnie, per esempio, potrebbero informare i propri dipendenti che i propri telefoni aziendali sono controllati per ragioni di sicurezza</q>
+</p>
+<div class="text-center">
+<p class="h-p__press-b__t">The Next Web</p>
+</div>
+<div class="h-p__b__btn-wrap">
+<a class="btn __imp __mid" href="https://www.mspy.it/buynow.html">Comincia subito</a>
+</div>
+</div>
+</div>
+</section>
+<div class="text-spoiler" id="textSpoiler">
+<div class="wrapper">
+<div class="text-spoiler__title js-textSpoilerTitle">Leggi maggiori informazioni su mSpy</div>
+<div class="text-spoiler__text js-textSpoilerContent"><h2>Cos'è il software per controllare un cellulare mSpy</h2>
+<p>Ci sono milioni di telefoni cellulari in giro per il mondo. I datori di lavoro li offrono ai propri dipendenti per esigenze lavorative. I genitori li regalano ai propri figli per farli felici. Tutti pagano soldi per l'utilizzo di questi dispositivi. Che tu sia un datore di lavoro o un genitore, non ti piacerebbe sapere come spiare un cellulare? I tuoi dipendenti lo usano per scopi lavorativi o personali? Qui entra in gioco il software spia mSpy.</p>
+<p>La risposta è molto semplice, mSpy consente al genitore o al datore di lavoro, o chiunque altro desideri spiare un cellulare, di tenere traccia dei dispositivi mobile che desiderano. Con questo software spia cellulari, l'amministratore del cellulare può tenere traccia di diverse informazioni, come monitoraggio delle chiamate, messaggi di testo, posizione GPS e molto altro ancora. Questo programma viene eseguito su qualsiasi tipo di telefono, che sia esso Android o iOS, ed inserisce dei registri nell'account mSpy privato del proprietario.</p>
+<p>A cosa serve l'app spia mSpy:</p>
+<ul>
+<li>A capire se i tuoi figli sono al sicuro quando non sono vicino a te</li>
+<li>Quali sono le loro maggiori preoccupazioni</li>
+<li>Con chi sono in contatto e cosa si dicono</li>
+<li>Quali posti visitano e quando</li>
+<li>Quali sono i siti internet su cui navigano</li>
+<li>A ridurre il rischio di un furto della identità</li>
+<li>Quanto rendono i tuoi dipendenti</li>
+</ul>
+<p>Qualsiasi datore di lavoro può controllare un cellulare affidato al proprio dipendente per farlo rigare dritto. Per farlo, basta seguire queste semplici regole:</p>
+<ul>
+<li>Chiedere il consento per monitorare i dispositivi dati ai propri dipendenti</li>
+<li>Tenere traccia solo di quello che fanno durante le ore lavorative</li>
+</ul>
+<h2>Controllare un altro cellulare con l’app mSpy</h2>
+<p>mSpy è un software innovativo, che consente a chi lo utilizza, di individuare pericoli e problemi, che i propri dipendenti o i propri figli, potrebbero ritrovarsi ad affrontare, ancor prima che questi possano verificarsi.</p>
+<p>Al termine dell'installazione di questa app per spiare smartphone, che è possibile installare anche su tablet, questa inizierà a collezionare molte info relative al dispositivo mobile, come il registro delle telefonate, la posizione tramite GPS, le pagine internet visitate, la posta elettronica, le conversazioni, gli SMS, video e foto.</p>
+<p>Questa app per spiare cellulare, ti consente anche di bloccare siti web che non vuoi che vengano visitati o app che non desideri far scaricare sul dispositivo. Inoltre, se ti accorgi che i tuoi figli ricevono telefonate da contatti indesiderati, li puoi bloccare a distanza! In qualunque momento e ovunque ti trovi, potrai accedere alle informazioni di quel dispositivo, con un semplice clic.</p>
+<p>Per accedere a tali info, è necessario entrare nel proprio account mSpy. Puoi utilizzare qualsiasi dispositivo connesso ad internet. In questo modo, avrai accesso a tutte le informazioni sul dispositivo, direttamente dal pannello di controllo dell'app per spiare un altro telefono mSpy.</p>
+<p>Per tutti quelli che desiderano spiare un telefono dotato di sistema operativo iOS, il monitoraggio può essere eseguito in due modi differenti:</p>
+<ul>
+<li>mSpy per dispositivi con jailbreak</li>
+<li>mSpy per dispositivi senza jailbreak</li>
+</ul>
+<p>Come funziona un telefono spia mSpy senza Jailbreak:</p>
+<p>mSpy può essere installato anche su un dispositivo mobile iOS senza jailbreak, semplicemente ottenendo le credenziali di iCloud e quindi attivare tutte le funzioni che desideri monitorare. Nella procedura di configurazione, non dovrai far altro che compilare in modo corretto i campi richiesti e poi eseguire l'accesso al pannello di controllo, per tenere traccia del cellulare spia.</p>
+<h3>Chi dovrebbe spiare un cellulare con mSpy senza Jailbreak?</h3>
+<p>Tutti coloro che sono alla ricerca di un'app spia telefono tecnologicamente avanzata, per non desidera eseguire il jailbreak del telefono o tablet, in modo da non perdere la possibilità di utilizzare alcuni servizi. Per installare mSpy su un dispositivo senza jailbreak, non occorre nessuna installazione fisica. Basta solo entrare in possesso del nome utente e password di iCloud.</p>
+<p>Utilizzando mSpy su un dispositivo senza jailbreak, si possono utilizzare le seguenti funzioni di monitoraggio:</p>
+<ul>
+<li>Registro delle telefonate</li>
+<li>Schede contatto</li>
+<li>SMS</li>
+<li>Navigazione dei siti web</li>
+<li>Eventi</li>
+<li>Note scritte</li>
+</ul>
+<p>Chiaramente, ottenendo il jailbreak del dispositivo, è possibile accedere anche a strumenti di monitoraggio avanzati. Tuttavia, anche con mSpy tradizionale, è possibile monitorare in maniera piuttosto approfondita un qualsiasi dispositivo mobile.</p>
+<h3>Controllare cellulare con mSpy è legale?</h3>
+<p>Se ti sei posto questa domanda fin dall'inizio, eccoti alcune informazioni che forse non conosci:</p>
+<ul>
+<li>Il 42% dei ragazzi è vittima di bullismo, anche online. Questo significa, che è capitato almeno una volta ad un ragazzo su quattro, di essere vittima di bullismo, di qualsiasi forma.</li>
+<li>Non tutti informano i propri genitori della situazione. Si calcola che solo uno su dieci informa i propri genitori, a volte per vergogna delle angherie subite.</li>
+<li>Tutti coloro che subiscono bullismo nella loro vita, hanno una maggiore propensione al suicidio.</li>
+</ul>
+<p>Se il software di controllo telefono viene utilizzato in modo corretto, è in grado di salvare una vittima di bullismo, tenendo i propri figli lontano da qualsiasi pericolo.</p><p>Oggi come oggi, i ragazzi passano più tempo con la testa immersa in un mondo virtuale, più che reale. Nonostante questo loro mondo sia solo fittizio, i rischi che corrono sono del tutto reali. Ti verrebbe mai in mente di lasciare tuo figlio da solo in casa con un perfetto sconosciuto? Allora perché dovrebbe accedere online e avere la possibilità di essere bullizzato da chiunque? </p><p>In mancanza di un efficace controllo, chiunque navighi in rete può entrare in contatto con contenuti che non sono adatti alla sua età, come pornografia, alcol, droghe o cyberbullismo. Se sei un genitore premuroso, devi interessarti a ciò che tuo figlio fa col suo cellulare. Se sei un genitore, sai quanto sia forte il legame con un bambino e quindi è importante proteggerlo da pericoli esterni.</p>
+<p>E cosa dire dei datori di lavoro? È possibile monitorare i propri dipendenti? La risposta è si, ma:</p>
+<ol>
+<li>Li devi informare del fatto che durante le ore lavorative utilizzi programmi spia per cellulari;</li>
+<li>Devi spiegare loro che monitori solo il telefono aziendale e che una volta terminato l'orario di lavoro, non dovranno più utilizzarlo se non vogliono essere monitorati;</li>
+<li>Fargli capire quali sono le attività che verranno monitorare e che lo fai soltanto per il bene della tua azienda;</li>
+</ol>
+<p>Se un datore di lavoro non sa cosa fanno i dipendenti durante le ore di lavoro, allora è possibili che questi siano controproducenti per la propria attività imprenditoriale. Monitorare i propri dipendenti non è un reato, finché sono informati e serve solo a far rendere di più, le persone che paghi profumatamente.</p></div>
+</div>
+</div>
+</div>
+<div class="modal __video js-modalOn" id="homeVideo">
+<i class="modal__close js-modalOnClose"></i>
+<div class="modal__wrap-video js-wrap"></div>
+</div> </section>
+<footer class="footer">
+<input type="hidden" class="timeleft">
+<div class="wrapper">
+<nav class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList"><ul><li class="breadcrumbs__i" property="itemListElement" typeof="ListItem"><a href="index.html" property="item" typeof="WebPage"><span property="name">Casa</span><meta property="position" content="1"></a></li></ul></nav> <div class="row">
+<div class="col-md-4 col-sm-6">
+<p class="footer__title">mSpy è la migliore soluzione tutto incluso per:</p>
+<menu class="footer__menu main-menu __two js-footerMenuGA">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/text-message-spy.html">Monitoraggio SMS</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/android-spy.html">Monitoraggio Android</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/iphone-spy.html">Monitoraggio iPhone</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/no-jailbreak.html">mSpy Senza Jailbreak</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/facebook-spy.html">Monitoraggio Facebook</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/viber-spy.html">Monitoraggio Viber</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/skype-spy.html">Monitoraggio Skype</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/whatsapp-spy.html">Monitoraggio WhatsApp</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/snapchat-spy.html">Monitoraggio Snapchat</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/line-spy.html">Monitoraggio di Line</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/telegram-spy.html">Monitoraggio di Telegram</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/tinder-spy.html">Monitoraggio di Tinder</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/hangouts-spy.html">Monitoraggio Hangouts</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/mobile-phone-spy-software.html">Monitoraggio Cellulari</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/parental-control.html">Controllo Parentale</a>
+</li>
+</menu>
+</div>
+<div class="col-md-5 col-sm-6">
+<div class="row footer__fix-col">
+<div class="col-md-4 col-sm-4">
+<p class="footer__title">Info</p>
+<menu class="footer__menu main-menu js-footerMenuGA">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/about.html" rel="nofollow">Informazioni</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/faq.html">FAQ</a>
+</li>
+<li class="main-menu__i">
+<a href="../blog.mspy.com/index.html" target="_blank">Blog</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/tour.html" rel="nofollow">Come funziona mSpy</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/affiliates.html" rel="nofollow">Programma Partner</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/reviews.html">Recensioni</a>
+</li>
+<li class="main-menu__i">
+<a href="https://help.mspy.support/hc/en-us/" rel="nofollow" target="_blank">Contattaci</a>
+</li>
+</menu>
+</div>
+<div class="col-md-4 col-sm-4 rght-pad-min">
+<p class="footer__title">Informazioni legali</p>
+<menu class="footer__menu main-menu js-footerMenuGA">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/terms-of-use.html" rel="nofollow">Terms of Use</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/legal-info.html" rel="nofollow">EULA</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/privacy-policy.html" rel="nofollow">Politica privacy</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/refund-policy.html" rel="nofollow">Politica rimborsi</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/cookie-policy.html" rel="nofollow">Informativa cookie</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/compatibility-policy.html" rel="nofollow">Compatibility policy</a>
+</li>
+<li class="main-menu__i">
+<a href="https://www.mspy.it/affiliatesprogramTC.html" rel="nofollow">Affiliates Program T&C</a>
+</li>
+</menu>
+</div>
+<div class="col-md-4 col-sm-4 left-pad-min">
+<p class="footer__title">Social</p>
+<ul class="social-ic footer__menu main-menu">
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-tw" href="https://twitter.com/mspycom" title="Twitter" rel="nofollow" target="_blank">Twitter</a>
+</li>
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-gp" href="https://plus.google.com/u/0/117428278861929687790/posts" title="Google-plus" rel="nofollow" target="_blank">Google+</a>
+</li>
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-yt" href="http://www.youtube.com/user/mspycom" title="YouTube" rel="nofollow" target="_blank">YouTube</a>
+</li>
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-vm" href="http://vimeo.com/mspy" title="Vimeo" rel="nofollow" target="_blank">Vimeo</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-12">
+<p class="footer__title">Pagamenti online sicuri</p>
+<div class="payment-b">
+<i class="payment-b__i sp-py_vi"></i><i class="payment-b__i sp-py_mc"></i><i class="payment-b__i sp-py_ae"></i><i class="payment-b__i sp-py_pp"></i><i class="payment-b__i sp-py_ds"></i><i class="payment-b__i sp-py_db"></i><i class="payment-b__i sp-py_bw"></i><i class="payment-b__i sp-py_jb"></i>
+</div>
+<div class="footer__gurant-l js-footerGurantBlock">
+<p class="footer__title">Approvato da</p>
+<span class="footer__gurant-l__i">
+<a href="../www.securitymetrics.com/site_certificateff84.html?id=1492250&amp;tk=ad13693acde5d0de13a0ebd1e1e41323" rel="nofollow" target="_blank">
+<img src="https://www.securitymetrics.com/static/img/site_certified_logos/Credit_Card_Safe_light.png" alt="SecurityMetrics Credit Card Safe" style="max-width:101px;">
+</a>
+</span>
+<span class="footer__gurant-full">
+<a href="../www.stopbullying.gov/index.html" target="_blank" data-name="StopBullying" rel="nofollow">
+<img border="0" width="135" alt="mSpy Parental Monitoring Tool is listed by the StopBullying." src="http://static.mspy.com/assets/static/img/stopbullying-logo.png">
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<p class="footer__title">Limitazione di responsabilità</p>
+<p class="footer__text js-ShowMore"><b>SOFTWARE DESTINATO SOLO A UN UTILIZZO LEGALMENTE CONSENTITO.</b> Costituisce una violazione delle leggi vigenti e delle normative locali applicabili l'installazione del Software concesso in Licenza su un dispositivo di cui non sei il proprietario. Generalmente, la legge richiede che tu provveda a informare i proprietari dei dispositivi<u class="more"></u> sui quali intendi installare il Software concesso in licenza. La violazione di tale prescrizione potrebbe comportare gravi sanzioni pecuniarie e penali a carico del trasgressore. È necessario che consulti il tuo legale in merito alla legittimità dell'utilizzo del Software concesso in licenza all'interno della tua giurisdizione, prima di procedere alla sua installazione e al suo utilizzo. Sei l'unico responsabile dell'installazione del Software concesso in licenza su tale dispositivo e sei consapevole del fatto che mSpy non può essere ritenuta in alcun modo responsabile.</p>
+<p class="footer__copy">&copy; 2019 My Spy (mSpy). Tutti i marchi registrati sono di proprietà dei rispettivi proprietari.</p>
+</div>
+</footer>
+</main>
+<header class="header" id="header">
+<div class="info-toolbar" id="infoToolbar">
+<div class="wrapper">
+<div class="info-toolbar__c">
+<span>Questo sito internet utilizza i cookie. Proseguendo la navigazione, acconsenti al nostro utilizzo dei cookie come spiegato nella nostra <a href="https://www.mspy.it/cookie-policy.html">Gestione Cookie</a></span>
+<button class="btn __second __micro" id="infoToolbarBtn">OK</button>
+</div>
+</div>
+</div>
+<div class="header__top">
+<div class="wrapper">
+<div class="promo-wr">
+<a class="header__logo sp-hd_logo js-headLogoGA" href="index.html"></a>
+<button class="toogle-menu" id="toogleMenuBtn">
+<i class="toogle-menu__i"></i>
+<i class="toogle-menu__i"></i>
+<i class="toogle-menu__i"></i>
+</button>
+<div class="support-line-b" id="headerPhoneNum">
+<span class="support-line-b__text"><i class="icon sp-support"></i>Siamo operativi 24/7</span>
+<span class="support-line-b__num" id="headerPhoneNum">+1 855 896 0041</span>
+</div>
+<script>
+                       var geoIp = "FR";
+                       geoIp = geoIp.toLowerCase();
+                       var date = new Date(),
+                        timeHour = date.getUTCHours() + 3,
+                           dateDay = date.getDay();
+
+                       if(geoIp == 'pt' || geoIp == 'br') {
+                           changePhoneNum(geoIp);
+                       }
+                       if(geoIp == 'tr') {
+                           changePhoneNumTr(geoIp);
+                       }
+                       if(geoIp == 'fr') {
+                           changePhoneNumFr(geoIp);
+                       }
+
+                       function changePhoneNum(locale) {
+                           var timePeriods = {
+                               "pt": ['12:00 - 22:00'],
+                               "br": ['8:00 - 19:00']
+                           };
+                           if(dateDay < 1 || dateDay > 5) {
+                               return false;
+                           }
+                           if((dateDay >= 1 && dateDay < 5) && (timeHour >= 14 && timeHour < 24) && geoIp == 'br'){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = timePeriods[locale];
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+
+                               if(phoneNum !== undefined && text !== undefined) {
+                                   $block.innerHTML = template.join('');
+                               }
+                           }
+                           if((dateDay >= 1 && dateDay < 5) && (timeHour >= 12 && timeHour < 22) && geoIp == 'pt'){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = timePeriods[locale];
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+
+                               if(phoneNum !== undefined && text !== undefined) {
+                                   $block.innerHTML = template.join('');
+                               }
+                           }
+
+
+                       }
+                       function changePhoneNumTr(locale) {
+                           var timePeriods = {
+                               "tr": ['11:00 - 20:00']
+                           };
+
+                           if(dateDay < 1 || dateDay > 6) {
+                               return false;
+                           }
+
+                           if((dateDay >= 1 && dateDay < 6) && (timeHour >= 11 && timeHour < 20)){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = timePeriods[locale];
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+                           }
+
+                           if(phoneNum !== undefined && text !== undefined) {
+                               $block.innerHTML = template.join('');
+                           }
+                       }
+
+                       function changePhoneNumFr(locale) {
+
+                           if(dateDay < 1 || dateDay > 6) {
+                               return false;
+                           }
+
+                           if((dateDay > 0 && dateDay < 6) && (timeHour >= 11 && timeHour < 20)){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = '10:00 - 19:00';
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+                           }
+
+                           if(phoneNum !== undefined && text !== undefined) {
+                               $block.innerHTML = template.join('');
+                           }
+                       }
+                   </script>
+</div>
+</div>
+</div>
+<div class="header__bot js-sticToolbar" data-blockheight="30">
+<div class="wrapper">
+<menu class="header__menu main-menu js-mainMenu">
+<li class="main-menu__i __active ">
+<a href="index.html">Casa</a>
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/product.html">Prodotti</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/product.html" data-mobile="Prodotti per cellulari">mSpy per cellulari</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/features.html">Funzionalità</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/features.html" data-mobile="Funzionalità per cellulari">mSpy per cellulari</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/compatibility.html">Compatibilità</a>
+</li>
+<li class="main-menu__i  __hide-m">
+<a href="https://www.mspy.it/faq.html">FAQ</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/faq.html" data-mobile="FAQ per cellulari">mSpy per cellulari</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/about.html">Informazioni</a>
+</li>
+<li class="main-menu__i  __inner">
+<a href="https://www.mspy.it/buynow.html">Acquista Ora</a>
+</li>
+</menu>
+<aside class="header__tool js-headTool">
+<div class="header__tool__i">
+<span class="header__tool__inner js-headToolItem">Accesso</span>
+<div class="header__tool__con head-login">
+<form class="js-formLogin" target="new" method="post" action="https://cp.mspyonline.com/login.html">
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<input type="email" value="" name="aItem[email]" required="required" placeholder="Accesso">
+</div>
+<div class="col-md-4 col-sm-4">
+<input type="password" value="" name="aItem[password]" required="required" placeholder="Parola d'ordine">
+</div>
+<div class="col-md-4 col-sm-4 align-center">
+<button class="btn __second __micro hidden-m">Accesso</button>
+<button class="btn __imp __sm hidden show-m">Accesso</button>
+</div>
+</div>
+<input type="hidden" value="0" name="aItem[remember]">
+<input type="hidden" value="" name="do[login]">
+<div class="mt10"><small><a class="js-forgoPassword" rel="nofollow" target="new" href="https://cp.mspyonline.com/login.forgotpassword.html">Hai dimenticato la password?</a></small></div>
+</form> </div>
+</div>
+<div class="header__tool__i">
+<a class="language-s__icon header__tool__inner flag-it js-headToolItem" href="#"></a>
+<div class="language-s__con header__tool__con" id="switchLanguageCon">
+<a class="language-s__con__i flag-us" href="../www.mspy.com/index.html">English</a>
+<a class="language-s__con__i flag-de" href="../www.mspy.com.de/index.html">Deutsch</a>
+<a class="language-s__con__i flag-es" href="../www.mspy.com.es/index.html">Español</a>
+<a class="language-s__con__i flag-fr" href="../www.mspy.fr/index.html">Français</a>
+<a class="language-s__con__i flag-it" href="index.html">Italiano</a>
+<a class="language-s__con__i flag-br" href="../www.mspy.com.br/index.html">Português</a>
+<a class="language-s__con__i flag-tr" href="../tr.mspy.com/index.html">Türkçe</a>
+ <a class="language-s__con__i flag-kr" href="../kr.mspy.com/index.html">한국의</a>
+<a class="language-s__con__i flag-jp" href="../www.mspy.jp/index.html">日本</a>
+<a class="language-s__con__i flag-ww" href="../ar.mspy.com/index.html">العربية</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+<menu class="mobile-menu__nav main-menu">
+<li class="main-menu__i __active ">
+<a href="index.html">Casa</a>
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/product.html">Prodotti</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/product.html" data-mobile="Prodotti per cellulari">mSpy per cellulari</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/features.html">Funzionalità</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/features.html" data-mobile="Funzionalità per cellulari">mSpy per cellulari</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/compatibility.html">Compatibilità</a>
+</li>
+<li class="main-menu__i  __hide-m">
+<a href="https://www.mspy.it/faq.html">FAQ</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://www.mspy.it/faq.html" data-mobile="FAQ per cellulari">mSpy per cellulari</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://www.mspy.it/about.html">Informazioni</a>
+</li>
+<li class="main-menu__i  __inner">
+<a href="https://www.mspy.it/buynow.html">Acquista Ora</a>
+</li>
+</menu>
+<div class="mobile-menu__lang">
+<select id="mobileSelectLanguage">
+<option value="https://www.mspy.com/">
+English </option>
+<option value="https://www.mspy.com.de/">
+Deutsch </option>
+<option value="https://www.mspy.com.es/">
+Español </option>
+<option value="https://www.mspy.fr/">
+Français </option>
+<option selected="selected" value="https://www.mspy.it/">
+Italiano </option>
+<option value="https://www.mspy.com.br/">
+Português </option>
+<option value="https://tr.mspy.com/">
+Türkçe </option>
+<option value="https://kr.mspy.com/">
+한국의 </option>
+<option value="https://www.mspy.jp/">
+日本 </option>
+<option value="https://ar.mspy.com/">
+العربية </option>
+</select>
+</div>
+<div class="mobile-menu__login">
+<div class="mobile-menu__login__btn-wrap">
+<a class="btn __imp __sm js-mobileLoginIn" href="#">Accesso</a>
+</div>
+<div class="mobile-menu__login__c js-mobileLoginInForm">
+<form class="js-formLogin" target="new" method="post" action="https://cp.mspyonline.com/login.html">
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<input type="email" value="" name="aItem[email]" required="required" placeholder="Accesso">
+</div>
+<div class="col-md-4 col-sm-4">
+<input type="password" value="" name="aItem[password]" required="required" placeholder="Parola d'ordine">
+</div>
+<div class="col-md-4 col-sm-4 align-center">
+<button class="btn __second __micro hidden-m">Accesso</button>
+<button class="btn __imp __sm hidden show-m">Accesso</button>
+</div>
+</div>
+<input type="hidden" value="0" name="aItem[remember]">
+<input type="hidden" value="" name="do[login]">
+<div class="mt10"><small><a class="js-forgoPassword" rel="nofollow" target="new" href="https://cp.mspyonline.com/login.forgotpassword.html">Hai dimenticato la password?</a></small></div>
+</form> </div>
+</div>
+</div>
+<div class="overlay" id="overlay"></div>
+<form id="formViewDemo" action="https://demo.mspy.com/?lang=it" method="post" target="new">
+<input type="hidden" name="aItem[email]" value="demo@example.com">
+<input type="hidden" name="aItem[password]" value="demopassword">
+<input type="hidden" class="remember" name="aItem[remember]" value="0">
+<input type="hidden" name="do[login]" value="">
+<input type="hidden" name="redirect_to" value="">
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://static.mspy.com/assets/app-3a27348337b2c8f857faad60fd2c4ddd.js"></script>
+<div style="height: 0; overflow: hidden;">
+</div>
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "Organization",
+"name": "mSpy",
+"url": "https://www.mspy.com/",
+"logo": "https://www.mspy.com/logo-m.svg",
+"contactPoint": [
+{ "@type": "ContactPoint", "telephone": "+1 855 896 0041", "contactType": "customer support" }],
+"sameAs": [
+"https://en.wikipedia.org/wiki/MSpy",
+"../www.youtube.com/user/mSpycom.html",
+"../www.facebook.com/mspyofficial/index.html",
+"https://plus.google.com/u/0/117428278861929687790/posts",
+"https://twitter.com/mSpycom"]}
+</script>
+<script type="application/ld+json">
+{ "@context": "http://schema.org", "@id": "https://www.mspy.com/#webpage", "@type": "WebPage", "url": "https://www.mspy.com/", "name": "mSpy" }
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a4e5cf69d5","applicationID":"109152182","transactionName":"Y1xTMRdYVkYHVBddC1oWZBcMFlFbAlIbGhRcSQ==","queueTime":0,"applicationTime":134,"atts":"TxtQR19CRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.mspy.it/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:13:24 GMT -->
+</html>

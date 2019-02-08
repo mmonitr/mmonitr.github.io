@@ -1,0 +1,1103 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie7 ie-lt9" lang="ko-kr"><![endif]-->
+<!--[if IE 8]><html class="ie8 ie-lt9" lang="ko-kr"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-kr"><!--<![endif]-->
+
+<!-- Mirrored from kr.mspy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:13:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>휴대전화 추적 &amp; 모니터링 소프트웨어, 문자 추적 | mSpy</title>
+<meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="ZzF3UEpkWV8pdxkKfxV0BT1hNRYuFDM0LXYbJDkMHikobjsxfFA4Og==">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#42afc7">
+
+<meta name="msapplication-navbutton-color" content="#42afc7">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="#42afc7">
+<meta name="google-site-verification" content="KhJuFW4iZtKUuv7kYJcMoHEMQ0P6HX3_Z6vuwUDMz7U" />
+<script>dataLayer = [{'ueia': 'ireahleoooeahn'}];</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M9M6BN');</script>
+ <script>
+(function(protocol, host){
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    //example http(s)://mspy.com/mspy.js?url=urlencodedrequest&get=urlencodedgetarray
+    var paramString = protocol + '://' + host + '/mspy.js?' + '&url=' + encodeURIComponent(location.href) + '&get=' + encodeURIComponent(location.search);
+    var sequence = readCookie('sequence');
+    var _ga = readCookie('_ga');
+    var gclid = readCookie('gclid');
+    var gcl = readCookie('_gcl_aw');
+
+    if (!gclid && gcl) {
+        var _gcl = gcl.split('.');
+        gclid = _gcl.pop();
+    }
+
+    paramString += (sequence != null) ? '&sequence='+sequence : '';
+    paramString += (_ga != null) ? '&_ga='+encodeURIComponent(_ga) : '';
+    paramString += (gclid != null) ? '&gclid='+gclid : '';
+    paramString += (gcl != null) ? '&_gcl_aw='+gcl : '';
+
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = encodeURI(paramString);
+    script.async = 1;
+    //append script to head
+    document.getElementsByTagName('head')[0].appendChild(script);
+})('https', 'tracker.mspy.com' );
+</script>
+<link rel="apple-touch-icon" sizes="152x152" href="http://static.mspy.com/assets/static/img/touch-icon-ipad-retina.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://static.mspy.com/assets/static/img/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://static.mspy.com/assets/static/img/touch-icon-ipad.png">
+<link rel="apple-touch-icon" href="http://static.mspy.com/assets/static/img/touch-icon-iphone.png">
+<link rel="shortcut icon" href="http://static.mspy.com/assets/static/img/favicon.ico">
+<meta name="keywords" content="mspy 휴대 전화 스파이">
+<meta name="description" content="휴대전화 추적 소프트웨어가 모바일 문자 메시지, 이메일, 위치, 통화를 감시 및 모니터링 합니다! 최고의 휴대전화 스파이 소프트웨어는 여러분의 비즈니스 및 가족을 안전하게 지켜줍니다.">
+<meta name="robots" content="index, follow">
+<link href="https://static.mspy.com/assets/app-d1af04dbd8bee68cbb3a5a5409e0d2aa.css" rel="stylesheet">
+<script type="text/javascript">window.jQueryFallbackUrl = '//static.mspy.com/assets/static/js/jquery.min.js'</script>
+<link rel="alternate" hreflang="en-us" href="../www.mspy.com/index.html">
+<link rel="alternate" hreflang="de-de" href="../www.mspy.com.de/index.html">
+<link rel="alternate" hreflang="es-es" href="../www.mspy.com.es/index.html">
+<link rel="alternate" hreflang="fr-fr" href="../www.mspy.fr/index.html">
+<link rel="alternate" hreflang="it-it" href="../www.mspy.it/index.html">
+<link rel="alternate" hreflang="pt-br" href="../www.mspy.com.br/index.html">
+<link rel="alternate" hreflang="tr-tr" href="../tr.mspy.com/index.html">
+<link rel="alternate" hreflang="ko-kr" href="index.html">
+<link rel="alternate" hreflang="ja-jp" href="../www.mspy.jp/index.html">
+<link rel="alternate" hreflang="ar-ae" href="../ar.mspy.com/index.html">
+<script>
+var stats_pgs = '1549638627.502';
+var stats_route = 'home/index';
+var textStrings = {
+    //activation.html messages
+    activationResultEmailError: '이메일과 확인 이메일이 일치하지 않습니다',
+    activationResultError: '오류가 발생했습니다. 나중에 다시 시도하시거나 다른 브라우저에서 같은 링크를 가지고 다시 시도해주시기 바랍니다.',
+    activationResultSuccess: '등록해주셔서 감사합니다!<br><br> 귀하의 계정을 활성화하는 방법에 대한 세부 정보를 담은 이메일이 {your@email.com}로 전송되었습니다. 귀하의 이메일 받은 편지함을 확인하시고 저희의 소프트웨어를 설치 및 사용하시기 전에 확인 링크를 따라주시기 바랍니다.<br><br> 질문 사항이 있으시면, 언제든지 주저하지 마시고 저희에게 연락주시기 바랍니다.',
+    activationResultAlready: '새로운 정액제가 활성화되고 mspyonline.com의 기존 계정에 연결됩니다.<br><br> 비밀번호를 기억하지 못하여 오래된 계정에 액세스 할 수 없는 경우에 대비하여, <a href="https://mspyonline.com/login.forgotpassword.html">비밀번호 찾기</a> 기능을 활성화하시기 바랍니다. 그러면 새롭게 생성된 비밀번호가 이메일로 전송됩니다.',
+    activationResultOther: '무언가 잘못 됐습니다. 지원 팀 +1 855 896 0041으로 연락주시기 바랍니다. ',
+    
+    //compatibility.html messages
+    searchResultMessageSuccess: '축하드립니다! {device_name}가 지원됩니다',
+    searchResultMessageSuccessNoSupport: '이제 {device_name}에 대한 <a href=https://kr.mspy.com/no-jailbreak.html>비탈옥 솔루션이 지원 됨을 알려드리게되어 기쁩니다!</a>',
+    searchResultMessageFail: '죄송합지만, 귀하의 장치가 아직 지원되지 않습니다, 아마도 오류일 수 있습니다. 저희 고객 지원 팀으로 연락주시기 바랍니다.',
+    searchResultMessageLength: '검색어가 너무 짧습니다',
+    searchResultMessageNoResult: '장치가 인식되지 않았습니다. 호환성에 대해 문의하시려면 저희 지원 팀으로 연락주세요.',
+    
+    searchFieldText: ['장치 모델','OS 버전'],
+    viewResultBtn: ['인기 모델 확인','OS 버전 확인'],
+
+    //Footer more text
+    moreTextEllipses: '...',
+    moreTextMore: '더',
+    moreTextLess: '줄이기'
+}
+</script>
+<script>
+var comBlockImageText = {
+    android: ['Samsung Galaxy S3, S4','Sony Xperia, HTC One'],
+    ios: ['iPad Air, iPad Mini','iPhone 5S, 5C'],
+};
+var comBlockMainTitle = {
+    android: [''],
+    apple: [''],
+    defaultText: ['모든 인기 장치와 호환']
+};
+
+var phones = {
+    us: '+1 855 896 0041',
+    pt: '+351 308 802 223',
+    br: '0 800 591 5100',
+    tr: '+90 850 252 6514',
+    fr: '+33 970 738115'
+};
+
+var phonesText = {
+    pt: '12:00 - 22:00',
+    br: '8:00 - 19:00'
+}
+
+var suppportOs = {
+    ios: ['6', '9.0.2'],
+    android: '4.0',
+};
+
+var buyPage = 'https://kr.mspy.com/buynow.html';
+
+if (typeof ga != "undefined")  {
+    ga(function(tracker) {
+        gaLinkerParam = tracker.get('linkerParam');
+    });
+} else {
+    gaLinkerParam = '';
+}
+
+var currency = 'EUR';
+var currencySymbol = '€';
+var locale = 'kr';
+
+var siteStatus = 'prod';
+
+var trackerUrl =  'https://kr.mspy.com/tracker.mspy.com'
+</script>
+</head>
+<body class=" home-page cur-eur lang-ko count-kr ">
+
+<noscript><iframe src="../www.googletagmanager.com/nsb11a.html?id=GTM-M9M6BN"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<main class="page-container " id="pageContainer">
+<section class="main" id="mainBlock">
+
+<style>
+    body {
+        background-color: #ECECEC;
+    }
+
+    .footer {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+</style>
+<div class="h-p home-promo" id="homePage">
+<div class="banner-wr">
+</div>
+<section class="h-p__top-b">
+<aside class="h-p__top-b__c">
+<div class="wrapper">
+<div class="row">
+<div class="col-md-7 col-sm-7">
+<div class="tablecell">
+<h1 class="h-p__top-b__t-m">자녀 보호를 <br> 위한 최고의 모니터링 <br> 소프트웨어</h1>
+<div class="h-p__top-b__tx">
+<p>자녀의 모든 스마트폰 활동을 원격으로 추적 및 통제하세요</p>
+</div>
+<div class="h-p__top-b__btn-wrap">
+<a class="btn __imp __mid js-buyBtn" href="https://kr.mspy.com/buynow.html">지금 구입하기</a>
+<span class="h-p__top-b__btn-wrap__tx">또는</span>
+<a class="h-p__top-b__btn-wrap__demo" href="https://demo.mspy.com/ko/">비디오 데모</a>
+</div>
+</div>
+</div>
+<div class="col-md-5 col-sm-5">
+<div class="tablecell">
+<ul class="h-p__top-b__list">
+<li class="sp-li-b">WhatsApp, SMS, 통화 기록, 위치 추적 & 25 가지 이상의 기능</li>
+<li class="sp-li-b">Android, iOS 및 Mac OS와 호환</li>
+<li class="sp-li-b">모든 브라우저에서 쉽게 액세스 가능</li>
+<li class="sp-li-b">주 7 일 24 시간 다양한 언어 지원</li>
+<li class="sp-li-b">무료 온라인 초기 설치 지원</li>
+</ul>
+<div class="h-p__top-b__btn-wrap-m">
+<a class="btn __imp __mid js-buyBtn" href="https://kr.mspy.com/buynow.html">지금 구입하기</a>
+<a class="h-p__top-b__btn-wrap__demo h-p__top-b__btn-wrap-m__demo" href="https://demo.mspy.com/ko/">비디오 데모</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<aside class="h-p__top-b__video">
+<i style="background-image: url(http://static.mspy.com/assets/static/img/landing/home/home-v5-head.jpg); background-repeat: no-repeat; background-size: cover; display: inline-block; width: 1680px; height: 500px;"></i>
+</aside>
+</section>
+<section class="h-p__b h-p__work-b">
+<div class="h-p__work-b__bg-wrap">
+<i class="h-p__work-b__bg sp-inb-1 __1"></i>
+<i class="h-p__work-b__bg sp-inb-2 __2"></i>
+<i class="h-p__work-b__bg sp-inb-3 __3"></i>
+</div>
+<div class="wrapper">
+<div class="row">
+<div class="col-md-7 col-sm-7">
+<h2 class="h-p__work-b__t-s">왜 mSpy입니까?</h2>
+<p class="h-p__work-b__t-m">mSpy는 최종 사용자가 필요한 보안, 안전 및 편의를 만족시키는 모니터링 솔루션의 글로벌 리더입니다.</p>
+<p class="h-p__work-b__t-m">mSpy - 확인하세요. 예방하세요. 보호하세요.</p>
+<a class="h-p__work-b__link" data-tooltip="mSpy는 세계 수백만 사용자들이 만족하시는 시장 최고의 인기 모니터링 및 세이프티 애플리케이션입니다. 저희 소프트웨어는 모니터하는 장치의 백그라운드에서 작동하며 GPS 위치, 웹 기록, 이미지, 비디오, 이메일, SMS, Skype, WhatsApp, 키스트로크 등과 같은 모든 활동을 추적합니다. 사용하기 쉬운 제어판과 주 7 일 24 시간 실시간 고객 지원을 갖춘 mSpy는 자녀 안전과 직원의 생산성을 지켜주는 최고의 솔루션입니다.">작동 원리</a>
+</div>
+<div class="col-md-5 col-sm-5">
+<aside class="h-p__work-b__video-b">
+<i class="img" style="background-image: url(http://static.mspy.com/assets/static/img/landing/home/home-howItWorks-video-bg.png); display: inline-block; width: 378px; height: 198px;"></i>
+<a class="video-btn js-videoMobal" data-modal="homeVideo" data-yootube="SWEAY41EPQs" href="https://youtu.be/SWEAY41EPQs" target="_blank"></a>
+</aside>
+</div>
+</div>
+</div>
+</section>
+<section class="h-p__b">
+<div class="wrapper">
+<h2 class="h-p__b__t">모바일 추적 소프트웨어의 전체 기능을 사용하세요</h2>
+<div class="h-p__info">
+<div class="row">
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-mn __1"></i>
+<h3 class="h-p__info__t">메신저 모니터</h3>
+<p>추적하는 장치의 메신저 및 채팅에 대한 전체 액세스 획득.</p>
+</div>
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-cn __2"></i>
+<h3 class="h-p__info__t">주 7 일 24 시간 연결 가능</h3>
+<p>이메일, 채팅 또는 전화로 저희 전담 지원 팀에 연락하실 수 있습니다. </p>
+</div>
+<i class="h-p__info__separator-m"></i>
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-st __3"></i>
+<h3 class="h-p__info__t">데이터 저장</h3>
+<p>안전한 저장, 백업 및 데이터 내보내기.</p>
+</div>
+<div class="h-p__info__i col-md-3 col-sm-3 col-xs-6">
+<i class="h-p__info__ic sp-in-tr __4"></i>
+<h3 class="h-p__info__t">여러 장치 모니터</h3>
+<p>스마트폰 (Android, iOS) 동시에 모니터하실 수 있습니다.</p>
+</div>
+</div>
+<div class="h-p__b__btn-wrap">
+<a class="btn __imp-tr __mid" href="https://kr.mspy.com/buynow.html">요금 확인</a>
+</div>
+</div>
+</div>
+</section>
+<div class="h-p__b__separate"></div>
+<section class="h-p__b">
+<div class="wrapper">
+<h2 class="h-p__b__t">mSpy와 함께하는 모니터</h2>
+<div class="h-p__tab">
+<div class="h-p__tab__c" style="max-width: 300px;display: flex;justify-content: center;flex-wrap: wrap;margin: 0 auto;">
+<a class="h-p__tab__i on" href="#tab-phone">
+<span class="h-p__tab__i__tx">휴대전화 전용 mSpy</span>
+</a>
+</div>
+</div>
+<section class="h-p__f-b __animate on" data-tab="phone">
+<div class="h-p__f-b__wrap js-gaHomeFeatures">
+<div class="h-p__f-b__row">
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/sent-received-sms.html">
+<i class="h-p__f-b__ic sp-fn-tm"></i>
+<h4 class="h-p__f-b__t">SMS</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">목표 장치의 모든 수신 및 발신 메세지 확인</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __1"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/social.html">
+<i class="h-p__f-b__ic sp-fn-sc"></i>
+<h4 class="h-p__f-b__t">소셜 네트워크</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">모니터하는 장치의 소셜 네트워크 앱을 통해 주고 받은 모든 채팅 내용을 확인하세요</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __2"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/whatsapp.html">
+<i class="h-p__f-b__ic sp-fn-wt"></i>
+<h4 class="h-p__f-b__t">WhatsApp</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">WhatsApp 같은 인기 커뮤니케이션 앱 모니터</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __3"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/current-gps-location.html">
+<i class="h-p__f-b__ic sp-fn-gl"></i>
+<h4 class="h-p__f-b__t">GPS 추적</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">자녀 또는 직원의 위치 확인</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __4"></span>
+</aside>
+</div>
+<div class="h-p__f-b__row">
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/call-logs.html">
+<i class="h-p__f-b__ic sp-fn-cl"></i>
+<h4 class="h-p__f-b__t">통화</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">모든 수신 및 발신 통화에 대한 시간순 기록 확인</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __5"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/photos.html">
+<i class="h-p__f-b__ic sp-fn-vd"></i>
+<h4 class="h-p__f-b__t">사진 & 비디오</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">모니터하는 장치의 모든 사진/ 비디오 확인</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __6"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/instagram.html">
+<i class="h-p__f-b__ic sp-fn-em"></i>
+<h4 class="h-p__f-b__t">Instagram</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">Look through all the content shared in Instagram direct messages</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __7"></span>
+</aside>
+<aside class="h-p__f-b__i">
+<a class="h-p__f-b__c" href="https://kr.mspy.com/features.html">
+<i class="h-p__f-b__ic sp-fn-va"></i>
+<h4 class="h-p__f-b__t">모든 기능 확인</h4>
+<div class="h-p__f-b__bec">
+<p class="h-p__f-b__c__tx">모든 mSpy 기능 확인</p>
+</div>
+</a>
+<span class="h-p__f-b__bg __8"></span>
+</aside>
+</div>
+</div>
+<div class="h-p__f-b__btn-wrap h-p__b__btn-wrap">
+<a class="btn __trn __mid" href="https://kr.mspy.com/buynow.html" data-ga="Mobile">요금 확인</a>
+</div>
+</section>
+</div>
+</section>
+<section class="h-p__stat-b">
+<div class="wrapper">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-6">
+<div class="h-p__stat-b__num">
+24<sub>/7</sub>
+</div>
+<h3 class="h-p__stat-b__t">주 7 일 24 시간 글로벌 고객 지원</h3>
+<p>mSpy는 모든 고객을 소중히 여기며 주 7 일 24 시간 고객 서비스에 중점을 두고 있습니다.</p>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-6 snowflake-left">
+<div class="h-p__stat-b__num">
+95<sup>%</sup>
+</div>
+<h3 class="h-p__stat-b__t">95% 고객 만족</h3>
+<p>mSpy는 고객 만족을 제일 중요하게 생각합니다. mSpy의 고객분 중 95%께서 만족감 및 서비스 재사용 의사를 표시하셨습니다.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="h-p__b __bg-grey">
+<h2 class="h-p__b__t">mSpy는 고객님께 행복을 드립니다</h2>
+<div class="h-p__sl" id="sincSlider-slider" data-directionnav="true">
+<ul class="slides">
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>처음 mSpy를 사용한 이후, mSpy는 제 부모 인생의 매우 중요한 부분이 되었습니다. mSpy가 아이들이 무엇을 하는지 제게 업데이트해줘서 아이들의 안전을 확인 할 수 있습니다. 또한 제가 연락처, 사이트 또는 앱의 차단 및 승인 여부를 결정하고, 설정 할 수 있게 해줘서 좋습니다.</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>mSpy는 제가 제 아이의 인터넷 활동을 확인 할 수 있도록 도와주는 좋은 앱입니다. 또한 의심스러운 연락처를 차단 할 수 있도록 합니다. 현대 사회의 부모를 위한 훌륭한 선택입니다.</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>자녀 보호는 모든 부모님의 중요 과제일 것입니다. mSpy는 제가 딸 아이 곁에 없을 때 딸 아이의 행적을 확인 할 수 있도록 도와줍니다. mSpy를 강력 추천합니다!</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>제 아들은 하루 종일 휴대전화를 달고 살기 때문에, 저는 가끔 제 아들이 어떤 나쁜 짓을 하는지 않는지 확인 할 필요가 있습니다. mSpy는 제 아들이 활동한 내용을 정기적으로 제게 업데이트해줍니다.</q>
+</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl__c">
+<p class="h-p__sl__tx">
+<q>저는 제가 아이들과 같이 없을 때 아이들을 지켜 볼 수 있는 좋은 앱을 찾고 있었습니다. 그리고 제 친구가 저에게 mSpy를 추천해줬는데, 정말 만족합니다! mSpy는 제가 아이들의 인터넷 사용을 이해 할 수 있도록 도와줍니다.</q>
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="align-center">
+<div class="h-p__sl-cn" id="sincSlider-carousel" data-minitems="5">
+<ul class="slides">
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-1.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Owen, 미국</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-2.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Elijah, 캐나다</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-3.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Ashley, 프랑스</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-4.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Aiden, 독일</p>
+</div>
+</li>
+<li class="slides__i">
+<div class="h-p__sl-cn__box">
+<i class="h-p__sl-cn__img" style="background: url(http://static.mspy.com/assets/static/img/landing/home/review/review-avatar-5.jpg); display: block; width: 64px; height: 64px;"></i>
+<p class="h-p__sl-cn__t">Emma, 미국</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="h-p__b">
+<div class="wrapper">
+<h2 class="h-p__b__t">보증</h2>
+<div class="h-p__press-b">
+<div class="table-overflow">
+<table>
+<tr>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_cnet"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_huffingtonpost"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_abc"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_forbes"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_tnw"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_fox"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_dailymail"></i>
+</td>
+<td class="h-p__press-b__i">
+<i class="h-p__press-b__ic sp-h-press_cnn"></i>
+</td>
+</tr>
+</table>
+</div>
+<p class="h-p__press-b__tx">
+<q>본 앱은 표면적으로 법적 모니터링 사용을 위한 것으로, 본 소프트웨어를 설치하는 정당한 이유가 분명히 있어야 합니다. 예를 들어, 보안을 위해 회사 휴대전화를 감시하고자 하는 회사는 회사 직원들에게 이러한 정보를 알려야합니다.</q>
+</p>
+<div class="text-center">
+<p class="h-p__press-b__t">The Next Web</p>
+</div>
+<div class="h-p__b__btn-wrap">
+<a class="btn __imp __mid" href="https://kr.mspy.com/buynow.html">시작하기</a>
+</div>
+</div>
+</div>
+</section>
+<div class="text-spoiler" id="textSpoiler">
+<div class="wrapper">
+<div class="text-spoiler__title js-textSpoilerTitle">mSpy 소프트웨어에 대해 더 자세히 보기</div>
+<div class="text-spoiler__text js-textSpoilerContent"><h2>mSpy 추적 소프트웨어 소개</h2>
+<p>우리 모두가 부도덕한 직원이나 자녀가 해를 입는 것에 대한 걱정이 없는 이상적인 세상에서 살고 싶어합니다. 그러나 불행히도, 우리는 위험으로 둘러쌓인 세상에 살고 있습니다. 이러한 이유로, 비즈니스를 성장시키고 자녀가 행복하고 건강하고 안전하게 자라게 하려면 안전 유지가 필수적입니다.</p>
+<p>이것이 mSpy의 시작점입니다. 고급 소프트웨어 기술이 내장된 모니터링 앱으로 부모님과 고용주께서는 소중한 회사와 소중한 사람들을 지켜볼 수 있습니다. mSpy로, 매일 걱정에서 벗어나 더욱 생산적인 기업가 또는 부모가 되는 데에 에너지를 쏟을 수 있습니다.</p>
+<p>mSpy를 사용하여, 알 수 있는 것:</p>
+<ul>
+<li>자녀 곁에 없을 때 자녀의 안전</li>
+<li>자녀가 가장 많이 겪는 문제</li>
+<li>자녀가 연락하는 사람</li>
+<li>자녀가 방문하는 장소</li>
+<li>자녀가 온라인에서 방문하는 사이트</li>
+<li>신분 도용 위험 감소</li>
+<li>직원의 생산성</li>
+</ul>
+<p>mSpy는 비즈니스 소유자께서 직원들의 무결성을 관리할 수 있는 최고의 도구입니다. 모든 비즈니스 소유자께서는 반드시 다음 사항을 따라주셔야 합니다:</p>
+<ul>
+<li>장치 모니터에 대한 직원들의 사전 동의 얻기</li>
+<li>엄격하게 업무 관련 내용만 모니터링</li>
+</ul>
+<h3>휴대 전화 추적용 mSpy</h3>
+<p>mSpy는 여러분의 자녀와 비즈니스에 일어날 위험이나 문제에 대한 깊은 통찰력을 제공하는 최첨단 솔루션입니다!</p>
+<p>모니터링하고자 하는 스마트폰이나 태블릿에 설치하면, 저희의 모바일 추적 앱은 통화 기록, GPS 위치, 이메일, 브라우징 기록, 텍스트 메세지, 채팅, 사진 및 비디오를 포함한, 모든 정보를 추적하기 시작합니다. 심지어 부적절한 웹사이트 &amp; 앱을 원격으로 차단 할 수 있으며, 원치않는 연락처의 수신 전화를 막을 수도 있습니다! 어디에 계시던지 원하시는 정보에 액세스하실 수 있습니다.</p>
+<p>간단히 인터넷 연결이 된 장치에서 귀하의 보안 mSpy 계정에 로그인하신 후, 저희의 모바일 추적 애플리케이션 제어판에 캡처 된 장치 사용 세부 정보를 확인하세요.</p>
+<p>iOS 장치를 감시하시려면, 두 가지 모니터링 옵션이 있습니다:</p>
+<p>탈옥 &amp; 비탈옥 장치용 mSpy</p>
+<p><i>탈옥 없는 mSpy 작동 원리:</i></p>
+<p>비탈옥 장치에 mSpy를 설치하려면, 반드시 모니터링하는 장치의 iCloud 자격 증명을 획득하고 모니터하고자 하는 기능을 키셔야 합니다. 마법사 설정에 필수 항목을 정확하게 입력하시고, 제어판에 로그인하시면 해당 사용자 장치의 활동에 대한 데이터 로그를 확인하실 수 있습니다.</p>
+<h3>누가 탈옥 없는 mSpy를 사용하면 좋나요?</h3>
+<p>고급 모니터링 소프트웨어를 찾고 계시지만 이러한 서비스를 위해 장치의 탈옥을 하고 싶지는 않으신 모든 분들. 물리적 설치 필요 없음. 해당 사용자의 iCloud 자격 증명에 대한 액세스 필요.</p>
+<p>탈옥 없는 mSpy를 선택하시면, 다음과 같은 모니터링 기능이 제공됩니다:</p>
+<ul>
+<li>통화 기록</li>
+<li>연락처</li>
+<li>텍스트 메세지</li>
+<li>브라우저 기록</li>
+<li>일정</li>
+<li>노트</li>
+</ul>
+<p>iOS 장치 모니터링에 대한 다양한 기능을 찾고 계신 분께, 저희는 기존의 mSpy를 제안드립니다만, 추가 모니터링 도구를 즐기시려면 반드시 장치의 탈옥이 필요합니다.</p>
+<h3>이 모니터링 소프트웨어는 합법적인가요?</h3>
+<p>여러분께서 모르실 수도 있는 몇 가지:</p>
+<ul>
+<li>약 43%의 아이들이 온라인에서 괴롭힘을 당했습니다. 4 명 중 1 명은 한 번 이상 괴롭힘을 당했습니다.</li>
+<li>10 명 중 1 명의 사이버 괴롭힘 피해자만이 부모나 다른 성인에게 이 사실을 알렸습니다.</li>
+<li>괴롭힘 피해자가 2-9 배 더 자살을 고려했습니다.</li>
+</ul>
+<p>mSpy와 같은 안전한 소프트웨어를 적절하게 사용하면, 여러분의 자녀에게 생길 수 있는 위험을 방지하고 자녀를 보호 할 수 있습니다.</p>
+<p>오늘날 아이들은 현실만큼, 혹은 현실보다 더 많이 가상 세계에 삽니다. 그러나,가상 현실임에도 불구하고, 아이들이 직면하는 위험은 매우 현실적입니다. 여러분께서는 감시 없이 미성년 자녀를 혼자 집에 두거나 낯선 사람과 함께 있게 하지 않을 것입니다; 그런데 왜 여러분께서는 감시 없이 아이들을 가상 세계에 남겨둡니까? 온라인에 방치된 아이들은 약물이나 알콜, 사이버 괴롭힘, 조기 섹스 및 기타 무모한 행동과 같은 위험에 노출 될 수 있는 무책임한 선택을 할 수도 있습니다. 부모가 자녀의 활동을 조정 할 때, 이러한 위험이 방지됩니다. 자녀를 두신 부모님이시라면, 이러한 두 단계의 가치를 이해하실 것입니다.</p>
+<p>미성년 자녀를 감시하는 컴퓨터 &amp; 휴대 전화 추적 앱 사용이 정말로 합법적이냐구요? 네, 그렇습니다.</p>
+<p>비즈니스 소유자의 경우는요? mSpy는 선택이 후회 없는 컴퓨터 &amp; 모바일 모니터링 솔루션입니다. 만약 직원 중에 비생산적인 작업을 하는 자가 있다면, 이는 귀하의 비즈니스에 큰 악영향을 미칠 것입니다. 각 직원의 휴대전화를 추적하면, 직원들의 성과에 대한 정보를 자동으로 수집할 수 있습니다. 보너스를 받을 자격이 있는 사람이 누구인지 알아보세요. 어떤 직원이 기업 범죄의 선을 넘어서는지도 알 수 있습니다. 컴퓨터 &amp; 모바일 추적 소프트웨어를 사용하여 직원을 모니터링하는 것이 불법일까봐 걱정되세요? 그렇지 않습니다, 다음만 지켜주시면 법은 귀하의 편에 있습니다:</p>
+<ol>
+<li>직원에게 모니터링에 대해 알리고 서면 동의 얻기.</li>
+<li>업무 관련 IT 장치 사용에 대해 허용과 금지된 사용 설명.</li>
+<li>엄격하게 업무 관련 모니터링만.</li>
+</ol>
+<p><b>중요 알림:</b> mSpy는 직원의 동의 하에 직원의 IT 장비 사용을 모니터하는 비즈니스와 어린 자녀를 모니터하는 부모를 돕습니다. 저희의 소프트웨어는 자녀의 안전과 직원의 생산성을 지킬 수 있도록 만들어졌습니다.</p></div>
+</div>
+</div>
+</div>
+<div class="modal __video js-modalOn" id="homeVideo">
+<i class="modal__close js-modalOnClose"></i>
+<div class="modal__wrap-video js-wrap"></div>
+</div> </section>
+<footer class="footer">
+<input type="hidden" class="timeleft">
+<div class="wrapper">
+<nav class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList"><ul><li class="breadcrumbs__i" property="itemListElement" typeof="ListItem"><a href="index.html" property="item" typeof="WebPage"><span property="name">홈</span><meta property="position" content="1"></a></li></ul></nav> <div class="row">
+<div class="col-md-4 col-sm-6">
+<p class="footer__title">mSpy는 다음에 대한 타의 추종을 불허하는 올인원 솔루션입니다:</p>
+<menu class="footer__menu main-menu __two js-footerMenuGA">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/text-message-spy.html">SMS 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/android-spy.html">Android 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/iphone-spy.html">iPhone Tracking 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/no-jailbreak.html">탈옥 없는 mSpy</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/facebook-spy.html">Facebook 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/viber-spy.html">Viber 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/skype-spy.html">Skype 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/whatsapp-spy.html">WhatsApp 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/snapchat-spy.html">Snapchat 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/line-spy.html">Line 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/telegram-spy.html">Telegram 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/tinder-spy.html">Tinder 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/hangouts-spy.html">Hangouts 추적</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/mobile-phone-spy-software.html">모바일 휴대 전화 모니터링</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/parental-control.html">부모 통제</a>
+</li>
+</menu>
+</div>
+<div class="col-md-5 col-sm-6">
+<div class="row footer__fix-col">
+<div class="col-md-4 col-sm-4">
+<p class="footer__title">정보</p>
+<menu class="footer__menu main-menu js-footerMenuGA">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/about.html" rel="nofollow">소개</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/faq.html">자주 묻는 질문</a>
+</li>
+<li class="main-menu__i">
+<a href="../blog.mspy.com/index.html" target="_blank">블로그</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/tour.html" rel="nofollow">mSpy 작동 원리</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/affiliates.html" rel="nofollow">제휴 프로그램</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/reviews.html">리뷰</a>
+</li>
+<li class="main-menu__i">
+<a href="https://help.mspy.support/hc/en-us/" rel="nofollow" target="_blank">연락</a>
+</li>
+</menu>
+</div>
+<div class="col-md-4 col-sm-4 rght-pad-min">
+<p class="footer__title">법정 정보</p>
+<menu class="footer__menu main-menu js-footerMenuGA">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/terms-of-use.html" rel="nofollow">Terms of Use</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/legal-info.html" rel="nofollow">EULA</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/privacy-policy.html" rel="nofollow">개인 정보 보호 정책</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/refund-policy.html" rel="nofollow">환불 정책</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/cookie-policy.html" rel="nofollow">쿠키 정책</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/compatibility-policy.html" rel="nofollow">Compatibility policy</a>
+</li>
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/affiliatesprogramTC.html" rel="nofollow">Affiliates Program T&C</a>
+</li>
+</menu>
+</div>
+<div class="col-md-4 col-sm-4 left-pad-min">
+<p class="footer__title">소셜</p>
+<ul class="social-ic footer__menu main-menu">
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-tw" href="https://twitter.com/mspycom" title="Twitter" rel="nofollow" target="_blank">Twitter</a>
+</li>
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-gp" href="https://plus.google.com/u/0/117428278861929687790/posts" title="Google-plus" rel="nofollow" target="_blank">Google+</a>
+</li>
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-yt" href="http://www.youtube.com/user/mspycom" title="YouTube" rel="nofollow" target="_blank">YouTube</a>
+</li>
+<li class="main-menu__i">
+<a class="social-ic__i sp-sc-vm" href="http://vimeo.com/mspy" title="Vimeo" rel="nofollow" target="_blank">Vimeo</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-12">
+<p class="footer__title">온라인 보안 결제</p>
+<div class="payment-b">
+<i class="payment-b__i sp-py_vi"></i><i class="payment-b__i sp-py_mc"></i><i class="payment-b__i sp-py_ae"></i><i class="payment-b__i sp-py_pp"></i><i class="payment-b__i sp-py_ds"></i><i class="payment-b__i sp-py_db"></i><i class="payment-b__i sp-py_bw"></i><i class="payment-b__i sp-py_jb"></i>
+</div>
+<div class="footer__gurant-l js-footerGurantBlock">
+<p class="footer__title">승인 기관</p>
+<span class="footer__gurant-l__i">
+<a href="../www.securitymetrics.com/site_certificateff84.html?id=1492250&amp;tk=ad13693acde5d0de13a0ebd1e1e41323" rel="nofollow" target="_blank">
+<img src="https://www.securitymetrics.com/static/img/site_certified_logos/Credit_Card_Safe_light.png" alt="SecurityMetrics Credit Card Safe" style="max-width:101px;">
+</a>
+</span>
+<span class="footer__gurant-full">
+<a href="../www.stopbullying.gov/index.html" target="_blank" data-name="StopBullying" rel="nofollow">
+<img border="0" width="135" alt="mSpy Parental Monitoring Tool is listed by the StopBullying." src="http://static.mspy.com/assets/static/img/stopbullying-logo.png">
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<p class="footer__title">면책</p>
+<p class="footer__text js-ShowMore"><b>합법적인 용도로만 사용할 수 있는 소프트웨어.</b> 자신의 소유가 아닌 장치에 본 라이센스 소프트웨어를 설치하는 것은 해당 법률 및 현지 관할 법률의 위반입니다. 일반적으로 법률에 따라 귀하는 본 라이센스 소프트웨어를<u class="more"></u> 설치하려는 장치의 소유자에게 통지해야 합니다. 이 요구 사항을 위반할 경우, 위반자에게 형사 처벌 및 상당한 벌금이 부과될 수 있습니다. 귀하는 본 라이센스 소프트웨어를 설치하고 사용하기 전에 귀하의 관할 지역 내 본 라이센스 소프트웨어 사용의 적법성에 관하여 귀하의 법률 고문에게 자문을 구해야 합니다. 그러한 장치에 본 라이센스 소프트웨어를 설치하는 것은 전적으로 귀하의 책임이며 귀하는 mSpy가 책임을 지지 않음을 알고 있습니다.</p>
+<p class="footer__copy">&copy; 2019 My Spy (mSpy). 모든 상표권은 각 소유주의 재산권입니다.</p>
+</div>
+</footer>
+</main>
+<header class="header" id="header">
+<div class="info-toolbar" id="infoToolbar">
+<div class="wrapper">
+<div class="info-toolbar__c">
+<span>본 웹사이트는 쿠키를 사용합니다. 계속 브라우징하시는 것은, 귀하께서 저희의 <a href="https://kr.mspy.com/cookie-policy.html">쿠키 정책</a>에 설명된 쿠키의 사용에 동의하시는 것입니다.</span>
+<button class="btn __second __micro" id="infoToolbarBtn">OK</button>
+</div>
+</div>
+</div>
+<div class="header__top">
+<div class="wrapper">
+<div class="promo-wr">
+<a class="header__logo sp-hd_logo js-headLogoGA" href="index.html"></a>
+<button class="toogle-menu" id="toogleMenuBtn">
+<i class="toogle-menu__i"></i>
+<i class="toogle-menu__i"></i>
+<i class="toogle-menu__i"></i>
+</button>
+<div class="support-line-b" id="headerPhoneNum">
+<span class="support-line-b__text"><i class="icon sp-support"></i>영어 지원 주 7 일 24 시간</span>
+<span class="support-line-b__num" id="headerPhoneNum">+1 855 896 0041</span>
+</div>
+<script>
+                       var geoIp = "FR";
+                       geoIp = geoIp.toLowerCase();
+                       var date = new Date(),
+                        timeHour = date.getUTCHours() + 3,
+                           dateDay = date.getDay();
+
+                       if(geoIp == 'pt' || geoIp == 'br') {
+                           changePhoneNum(geoIp);
+                       }
+                       if(geoIp == 'tr') {
+                           changePhoneNumTr(geoIp);
+                       }
+                       if(geoIp == 'fr') {
+                           changePhoneNumFr(geoIp);
+                       }
+
+                       function changePhoneNum(locale) {
+                           var timePeriods = {
+                               "pt": ['12:00 - 22:00'],
+                               "br": ['8:00 - 19:00']
+                           };
+                           if(dateDay < 1 || dateDay > 5) {
+                               return false;
+                           }
+                           if((dateDay >= 1 && dateDay < 5) && (timeHour >= 14 && timeHour < 24) && geoIp == 'br'){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = timePeriods[locale];
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+
+                               if(phoneNum !== undefined && text !== undefined) {
+                                   $block.innerHTML = template.join('');
+                               }
+                           }
+                           if((dateDay >= 1 && dateDay < 5) && (timeHour >= 12 && timeHour < 22) && geoIp == 'pt'){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = timePeriods[locale];
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+
+                               if(phoneNum !== undefined && text !== undefined) {
+                                   $block.innerHTML = template.join('');
+                               }
+                           }
+
+
+                       }
+                       function changePhoneNumTr(locale) {
+                           var timePeriods = {
+                               "tr": ['11:00 - 20:00']
+                           };
+
+                           if(dateDay < 1 || dateDay > 6) {
+                               return false;
+                           }
+
+                           if((dateDay >= 1 && dateDay < 6) && (timeHour >= 11 && timeHour < 20)){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = timePeriods[locale];
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+                           }
+
+                           if(phoneNum !== undefined && text !== undefined) {
+                               $block.innerHTML = template.join('');
+                           }
+                       }
+
+                       function changePhoneNumFr(locale) {
+
+                           if(dateDay < 1 || dateDay > 6) {
+                               return false;
+                           }
+
+                           if((dateDay > 0 && dateDay < 6) && (timeHour >= 11 && timeHour < 20)){
+                               var $block = document.getElementById('headerPhoneNum');
+                               var phoneNum = window.phones[locale];
+                               var text = '10:00 - 19:00';
+                               var template = [
+                                   '<span class="support-line-b__text">',
+                                   '<i class="icon sp-support"></i> ' + text,
+                                   '</span>',
+                                   '<span class="support-line-b__num">' + phoneNum + '</span>'
+                               ];
+                           }
+
+                           if(phoneNum !== undefined && text !== undefined) {
+                               $block.innerHTML = template.join('');
+                           }
+                       }
+                   </script>
+</div>
+</div>
+</div>
+<div class="header__bot js-sticToolbar" data-blockheight="30">
+<div class="wrapper">
+<menu class="header__menu main-menu js-mainMenu">
+<li class="main-menu__i __active ">
+<a href="index.html">홈</a>
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/product.html">제품</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/product.html" data-mobile="휴대전화용 제품">휴대 전화용 mSpy</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/features.html">기능</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/features.html" data-mobile="휴대 전화용 기능">휴대 전화용 mSpy</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/compatibility.html">호환성</a>
+</li>
+<li class="main-menu__i  __hide-m">
+<a href="https://kr.mspy.com/faq.html">자주 묻는 질문</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/faq.html" data-mobile="휴대 전화용 자주 묻는 질문">휴대 전화용 mSpy</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/about.html">소개</a>
+</li>
+<li class="main-menu__i  __inner">
+<a href="https://kr.mspy.com/buynow.html">지금 구입하기</a>
+</li>
+</menu>
+<aside class="header__tool js-headTool">
+<div class="header__tool__i">
+<span class="header__tool__inner js-headToolItem">로그 인</span>
+<div class="header__tool__con head-login">
+<form class="js-formLogin" target="new" method="post" action="https://cp.mspyonline.com/login.html">
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<input type="email" value="" name="aItem[email]" required="required" placeholder="로그인">
+</div>
+<div class="col-md-4 col-sm-4">
+<input type="password" value="" name="aItem[password]" required="required" placeholder="비밀번호">
+</div>
+<div class="col-md-4 col-sm-4 align-center">
+<button class="btn __second __micro hidden-m">로그 인</button>
+<button class="btn __imp __sm hidden show-m">로그 인</button>
+</div>
+</div>
+<input type="hidden" value="0" name="aItem[remember]">
+<input type="hidden" value="" name="do[login]">
+<div class="mt10"><small><a class="js-forgoPassword" rel="nofollow" target="new" href="https://cp.mspyonline.com/login.forgotpassword.html">비밀번호를 분실하셨나요?</a></small></div>
+</form> </div>
+</div>
+<div class="header__tool__i">
+<a class="language-s__icon header__tool__inner flag-kr js-headToolItem" href="#"></a>
+<div class="language-s__con header__tool__con" id="switchLanguageCon">
+<a class="language-s__con__i flag-us" href="../www.mspy.com/index.html">English</a>
+<a class="language-s__con__i flag-de" href="../www.mspy.com.de/index.html">Deutsch</a>
+<a class="language-s__con__i flag-es" href="../www.mspy.com.es/index.html">Español</a>
+<a class="language-s__con__i flag-fr" href="../www.mspy.fr/index.html">Français</a>
+<a class="language-s__con__i flag-it" href="../www.mspy.it/index.html">Italiano</a>
+<a class="language-s__con__i flag-br" href="../www.mspy.com.br/index.html">Português</a>
+<a class="language-s__con__i flag-tr" href="../tr.mspy.com/index.html">Türkçe</a>
+<a class="language-s__con__i flag-kr" href="index.html">한국의</a>
+ <a class="language-s__con__i flag-jp" href="../www.mspy.jp/index.html">日本</a>
+<a class="language-s__con__i flag-ww" href="../ar.mspy.com/index.html">العربية</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+<menu class="mobile-menu__nav main-menu">
+<li class="main-menu__i __active ">
+<a href="index.html">홈</a>
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/product.html">제품</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/product.html" data-mobile="휴대전화용 제품">휴대 전화용 mSpy</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/features.html">기능</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/features.html" data-mobile="휴대 전화용 기능">휴대 전화용 mSpy</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/compatibility.html">호환성</a>
+</li>
+<li class="main-menu__i  __hide-m">
+<a href="https://kr.mspy.com/faq.html">자주 묻는 질문</a>
+
+<div class="header__menu__sub js-headMenuSub">
+<ul class="main-menu wrapper">
+<li class="main-menu__i">
+<a href="https://kr.mspy.com/faq.html" data-mobile="휴대 전화용 자주 묻는 질문">휴대 전화용 mSpy</a>
+</li>
+</ul>
+</div>
+
+</li>
+<li class="main-menu__i  ">
+<a href="https://kr.mspy.com/about.html">소개</a>
+</li>
+<li class="main-menu__i  __inner">
+<a href="https://kr.mspy.com/buynow.html">지금 구입하기</a>
+</li>
+</menu>
+<div class="mobile-menu__lang">
+<select id="mobileSelectLanguage">
+<option value="https://www.mspy.com/">
+English </option>
+<option value="https://www.mspy.com.de/">
+Deutsch </option>
+<option value="https://www.mspy.com.es/">
+Español </option>
+<option value="https://www.mspy.fr/">
+Français </option>
+<option value="https://www.mspy.it/">
+Italiano </option>
+<option value="https://www.mspy.com.br/">
+Português </option>
+<option value="https://tr.mspy.com/">
+Türkçe </option>
+<option selected="selected" value="https://kr.mspy.com/">
+한국의 </option>
+<option value="https://www.mspy.jp/">
+日本 </option>
+<option value="https://ar.mspy.com/">
+العربية </option>
+</select>
+</div>
+<div class="mobile-menu__login">
+<div class="mobile-menu__login__btn-wrap">
+<a class="btn __imp __sm js-mobileLoginIn" href="#">로그 인</a>
+</div>
+<div class="mobile-menu__login__c js-mobileLoginInForm">
+<form class="js-formLogin" target="new" method="post" action="https://cp.mspyonline.com/login.html">
+<div class="row">
+<div class="col-md-4 col-sm-4">
+<input type="email" value="" name="aItem[email]" required="required" placeholder="로그인">
+</div>
+<div class="col-md-4 col-sm-4">
+<input type="password" value="" name="aItem[password]" required="required" placeholder="비밀번호">
+</div>
+<div class="col-md-4 col-sm-4 align-center">
+<button class="btn __second __micro hidden-m">로그 인</button>
+<button class="btn __imp __sm hidden show-m">로그 인</button>
+</div>
+</div>
+<input type="hidden" value="0" name="aItem[remember]">
+<input type="hidden" value="" name="do[login]">
+<div class="mt10"><small><a class="js-forgoPassword" rel="nofollow" target="new" href="https://cp.mspyonline.com/login.forgotpassword.html">비밀번호를 분실하셨나요?</a></small></div>
+</form> </div>
+</div>
+</div>
+<div class="overlay" id="overlay"></div>
+<form id="formViewDemo" action="https://demo.mspy.com/?lang=ko" method="post" target="new">
+<input type="hidden" name="aItem[email]" value="demo@example.com">
+<input type="hidden" name="aItem[password]" value="demopassword">
+<input type="hidden" class="remember" name="aItem[remember]" value="0">
+<input type="hidden" name="do[login]" value="">
+<input type="hidden" name="redirect_to" value="">
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://static.mspy.com/assets/app-3a27348337b2c8f857faad60fd2c4ddd.js"></script>
+<div style="height: 0; overflow: hidden;">
+</div>
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "Organization",
+"name": "mSpy",
+"url": "https://www.mspy.com/",
+"logo": "https://www.mspy.com/logo-m.svg",
+"contactPoint": [
+{ "@type": "ContactPoint", "telephone": "+1 855 896 0041", "contactType": "customer support" }],
+"sameAs": [
+"https://en.wikipedia.org/wiki/MSpy",
+"../www.youtube.com/user/mSpycom.html",
+"../www.facebook.com/mspyofficial/index.html",
+"https://plus.google.com/u/0/117428278861929687790/posts",
+"https://twitter.com/mSpycom"]}
+</script>
+<script type="application/ld+json">
+{ "@context": "http://schema.org", "@id": "https://www.mspy.com/#webpage", "@type": "WebPage", "url": "https://www.mspy.com/", "name": "mSpy" }
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a4e5cf69d5","applicationID":"109152182","transactionName":"Y1xTMRdYVkYHVBddC1oWZBcMFlFbAlIbGhRcSQ==","queueTime":0,"applicationTime":120,"atts":"TxtQR19CRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from kr.mspy.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:13:27 GMT -->
+</html>

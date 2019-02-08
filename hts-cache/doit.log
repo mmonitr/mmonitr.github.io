@@ -1,0 +1,8 @@
+https://www.mspy.com/ -r2 -%e1
+File generated automatically on Fri, 08 Feb 2019 15:10:18, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

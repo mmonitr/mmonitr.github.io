@@ -1,0 +1,2206 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        
+    
+       <!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" >
+
+<!-- Mirrored from www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entry/October_24_2017_at_11_56_59_PM?lang=en by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:14:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  
+  <meta name="Referrer" content="origin">
+  
+  <title>
+  	 	     	       What is mSpy parental control and why do you need it? - IBM Services Assets Blog
+	            </title>
+
+
+
+					<!-- Copyright IBM Corp. 2018  All Rights Reserved.                    -->
+
+<!--[if IE 6]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie lotusui_ie6";</script><![endif]-->
+<!--[if IE 7]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie lotusui_ie7";</script><![endif]-->
+<!--[if IE 8]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie8";</script><![endif]-->
+<!--[if IE 9]><script>document.getElementsByTagName("html")[0].className+=" lotusui_ie9";</script><![endif]-->
+<link rel="stylesheet" type="text/css" id="lotusBaseStylesheet" href="https://www.ibm.com/developerworks/community/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/base/package3.css&amp;etag=20181207.134999" appName="blogs" base="https://www.ibm.com/developerworks/community/connections/resources/web/" query="?version=oneui3&rtl=false&etag=20181207.134999" theme="default" defaultTheme="default" oneui="3"></link>
+<link rel="stylesheet" type="text/css" id="lotusSpritesStylesheet" href="https://www.ibm.com/developerworks/community/connections/resources/web/_style?include=com.ibm.lconn.core.styles.oneui3/sprites.css&amp;etag=20181207.134999"></link>
+<link rel="stylesheet" type="text/css" id="lotusThemeStylesheet" href="https://www.ibm.com/developerworks/community/connections/resources/web/_lconntheme/default.css?version=oneui3&amp;rtl=false&amp;etag=20181207.134999"></link>
+<!-- Copyright IBM Corp. 2018  All Rights Reserved.                    -->
+
+<link rel="stylesheet" type="text/css" id="lotusAppStylesheet" href="https://www.ibm.com/developerworks/community/connections/resources/web/_lconnappstyles/default/blogs.css?version=oneui3&amp;rtl=false&amp;etag=20181207.134999"></link>
+<!-- Copyright IBM Corp. 2018  All Rights Reserved.                    -->
+<!-- Copyright IBM Corp. 2018  All Rights Reserved.                    -->
+
+<!-- IBM Connections Mobile App for iOS -->
+<meta content="app-id=450533489" name="apple-itunes-app" />
+<!-- IBM Connections Mobile App for Android -->
+<meta content="app-id=com.ibm.lotus.connections.mobile" name="google-play-app" />
+
+	  	
+  		  			
+  		  	<script type="text/javascript">
+		window.currentLogin={};
+		window.__security_nonce='';
+		
+		var http;
+		if(typeof XMLHttpRequest == 'undefined') http=new ActiveXObject("Microsoft.XMLHTTP");
+		else http=new XMLHttpRequest();
+		http.open('https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entry/GET', '/developerworks/community/blogs/roller-services/json/authcheck?entry=286ff449-7d33-4cfa-9a1c-e59215aa6c61', false);
+		http.send(null);
+		var t=http.responseText;
+		if(http.status == 200 && t && t.length>4 && t.substring(0,5)=='nonce'){
+			eval('window.currentLogin={'+t+'}');
+			window.__security_nonce=window.currentLogin.nonce;
+		}
+	</script>
+
+<script type="text/javascript">
+	var appName = "blogs";	// valid values: profile, communities, blogs, bookmarks, activities
+	var microfmtTagScope = "span,h5";
+	
+		   var bidir = "ltr";
+		
+	function getLoginRedirectURL(url) {
+	    return 'https://www.ibm.com/developerworks/community/blogs/roller-ui/login-redirect.jsp?redirect=%2Fdeveloperworks%2Fcommunity%2Fblogs%2Fbae6a745-faab-4ee8-8c3b-0ce483a04daf%2Fentry%2FOctober_24_2017_at_11_56_59_PM%3Flang%3Den';
+    }
+</script>
+
+  <script type="text/javascript" src="https://www.ibm.com/developerworks/community/connections/bookmarklet/static/script/20181207.134999/feedMarklet.js?lang=en"></script>	
+  
+<script type="text/javascript">
+    var BlogsBaseUrl = "https://www.ibm.com/developerworks/community/blogs";
+    var langParaValue = "en";
+    var ratings = {};
+</script>
+    		
+
+<link rel="shortcut icon" href="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.oneui3.styles/imageLibrary/Icons/ComponentsDarkBlue/Blogs_Browser.ico?etag=20181207.134999" type="image/x-icon">
+<!-- Copyright IBM Corp. 2018  All Rights Reserved.                    -->
+
+
+
+  <style type="text/css">
+   
+    
+        
+    
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------
+   CSS
+---------------------------------------------------------------------- */
+
+
+
+/***************************** CSS *************************************/
+
+    
+  </style> 
+  
+              <link rel="alternate" type="application/atom+xml" title="Atom Entries"  href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/feed/entries/atom?lang=en" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Comments" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/feed/comments/atom?lang=en" />
+            <link rel="replies" type="application/atom+xml" title="Atom Entry Comments"  href="#" />
+              <link rel="service" class="preferred" type="application/atomsvc+xml" title="Atom Publishing Protocol" href="https://www.ibm.com/developerworks/community/blogs/api" />
+            <link rel="EditURI"   type="application/rsd+xml" title="RSD" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/rsd"/>
+    </head>
+<body class="blog  lotusui 
+ lotusui30dojo lotusui30_body lotusui30_fonts lotusui30 lotusSpritesOn">
+<label id="TemplateVersion" style="display:none">2.5</label>
+<a id="REFRESH_URL" href="#" style="display:none"></a>
+<div id="lotusFrame" class="lotusFrame lotusui30_layout">
+<div role="banner">
+<div id="lotusBanner" class="lotusBanner">
+<script type="text/javascript">
+if (self != top) {
+   try {
+      // Reset location if in different host.
+      // per Same Origin Policy, try to get top location attributes,
+      // will get permission denied if in different origin.
+      if (self.location.hostname != top.location.hostname)
+         top.location=self.location;
+   }catch(e){
+      // reset location if in different origin
+      top.location=self.location;
+   }
+}
+</script>
+
+
+<div id="ibm-masthead"></div>
+			<!-- SITE MON : START (DO NOT DELETE) -->
+			<!-- developerWorks monitoring token -->
+			<!-- SITE MON : END (DO NOT DELETE) -->	
+									
+<div class="lotusRightCorner" style="display: inline;">
+   <div class="lotusInner"><ul class="lotusInlinelist lotusUtility lotusNowrap" id="headerMenuContainer"><li class="shareboxLi" id="headerSharebox" class="lotusFirst lotusHidden" style="display:none"><a class="lotusBannerBtn" href="javascript:;" onclick="dojo.stopEvent(event);dojo.require('net.jazz.ajax.xdloader');net.jazz.ajax.xdloader.load_async('com.ibm.social.sharebox.dialog', dojo.hitch(this, function() {com.ibm.social.sharebox.show();}));" role="button">Share</a></li><li id="languageSelectorText" style="display: none;"></li><li id="headerHelpLi" ><a role="button" aria-label="Open help window" href="javascript:lconn.blogs.utils.openHelpWindow();" id="headerHelpLink"><img role="presentation" alt="" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="iconsOther16 iconsOther16-bannerHelpNormal16" /><span class="lotusAltText">?</span></a></li></ul><ul class="lotusInlinelist lotusLinks" role="navigation" aria-label="Connections"><li id="lotusBannerProfiles" class="lotusFirst "><a onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" 
+                      onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" 
+                      onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" 
+                      role="button" 
+                      _lconn_menuid="lconnheadermenu-people"
+                      aria-label="Profiles" 
+                      src="https://www.ibm.com/developerworks/community/blogs/static/20181207.134999!en/nav/templates/menu/people.jsp"
+                      href="https://www.ibm.com/developerworks/community/profiles/"
+                      errormessage="Profiles is not available"><img alt="" role="presentation" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lconnBannerIcon lconnSprite lconnSprite-iconProfilesBlue16">Profiles <img role="presentation" alt="" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">&#9660;</span></a></li><li id="lotusBannerCommunities" class=" "><a id="lotusBannerCommunitiesLink" 
+                      onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" 
+                      onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" 
+                      onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" 
+                      role="button" 
+                      _lconn_menuid="lconnheadermenu-communities"
+                      aria-label="Communities" 
+                      src="https://www.ibm.com/developerworks/community/blogs/static/20181207.134999!en/nav/templates/menu/communities.jsp"
+                      href="https://www.ibm.com/developerworks/community/groups/"
+                      errormessage="Communities is not available"><img alt="" role="presentation" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lconnBannerIcon lconnSprite lconnSprite-iconCommunitiesBlue16">Communities <img role="presentation" alt="" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">&#9660;</span></a></li><li id="lotusBannerApps" class=" lotusSelected"><a onmouseover="dojo.require('lconn.core.header');lconn.core.header.menuMouseover(this);" 
+                   onclick="dojo.require('lconn.core.header');lconn.core.header.menuClick(this);" 
+                   onfocus="dojo.require('lconn.core.header');lconn.core.header.menuFocus(this);" 
+                   role="button" 
+                   _lconn_menuid="lconnheadermenu-apps"
+                   aria-label="Apps" 
+                   src="https://www.ibm.com/developerworks/community/blogs/static/20181207.134999!en/nav/templates/menu/apps.jsp"
+                   href="javascript:;"
+                   errormessage="Blogs is not available">Apps <img role="presentation" alt="" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusArrow lotusDropDownSprite"><span class="lotusAltText">&#9660;</span></a></li><!--<li>
+            <a href="/developerworks/community/podcasts/?lang=en">Podcasts</a>
+         </li>-->
+         <!--<li>
+            <a href="/developerworks/champion/">IBM Champion program</a>
+         </li>--></ul><div class="lotusClear"><!-- IE --></div></div></div>
+
+
+ 
+</div><!--end pageHeader-->
+<script type="text/javascript" language="Javascript">
+var refresh_url = document.getElementById('REFRESH_URL');
+var this_url = window.location.toString();
+var this_url_anchor_idx = this_url.lastIndexOf('#');
+if(this_url_anchor_idx == -1) {
+    refresh_url.href = this_url;
+}
+else {
+	refresh_url.href = this_url.substring(0, this_url_anchor_idx);
+}
+
+var blogsUser = currentLogin.name ? currentLogin.name : null;
+</script>
+
+
+
+    
+
+
+
+
+
+        
+<script>
+	function showFeedTip(focusId) {
+   		lconn.blogs.utils.alert('Right-click and select Copy Shortcut to get the URL to this feed.', focusId);//alert
+	}
+
+	function jumpToPage(to, max) {
+		if(to > max) {
+			to = max;
+		}
+
+		if(to < 1) {
+			to = 1;
+		}
+
+		to = to - 1;
+		var base = "https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?sortby=0&amp;maxresults=15&amp;lang=en";
+		window.location = base + "&page=" +  to;
+	}
+
+	function jumpToPageForComment(to, max) {
+		if(to > max) {
+			to = max;
+		}
+
+		if(to < 1) {
+			to = 1;
+		}
+
+		to = to - 1;
+		var base = "https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entry/October_24_2017_at_11_56_59_PM?maxresults=15&amp;lang=en";
+		window.location = base + "&page=" +  to;
+	}
+</script>
+<div id="lotusTitleBar" class="lotusTitleBar2 lotusTitleBar2Tabs"><div class="lotusWrapper"><div class="lotusInner">
+		    
+<span style="position: absolute;">
+	<a id="tabNavigation" name="tabNavigation"> </a>
+</span>
+<div class="lotusTitleBarContent">
+	<h2 class="lotusHeading">
+		<img alt="" class="lotusIcon iconsComponentsBlue24 iconsComponentsBlue24-BlogsBlue24" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999"><span class="lotusText">Blogs</span>
+	</h2>
+	<div role="navigation" aria-label="Blogs Views">
+		<ul class="lotusNavTabs aria_toolbar" id="pageTabs" role="toolbar" aria-label="Blogs Views"  aria-controls="lotusMain">
+		    <li  role="presentation">
+		          <div class="lotusTabWrapper"><a class="lotusTab" role="button"  href="https://www.ibm.com/developerworks/community/blogs/roller-ui/myblogs/edit?lang=en"><span class="lotusTabInner">My Blogs</span></a></div>
+		    </li>
+		    <li  role="presentation">
+		          <div class="lotusTabWrapper"><a class="lotusTab" role="button"  href="https://www.ibm.com/developerworks/community/blogs/roller-ui/homepage?lang=en"><span class="lotusTabInner">Public Blogs</span></a></div>
+		    </li>
+		    <li  role="presentation">
+		          <div class="lotusTabWrapper"><a class="lotusTab" role="button"  href="https://www.ibm.com/developerworks/community/blogs/roller-ui/myupdates?lang=en"><span class="lotusTabInner">My Updates</span></a></div>
+		    </li>
+		    <li role="presentation" id="pageTabs_admin" >
+			<div class="lotusTabWrapper">
+				<a class="lotusTab" role="button" aria-pressed="false" href="https://www.ibm.com/developerworks/community/blogs/roller-ui/admin/rollerConfig.do?method=edit&amp;lang=en">
+					<span class="lotusTabInner">Administration
+					</span>
+				</a>
+			</div>
+		    </li>
+		</ul>
+		<script language="javascript">
+			 if(!currentLogin.globalAdmin) {
+				// TODO: temporary fix. Hope to fix better after dojo or widget framework API ready. 
+				(function(){
+					var e = document.getElementById("pageTabs_admin");
+					if (e.parentNode){
+						e.parentNode.removeChild(e);
+					}
+				})();
+			}
+		</script>
+
+		<div class="lotusClear"></div>
+	</div>
+</div>
+	
+					
+	<div id="global_search_container"></div>
+<script type="text/javascript">
+<!--
+function isExistInArray(array, value) {
+	for (var i=0; i < array.length; i++) {
+		if (array[i] == value) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+function getQueryString(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null) 
+		return unescape(r[2]); 
+	return "";
+} 
+
+function initialSearchBar() {
+                                                    
+    var _localOptions = [];
+	                _localOptions.push({label: 'Public Blogs', iconClass: 'lconnSprite lconnSprite-iconBlogs16', scope: 'public_blogs'  });
+        _localOptions.push({label: 'Public Blog Entries', iconClass: 'lconnSprite lconnSprite-iconBlogs16', scope: 'public_entries'  });
+        	    		    		_localOptions.push({label: 'My Blog Entries', iconClass: 'lconnSprite lconnSprite-iconBlogs16', scope: 'my_blogs'  });
+    			_localOptions.push({label: 'This Blog', iconClass: 'lconnSprite lconnSprite-iconBlogs16', scope: 'this_blog' , defaultOption: true  });
+    	_localOptions.push({label: 'This Blog\'s Comments', iconClass: 'lconnSprite lconnSprite-iconBlogs16', scope: 'this_blog_comments'  });
+        //ideationblog
+    	    	
+    		        		        
+    var _globalOptions = [];
+	         _globalOptions.push({label: 'Activities', feature: 'activities'});     	    	 _globalOptions.push({label: 'Communities', feature: 'communities'});          _globalOptions.push({label: 'Files', feature: 'files'});     	 _globalOptions.push({label: 'Forums', feature: 'forums'});     	 _globalOptions.push({label: 'Profiles', feature: 'profiles'});     	 _globalOptions.push({label: 'Wikis', feature: 'wikis'}); 	
+ 	var has = lconn.core.config.features;
+	//if(has("search-history-view-ui"))
+	//DW
+	if(false)
+	{
+		var _options = [];
+			        	            	            var loc = '/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/search?lang=' + langParaValue + '&t=entry&f=all&q=\{myQuery\}';
+                _options = [{label: 'This Blog', iconClass: 'lconnSprite lconnSprite-iconBlogs16', scope: 'this_blog', valueReplaceParam: 'myQuery', action: loc }];
+	            	        	    		
+		var searchBar = new lconn.search.searchPanel.SearchPaneManager({
+	        localOptions: _options,
+	        searchContextPath: 'https://www.ibm.com/developerworks/community/search',
+	        lblSearch:          'Search',
+	        lblSelectScope:     'Select Search Scope',
+	        lblAllConnections:  'developerWorks community',
+	        lblAdvanced:        'Advanced',
+	        thirdPartySearchEngines: lconn_core_thirdPartySearchEngines,
+	        	        onSubmit: function() {
+	        	return true;
+	        }
+	    }, dojo.byId('global_search_container'));
+	}else{
+	    var searchBar = new lconn.core.SearchBar({
+	        localOptions: _localOptions,
+	        globalOptions: [{}],
+	        searchContextPath: 'https://www.ibm.com/developerworks/community/search',
+	        lblSearch:          'Search',
+	        lblSelectScope:     'Select Search Scope',
+	        lblAllConnections:  'developerWorks community',
+	        lblAdvanced:        'Advanced',
+	        thirdPartySearchEngines: lconn_core_thirdPartySearchEngines,
+	        	        onSubmit: function() {
+	        	var str = this.getValue();
+	    		str = dojo.string.trim(str); // trim it
+	    		if (!str) {
+	        		return false;
+	    		}
+	
+	        	var selectedOption = this.selectedOption;
+	        	if (selectedOption.feature || selectedOption.action) {
+	        		return true;
+	    		}
+	        	else {
+	        	    var t = ['public_blogs', 'public_entries', 'my_blogs', 'public_blog_comments', 'this_blog', 'this_blog_comments','public_ideationblogs', 'public_ideas', 'my_ideationblogs', 'public_ideationblog_comments', 'this_ideationblog', 'this_ideationblog_comments'];
+	        	    if(!selectedOption.scope || isExistInArray(t, selectedOption.scope) == -1) {
+	        	        selectedOption.scope = 'this_blog';
+	        	    }
+	        		switch( selectedOption.scope ){
+			            case "public_blogs":
+			                var loc = '/developerworks/community/blogs/newhome/search?lang=' + langParaValue + '&t=blog&f=all&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            case "public_entries":
+			            	var loc = '/developerworks/community/blogs/newhome/search?lang=' + langParaValue + '&t=entry&f=all&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            case "my_blogs":
+			            	var loc = '/developerworks/community/blogs/roller-ui/myblogs/edit?lang=' + langParaValue + '&q=' + encodeURIComponent(str) + '&search=true&t=entry';
+			            	window.location=loc;
+			                break;
+			            case "public_blog_comments":
+			            	var loc = '/developerworks/community/blogs/newhome/search?lang=' + langParaValue + '&t=entry&f=comment&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			            	break;
+			            case "this_blog":
+			            	var loc = '/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/search?lang=' + langParaValue + '&t=entry&f=all&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            case "this_blog_comments":
+			            	var loc = '/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/search?lang=' + langParaValue + '&t=entry&f=comment&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            //ideationblog support
+			            case "public_ideationblogs":
+			                var loc = '/developerworks/community/blogs/newhome/search?lang=' + langParaValue + '&t=ideationblog&f=all&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            case "public_ideas":
+			            	var loc = '/developerworks/community/blogs/newhome/search?lang=' + langParaValue + '&t=idea&f=all&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            case "my_ideationblogs":
+			            	var loc = '/developerworks/community/blogs/roller-ui/myblogs/edit?lang=' + langParaValue + '&q=' + encodeURIComponent(str) + '&search=true&t=idea';
+			            	window.location=loc;
+			                break;
+			            case "public_ideationblog_comments":
+			            	var loc = '/developerworks/community/blogs/newhome/search?lang=' + langParaValue + '&t=idea&f=comment&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			            	break;
+			            case "this_ideationblog":
+			            	var loc = '/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/search?lang=' + langParaValue + '&t=idea&f=all&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            case "this_ideationblog_comments":
+			            	var loc = '/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/search?lang=' + langParaValue + '&t=idea&f=comment&q=' + encodeURIComponent(str);
+			                window.location=loc;
+			                break;
+			            default:
+			                break;
+			        }
+			        return false;
+	        	}
+	        }
+	    }, dojo.byId('global_search_container'));
+    }
+}
+//-->
+</script>
+</div></div></div><!--end titleBar-->
+
+
+<!-- DW Style dojoSetupRemote -->
+
+
+    		<link rel="stylesheet" href="http://www.ibm.com/developerworks/lc/html/dw-mf-lc.css" type="text/css" title="www" />
+		<link rel="stylesheet" href="http://www.ibm.com/developerworks/lc/html/dw-ic-global.css" type="text/css" />
+	<script type="text/javascript">
+var ibmConfig = {
+   serviceName: "blogs",
+   proxyURL: "/developerworks/community/blogs/ajaxProxy/",
+   contextRootEnabler: "/developerworks/community/blogs",
+   versionStamp: "20181207.134999"
+};
+var baseProtocol = "https";
+var baseHost = "www.ibm.com";
+var basePath = "/developerworks/community/connections/resources";
+var needProxy = (baseHost != window.location.host || baseProtocol+":" != window.location.protocol);
+var dojoConfig = djConfig = {
+   async: true,
+   isDebug: false,
+   baseUrl: (needProxy ? (ibmConfig.proxyURL + encodeURIComponent(baseProtocol) + "/" + encodeURIComponent(baseHost)) : (baseProtocol + "://" + baseHost)) + basePath + "/web/dojo/",
+   locale: "en",
+   dojoBlankHtmlUrl: "/developerworks/community/blogs/static/20181207.134999/nav/blankIE.html",
+   blankGif: "https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999",
+   useCommentedJson: true,  
+   proxy: "/developerworks/community/blogs/ajaxProxy",
+   localizationComplete: true
+};
+</script>
+<script type="text/javascript">
+var netJazzAjaxConfig = {
+    base: "https://www.ibm.com/developerworks/community/connections/resources",
+    skipStyles: true,
+    params: "etag=20181207.134999&lang=en"
+};
+CKEDITOR_BASEPATH = window.CKEDITOR_BASEPATH || "https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.oneui.ckeditor/editor/"; 
+</script>
+<script type="text/javascript">djConfig.parseOnLoad=false;</script>
+<script type="text/javascript" src="https://www.ibm.com/developerworks/community/connections/resources/web/_js/?include=dojo.main~&amp;etag=20181207.134999&amp;_proxyURL=https%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fcommunity%2Fconnections%2Fresources&amp;ss=20181207.134999&amp;lang=en&amp;country=&amp;variant="></script>
+<script type="text/javascript" src="https://www.ibm.com/developerworks/community/connections/resources/web/_js/?include=lconn.core.bundle_common~&amp;etag=20181207.134999&amp;exclude=dojo.main~&amp;_proxyURL=https%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fcommunity%2Fconnections%2Fresources&amp;ss=20181207.134999&amp;lang=en&amp;country=&amp;variant="></script>
+<script type="text/javascript" src="https://www.ibm.com/developerworks/community/connections/resources/web/_js/?include=lconn.blogs.blogsApp~&amp;etag=20181207.134999&amp;exclude=dojo.main~lconn.core.bundle_common~&amp;_proxyURL=https%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fcommunity%2Fconnections%2Fresources&amp;ss=20181207.134999&amp;lang=en&amp;country=&amp;variant="></script>
+
+<script type="text/javascript">
+	dojo.addOnLoad(function(){
+                /*// run the parser.
+                	                var p=dojo.parser; var d=document;
+	                	                if(d.getElementById('tagnavform')) {
+	                	p.parse(d.getElementById('tagnavform'));
+	                }
+	                	                if(d.getElementById('tagSliderGradient')) {
+	                	p.parse(d.getElementById('tagSliderGradient'));
+	                }
+	                	                if(d.getElementById('simpleSearchForm')) {
+	                	p.parse(d.getElementById('simpleSearchForm'));
+	                }
+	                	                if(d.getElementById('actionmenu_moreactions_container')) {
+	                	p.parse(d.getElementById('actionmenu_moreactions_container'));
+	                }
+	                	                if(d.getElementById('actionmenu_moreactions_container_anonymous')) {
+	                	p.parse(d.getElementById('actionmenu_moreactions_container_anonymous'));
+	                }
+	                	                if(d.getElementById('blogsActionBar')) {
+	                	p.parse(d.getElementById('blogsActionBar'));
+	                }
+	                                                */
+                lconn.core.globalization.bidiUtil.enforceTextDirectionOnPage(); // Enforce base text direction if Bidi is enabled
+                lconn.core.utilities.processUntilAvailable(function(){
+					try {
+				        if(!!lconn.communities.bizCard.core.community.externalAllowed) {
+				            dojo.addClass(dojo.byId("pagePlaceBar"), "lconnSharedExternalPlaceBar");
+				            dojo.byId("externalMemberAllowedIndicator").style.display = 'inline';
+				        }
+				    } catch(err){}
+				}, "dojo.getObject('lconn.communities.bizCard.core.community')", null, false);
+          });
+
+	document.onclick = function () {
+		if (dojo.isIE)
+			MenuPopup.returnFocusElement = false;
+		MenuPopup.hideMenu();
+	};
+	document.onkeyup = function ( event ) {
+		MenuPopup.hideOnKeypress( event );
+	};
+	
+	lconn.core.auth.setAuthCheck(function() {
+		if(!(typeof window.currentLogin.name == 'undefined' || window.currentLogin.name == null || window.currentLogin.name == '')) {
+			return true;
+		}
+		return false;
+	});
+</script>
+
+<div id="pagePlaceBar" class="lotusPlaceBar lotusTitleBarExt"><div class="lotusRightCorner"><div class="lotusInner">
+
+<h2 class="blogsWrapText bidiAware">
+<img id="externalMemberAllowedIndicator" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusui30 lconnIconListSharedExternal" title="This community can have members from outside your organization." alt="This community can have members from outside your organization." style="display: none; margin-top: -5px" />
+IBM Services Assets
+</h2>
+    <ul class="lotusRight lotusInlinelist lotusActions" id="login_participate_link" style="display:none;">
+    	<li class="lotusFirst">
+			<a href="javascript:lconn.blogs.utils.loginAction();">Log in</a> to participate
+    	</li>
+	</ul>
+	<ul aria-label="Action bar" role="toolbar" id="blogsActionBar" class="aria_toolbar lotusRight lotusInlinelist lotusActions">
+
+						
+			<script language="javascript">
+		if(currentLogin.auth){
+		document.write('<li class="lotusFirst">' +
+		   '<a id="followBtn" href="javascript:;" role="button" aria-haspopup="true" aria-owns="followDropDownMenu" style="display:none">' +
+		      'Following Actions ' +
+		      '<img class="lotusArrow lotusDropDownSprite" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" alt="" role="presentation" />' +
+		      '<span class="lotusAltText">&#x25bc;</span>' +
+		   '</a>' +
+		'</li>');
+		}
+		</script>
+
+		<script language="javascript">
+		var items = [];
+
+		dojo.addOnLoad(function() {
+			if(dojo.byId("followBtn")) {
+				var followMenu = new lconn.core.FollowMenu({items:items}, dojo.byId("followBtn"));
+				dojo.connect(dijit.byId('followBtn').menu, "addChild", null, function(){dojo.byId("followBtn").style.display = '';});
+			}
+		});
+
+		</script>
+	
+	<script language="javascript">
+		if(!currentLogin.auth)
+			dojo.byId("login_participate_link").style.display="block";
+			
+		function followAction(id, action) {
+			lconn.blogs.utils.clearMessage('messageContainer');
+			dojo.xhrPost({
+				url: '/developerworks/community/blogs/roller-services/json/following',
+				handleAs: 'json',
+				postData: 'version=300&uuid='+id+'&action='+action+'&dangerousurlnonce='+window.__security_nonce,
+				load: function (ret) {
+					if(!ret.success) {
+						if('session timeout' == ret.error) {
+							lconn.blogs.utils.refreshSecurityNonce(ret.nonce);
+							var errMsg = "We were unable to process your request due to a session timeout.  Please try again.";
+							lconn.blogs.utils.showMessage('messageContainer', errMsg, 'error', true);
+						} else {
+							var errMsg = "Following action failed.";
+							lconn.blogs.utils.showMessage('messageContainer', errMsg, 'error', true);
+						}
+					}
+					if(ret.success) {
+						var blogsFollowBtn = dojo.query("[class='blogsFollowBtn']", dojo.byId("blogsActionBar"))[0];
+						if(typeof (blogsFollowBtn) != "undefined"){
+							if(action == "follow"){
+								blogsFollowBtn.innerHTML = 'Stop Following this Blog';
+							    dojo.attr(blogsFollowBtn, {"aria-label": 'Stop Following this Blog'});
+								blogsFollowBtn.onclick= function(){followAction(id, 'unfollow');};
+							}
+							else{
+								blogsFollowBtn.innerHTML = 'Follow this Blog';
+							    dojo.attr(blogsFollowBtn, {"aria-label": 'Follow this Blog'});
+								blogsFollowBtn.onclick= function(){followAction(id, 'follow');};
+							}
+						}
+						if(typeof (blogsFollowItem) != "undefined"){
+							var blogsFollowItem = blogsFollowDropDownMenu.getChildren()[0];
+							var itemLabel;
+							var itemAction;
+							if(action == "follow"){
+								itemLabel = 'Stop Following this Blog';
+								itemAction = function() {followAction(id, 'unfollow');};
+							}
+							else{
+								itemLabel = 'Follow this Blog';
+								itemAction = function() {followAction(id, 'follow');};
+							}
+							dojo.attr(blogsFollowItem, {"label": itemLabel});
+							dojo.attr(blogsFollowItem, {"onClick": itemAction});
+						}
+						if(action == "follow")
+							lconn.blogs.utils.showMessage('messageContainer', 'You are following this blog and will receive updates about it.', 'success', true);
+						else
+							lconn.blogs.utils.showMessage('messageContainer', 'You stopped following this blog and will no longer receive updates about it.', 'success', true);
+					}
+				},
+				error: function () {
+					lconn.blogs.utils.showMessage('messageContainer', 'Following action failed.', 'error', true);
+				}
+			});
+		}
+	</script>
+
+			        <span id="communityActionBar"></span>
+		</ul><!--end bntContainer-->
+</div></div></div><!--end placebar-->
+
+</div>
+<div id="lotusMain" class="lotusMain">
+	<div id="lotusColLeft" class="lotusColLeft">
+	    <!-- Community link -->
+	    		    		    <span class="vcomm X-community-display-inline">
+		        <span class="name" style="display:none;"/></span>
+		        <span class="uuid" style="display:none">bae6a745-faab-4ee8-8c3b-0ce483a04daf</span>
+			    <span class="selectedWidgetId" style="display:none;">Blog</span>
+            </span>
+					
+		<!-- Tags -->
+    	<div id="lconnTagCloudFilter" class="lotusSection" role="complementary" aria-label="Tags" aria-labelledby="section_tag_label">
+			<h2>
+				<a id="tags" class="lotusSprite lotusArrow lotusTwistyOpen" href="javascript:;" role="button" aria-label="Click to collapse section" title="Click to collapse section" onclick="lconn.blogs.utils.toggleSection(this, 'Click to collapse section', 'Click to expand section');return false;">
+					<span class="lotusAltText">&#x25bc;</span>
+				</a>
+				<span id="section_tag_label" class="lotusLeft">Tags</span>
+				<a href="javascript:;" id="tagsHelpLink" class="lotusRight"></a>
+				<script>
+					lconn.core.HelpLauncher.createHelpLink(dojo.byId("tagsHelpLink"), 'Tags', 'A tag is a keyword that you assign to a blog to categorize it and make it easy to find. Type or click a tag to see the blogs associated with it. Popular tags appear in larger text in the tag cloud or list.', {HELP:'Tags Help',CLOSE:'Close Tags Help'});
+				</script>
+			</h2>
+		 	<div id="lconnTagCloudContent" name="section_tags" class="lotusSectionBody">
+				<div id="lconnTagWidget"></div>
+				
+				
+				
+				<script language="javascript">
+dojo.addOnLoad(function(){
+		var selectedTags = "";
+		
+		var urlParameters = {};
+					urlParameters['website'] = '0e52daf9-d51b-43b9-b52a-d56a2f1b187f';
+				
+		var redirectUrlParameters = {};
+							
+		var blogsTagsArgs = {
+			contextPath: "/developerworks/community/blogs",
+			selectedTags: selectedTags,
+
+			tagUrl: '/developerworks/community/blogs/roller-services/json/tagcloud',
+			urlParameters:urlParameters,
+
+						typeAheadFeedUrl: '/developerworks/community/blogs/roller-services/json/typeahead?requestType=entry&limit=10&handle=bae6a745-faab-4ee8-8c3b-0ce483a04daf',
+			
+    					
+							isAllBlogs: false,
+				redirectUrl: "/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf",
+						redirectUrlParameters:redirectUrlParameters,
+
+			multiSelected:true,
+			typeAheadTemplate:'tag',
+			tagTemplate:'tags',
+
+			disableRelated:false,
+			handleAs:'json',
+			redirectWhenClickTag:true,
+			tagDialogEnabled: false,
+			
+			ownedContentRegion: 'list_prompt'
+		};
+
+		new lconn.blogs.CommonTags.BlogsTagWidget(blogsTagsArgs, dojo.byId('lconnTagWidget'));
+	}
+);
+</script>
+			</div>
+		</div><!--end section-->
+	</div><!--end colLeft-->
+	
+	<!-- Fix ie8 bug - Defect 148666 [IE8] Left nav gray background is missing after the fold - blog -->
+	<div class="lotusHidden leftColBackgroundPlaceholder" id="leftColBgPlaceholder">&nbsp;</div>
+	
+	<!-- colRight -->
+	<!-- colRight would go below content when using overall table layout -->
+	<div id="lotusColRight" class="lotusColRight">
+				
+							     <div class="lotusSection lotusFirst" role="complementary" aria-label="Similar Entries" aria-labelledby="section_relatedentries_label">
+	            <h2 style="cursor:default">
+				<a id="relatedentries" class="lotusSprite lotusArrow lotusTwistyOpen" href="javascript:;" onclick="lconn.blogs.utils.toggleSection(this, 'Click to collapse section', 'Click to expand section');" title="Click to collapse section" role="button" aria-label="Click to collapse section"><span class="lotusAltText">&#x25bc;</span></a>
+				<span id="section_relatedentries_label" class="lotusLeft">Similar Entries</span>
+	            </h2>
+		        <div id="section_relatedentries" class="lotusSectionBody">
+			  	    			  	    <table cellspacing="0" class="lotusTable blogsFixedTable" role="presentation">
+			            <tbody>
+			                			                <tr class="first lotusFirst" >
+    <td width="35" style="padding-top: 7pt;" >
+                                   	           	               <img alt="" role="presentation" width="35" height="35" src="https://www.ibm.com/developerworks/community/profiles/photo.do?userid=120000DRN3"/>
+	           	                   </td>
+    <td class="lotusMeta" style="padding-top: 7pt;">
+        <h4 class="blogsWrapText">
+            <a href="https://www.ibm.com/developerworks/community/blogs/vse/entry/z_VSE_service_news_TCP_IP_IUI_CICS_APARs?lang=en" class="bidiAware" title="z/VSE service news: TCP/IP, IUI, CICS APARs">
+	          z/VSE service news: ...
+	       </a>
+        </h4>
+        <div role="list">
+	        <strong role="listitem">
+	           <span class="blogsPaddingRight">
+	           			           		Blog:
+	           			           </span>
+			   <span class="blogsWrapText">
+	           <a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/vse?lang=en" title="Ingolf&#39;s z/VSE Blog">
+	               Ingolf&#39;s z/VS...
+	           </a>
+			   </span>
+	        </strong>
+	        <br>
+		    <span class="vcard" role="listitem">
+		    	<a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=120000DRN3" title="Ingolf24">Ingolf24</a>
+				<span style="display: none;" class="x-lconn-userid">120000DRN3</span>
+							</span>
+	        <br>
+	        <span role="listitem"><span class="blogsPaddingRight">Updated</span><script type='text/javascript'> document.write(blogsDate.date.localize (1548077351000));</script></span>
+	        <br>
+			<span class="blogsPaddingRight" role="listitem">
+													<script language="javascript">
+		function useHeartIcon(obj){
+			var useHeartLikeIcon = lconn.core.config.features("ui-heart-like-hikari")&&lconn.core.theme.getCurrentThemeId()==="hikari";
+			if(useHeartLikeIcon){
+				dojo.addClass(obj, "ui-heart-like-hikari");
+			}
+		}
+	</script>
+			<div class="lotusLike">
+			<img alt="0 people like this" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusIconLike" onload="useHeartIcon(this);"><span class="lotusAltText">Likes</span> 0
+		</div>
+											</span>
+			<span class="blogsPaddingLeft" role="listitem">
+							<img class="lconnSprite lconnSprite-iconNoComments16" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" alt="No Comments" /><span class="lotusAltText">Comments</span> 0
+						</span>
+		</div>
+    </td>
+</tr>
+			                			                <tr >
+    <td width="35" style="padding-top: 7pt;" >
+                                   	           	               <img alt="" role="presentation" width="35" height="35" src="https://www.ibm.com/developerworks/community/profiles/photo.do?userid=120000DRN3"/>
+	           	                   </td>
+    <td class="lotusMeta" style="padding-top: 7pt;">
+        <h4 class="blogsWrapText">
+            <a href="https://www.ibm.com/developerworks/community/blogs/vse/entry/z_VM_Knowledge_Center?lang=en" class="bidiAware" title="z/VM Knowledge Center">
+	          z/VM Knowledge Cente...
+	       </a>
+        </h4>
+        <div role="list">
+	        <strong role="listitem">
+	           <span class="blogsPaddingRight">
+	           			           		Blog:
+	           			           </span>
+			   <span class="blogsWrapText">
+	           <a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/vse?lang=en" title="Ingolf&#39;s z/VSE Blog">
+	               Ingolf&#39;s z/VS...
+	           </a>
+			   </span>
+	        </strong>
+	        <br>
+		    <span class="vcard" role="listitem">
+		    	<a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=120000DRN3" title="Ingolf24">Ingolf24</a>
+				<span style="display: none;" class="x-lconn-userid">120000DRN3</span>
+							</span>
+	        <br>
+	        <span role="listitem"><span class="blogsPaddingRight">Updated</span><script type='text/javascript'> document.write(blogsDate.date.localize (1532429902000));</script></span>
+	        <br>
+			<span class="blogsPaddingRight" role="listitem">
+													<script language="javascript">
+		function useHeartIcon(obj){
+			var useHeartLikeIcon = lconn.core.config.features("ui-heart-like-hikari")&&lconn.core.theme.getCurrentThemeId()==="hikari";
+			if(useHeartLikeIcon){
+				dojo.addClass(obj, "ui-heart-like-hikari");
+			}
+		}
+	</script>
+			<div class="lotusLike">
+			<img alt="0 people like this" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusIconLike" onload="useHeartIcon(this);"><span class="lotusAltText">Likes</span> 0
+		</div>
+											</span>
+			<span class="blogsPaddingLeft" role="listitem">
+							<img class="lconnSprite lconnSprite-iconNoComments16" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" alt="No Comments" /><span class="lotusAltText">Comments</span> 0
+						</span>
+		</div>
+    </td>
+</tr>
+			                			                <tr >
+    <td width="35" style="padding-top: 7pt;" >
+                                   	           	               <img alt="" role="presentation" width="35" height="35" src="https://www.ibm.com/developerworks/community/profiles/photo.do?userid=120000DRN3"/>
+	           	                   </td>
+    <td class="lotusMeta" style="padding-top: 7pt;">
+        <h4 class="blogsWrapText">
+            <a href="https://www.ibm.com/developerworks/community/blogs/vse/entry/z_VM_continuous_delivery?lang=en" class="bidiAware" title="z/VM continuous delivery">
+	          z/VM continuous deli...
+	       </a>
+        </h4>
+        <div role="list">
+	        <strong role="listitem">
+	           <span class="blogsPaddingRight">
+	           			           		Blog:
+	           			           </span>
+			   <span class="blogsWrapText">
+	           <a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/vse?lang=en" title="Ingolf&#39;s z/VSE Blog">
+	               Ingolf&#39;s z/VS...
+	           </a>
+			   </span>
+	        </strong>
+	        <br>
+		    <span class="vcard" role="listitem">
+		    	<a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=120000DRN3" title="Ingolf24">Ingolf24</a>
+				<span style="display: none;" class="x-lconn-userid">120000DRN3</span>
+							</span>
+	        <br>
+	        <span role="listitem"><span class="blogsPaddingRight">Updated</span><script type='text/javascript'> document.write(blogsDate.date.localize (1529655195000));</script></span>
+	        <br>
+			<span class="blogsPaddingRight" role="listitem">
+													<script language="javascript">
+		function useHeartIcon(obj){
+			var useHeartLikeIcon = lconn.core.config.features("ui-heart-like-hikari")&&lconn.core.theme.getCurrentThemeId()==="hikari";
+			if(useHeartLikeIcon){
+				dojo.addClass(obj, "ui-heart-like-hikari");
+			}
+		}
+	</script>
+			<div class="lotusLike">
+			<img alt="0 people like this" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusIconLike" onload="useHeartIcon(this);"><span class="lotusAltText">Likes</span> 0
+		</div>
+											</span>
+			<span class="blogsPaddingLeft" role="listitem">
+							<img class="lconnSprite lconnSprite-iconNoComments16" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" alt="No Comments" /><span class="lotusAltText">Comments</span> 0
+						</span>
+		</div>
+    </td>
+</tr>
+			                			                <tr >
+    <td width="35" style="padding-top: 7pt;" >
+                                   	           	               <img alt="" role="presentation" width="35" height="35" src="https://www.ibm.com/developerworks/community/profiles/photo.do?userid=120000DRN3"/>
+	           	                   </td>
+    <td class="lotusMeta" style="padding-top: 7pt;">
+        <h4 class="blogsWrapText">
+            <a href="https://www.ibm.com/developerworks/community/blogs/vse/entry/How_to_retrieve_information_about_your_z_VSE_system?lang=en" class="bidiAware" title="How to retrieve information about your z/VSE system">
+	          How to retrieve info...
+	       </a>
+        </h4>
+        <div role="list">
+	        <strong role="listitem">
+	           <span class="blogsPaddingRight">
+	           			           		Blog:
+	           			           </span>
+			   <span class="blogsWrapText">
+	           <a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/vse?lang=en" title="Ingolf&#39;s z/VSE Blog">
+	               Ingolf&#39;s z/VS...
+	           </a>
+			   </span>
+	        </strong>
+	        <br>
+		    <span class="vcard" role="listitem">
+		    	<a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=120000DRN3" title="Ingolf24">Ingolf24</a>
+				<span style="display: none;" class="x-lconn-userid">120000DRN3</span>
+							</span>
+	        <br>
+	        <span role="listitem"><span class="blogsPaddingRight">Updated</span><script type='text/javascript'> document.write(blogsDate.date.localize (1521480097000));</script></span>
+	        <br>
+			<span class="blogsPaddingRight" role="listitem">
+													<script language="javascript">
+		function useHeartIcon(obj){
+			var useHeartLikeIcon = lconn.core.config.features("ui-heart-like-hikari")&&lconn.core.theme.getCurrentThemeId()==="hikari";
+			if(useHeartLikeIcon){
+				dojo.addClass(obj, "ui-heart-like-hikari");
+			}
+		}
+	</script>
+			<div class="lotusLike">
+			<img alt="0 people like this" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusIconLike" onload="useHeartIcon(this);"><span class="lotusAltText">Likes</span> 0
+		</div>
+											</span>
+			<span class="blogsPaddingLeft" role="listitem">
+							<img class="lconnSprite lconnSprite-iconNoComments16" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" alt="No Comments" /><span class="lotusAltText">Comments</span> 0
+						</span>
+		</div>
+    </td>
+</tr>
+			                			                <tr >
+    <td width="35" style="padding-top: 7pt;" >
+                                   	           	               <img alt="" role="presentation" width="35" height="35" src="https://www.ibm.com/developerworks/community/profiles/photo.do?userid=50QVH9KP73"/>
+	           	                   </td>
+    <td class="lotusMeta" style="padding-top: 7pt;">
+        <h4 class="blogsWrapText">
+            <a href="https://www.ibm.com/developerworks/community/blogs/9c59f17b-ed09-474a-87ac-e2f45ae9eb01/entry/Do_you_have_an_Apple_device_Watch_out_for_the_bad_Indian_character?lang=en" class="bidiAware" title="Do you have an Apple device? Watch out for the bad Indian character">
+	          Do you have an Apple...
+	       </a>
+        </h4>
+        <div role="list">
+	        <strong role="listitem">
+	           <span class="blogsPaddingRight">
+	           			           		Blog:
+	           			           </span>
+			   <span class="blogsWrapText">
+	           <a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/9c59f17b-ed09-474a-87ac-e2f45ae9eb01?lang=en" title="CyberSecurity Newsletter">
+	               CyberSecurity...
+	           </a>
+			   </span>
+	        </strong>
+	        <br>
+		    <span class="vcard" role="listitem">
+		    	<a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=50QVH9KP73" title="Serena Mancini">Serena Mancini</a>
+				<span style="display: none;" class="x-lconn-userid">50QVH9KP73</span>
+							</span>
+	        <br>
+	        <span role="listitem"><span class="blogsPaddingRight">Updated</span><script type='text/javascript'> document.write(blogsDate.date.localize (1519834178000));</script></span>
+	        <br>
+			<span class="blogsPaddingRight" role="listitem">
+													<script language="javascript">
+		function useHeartIcon(obj){
+			var useHeartLikeIcon = lconn.core.config.features("ui-heart-like-hikari")&&lconn.core.theme.getCurrentThemeId()==="hikari";
+			if(useHeartLikeIcon){
+				dojo.addClass(obj, "ui-heart-like-hikari");
+			}
+		}
+	</script>
+			<div class="lotusLike">
+			<img alt="0 people like this" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lotusIconLike" onload="useHeartIcon(this);"><span class="lotusAltText">Likes</span> 0
+		</div>
+											</span>
+			<span class="blogsPaddingLeft" role="listitem">
+							<img class="lconnSprite lconnSprite-iconNoComments16" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" alt="No Comments" /><span class="lotusAltText">Comments</span> 0
+						</span>
+		</div>
+    </td>
+</tr>
+			                			            </tbody>
+			        </table>
+				</div>
+			  </div><!-- end section -->
+			  			  
+								
+		
+	   					    			<div class="lotusSection " role="complementary" aria-label="Archive" aria-labelledby="section_archive_label">
+		    	<h2 style="cursor:default">
+				<a id="archive" class="lotusSprite lotusArrow lotusTwistyOpen" href="javascript:;" onclick="lconn.blogs.utils.toggleSection(this, 'Click to collapse section', 'Click to expand section');" title="Click to collapse section" role="button" aria-label="Click to collapse section"><span class="lotusAltText">&#x25bc;</span></a>
+				<span id="section_archive_label" class="lotusLeft">Archive</span>
+		    	</h2>
+		    	<div id="section_archive" class="lotusSectionBody">
+		    		<div>
+			    	
+<ul class='lotusList'><li><a href='https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/date/201710'>October 2017</a></li></ul>
+
+			    	</div>
+			    </div>
+		    </div>
+		    		    
+		    		
+		<div class="lotusSection " role="complementary" aria-label="Blog Authors" aria-labelledby="section_authors_label">
+			<h2 style="cursor:default">
+				<a id="authors" class="lotusSprite lotusArrow lotusTwistyOpen" href="javascript:;" onclick="lconn.blogs.utils.toggleSection(this, 'Click to collapse section', 'Click to expand section');" title="Click to collapse section" role="button" aria-label="Click to collapse section"><span class="lotusAltText">&#x25bc;</span></a>
+				<span id="section_authors_label" class="lotusLeft">Blog Authors<div id="authors_loading"></div></span>
+			</h2>
+			<div id="section_authors" class="lotusSectionBody">
+
+			<div id="blogAuthors" style="overflow:hidden">
+           </div>
+
+           <script language="javascript">
+				var blogAuthors = dojo.byId('blogAuthors');
+				var authorPageSize = 3;
+				blogAuthors.getUserPhotoURL = function(relative) {
+               	               	                              return 'https://www.ibm.com/developerworks/community/profiles' + relative;
+                          };
+				blogAuthors.render = function(data, reload) {
+               var i = 0, s = '';
+
+				var prevlink = undefined, nextlink = undefined, baselink = '/developerworks/community/blogs/roller-services/json/authors?weblog=0e52daf9-d51b-43b9-b52a-d56a2f1b187f&ps='+authorPageSize+'&offset={0}&lang=en';
+				if(data.offset > 1)
+					prevlink = "javascript:dojo.byId('blogAuthors').load('" + baselink.replace("{0}", (data.offset - authorPageSize))  + "')";
+				if(data.end < data.total)
+					nextlink = "javascript:dojo.byId('blogAuthors').load('" + baselink.replace("{0}", (data.offset + authorPageSize)) + "')";
+				
+				if(data.offset > 1)
+					s+= '<table width="100%" role="presentation"><tr><td style="text-align: center;"><a  role="button" aria-label="Previous" title="Previous" onclick="'+(prevlink ?prevlink : '')+ '" href="javascript:void(0);"><img class="lotusSprite lotusArrow lotusScrollUp" style="display: inline;" alt="Previous" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999"/><span class="lotusAltText">Previous</span></a></td></tr></table>';
+
+               for(; i < data.authors.length; i++) {
+                   var o = data.authors[i];
+                   var fullName = lconn.blogs.utils.escapeHTML(o.fullName);
+                   var divTemp = dojo.create("div",{});
+				   var a;
+				   if(lconn.core.config.services.profiles)
+                      a = com.ibm.lconn.layout.people.createLink({userid:o.extid, name:o.fullName});
+				   else{
+				      a = dojo.create("a",{"class":"fn lotusPerson bidiAware", "href":"/developerworks/community/blogs/roller-ui/allblogs?userid="+encodeURIComponent(o.extid)+"&lang=en", "title":o.fullName, "innerHTML":fullName});
+				   }
+                   divTemp.appendChild(a);
+                      if (o.state=='0') {
+						s += ['<table width="100%" style="border-style: solid; border-color: rgb(204, 203, 203); border-width: 0px;" role="presentation">',
+								'<tr><td class="lotusAlignLeft" style="padding: 0px 5px; vertical-align: middle; width: 45px;">',
+								'<img alt="" role="presentation" class="otherPeople48 otherPeople48-NoPhotoPerson48" src="', this.getUserPhotoURL(o.photo), '"></td>',
+								'<td class="lotusAlignLeft" style="vertical-align: middle; height: 50px;"><span class="vcard">',
+                           divTemp.innerHTML,
+                           '<span class="x-lconn-userid" style="display:none">', o.extid, '</span>',
+                           o.emailAddress? ('<span class="email" style="display:none">' + o.emailAddress + '</span>') : '',
+								'</span></td></tr></tbody></table>'
+                        ].join('');
+                      }
+                      else {
+                      	dojo.addClass(a, "lotusPersonInactive");
+                      	a.innerHTML = fullName + ' (' + 'inactive' + ')';
+						if(!lconn.core.config.services.profiles)
+							dojo.attr(a, {"title": o.fullName + ' (' + 'inactive' + ')'});
+						s += ['<table width="100%" style="border-style: solid; border-color: rgb(204, 203, 203); border-width: 0px;" role="presentation">',
+								'<tr><td class="lotusAlignLeft lotusDim" style="padding: 0px 5px; vertical-align: middle; width: 45px;">',
+								'<img alt="" role="presentation" class="otherPeople48 otherPeople48-NoPhotoPerson48" src="', this.getUserPhotoURL(o.photo), '"></td>',
+								'<td class="lotusAlignLeft" style="vertical-align: middle; height: 50px;"><span class="vcard">',
+                           divTemp.innerHTML,
+                           '<span class="x-lconn-userid" style="display:none">', o.extid, '</span>',
+                           o.emailAddress? ('<span class="email" style="display:none">' + o.emailAddress + '</span>') : '',
+								'</span></td></tr></tbody></table>'
+                        ].join('');
+                      }
+               }
+
+				if(data.end < data.total)
+					s+= '<table width="100%" role="presentation"><tr><td style="text-align: center;"><a role="button" aria-label="Next" title="Next" onclick="'+(nextlink ?nextlink : '')+ '" href="javascript:void(0);"><img class="lotusSprite lotusArrow lotusScrollDown" style="display: inline;" alt="Next" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999"/><span class="lotusAltText">Next</span></a></td></tr></table>';
+
+				s += ['<table width="100%" role="presentation"><tr>',
+						'<td class="lotusAlignLeft" style="padding: 0px 5px; vertical-align: middle; width: 50%;"><span>', dojo.string.substitute(	'${0} - ${1} of ${2} authors', [data.offset, data.end, data.total]), '</span></td>',
+						'</tr></tbody></table>'
+                        ].join('');
+
+				dojo.byId('blogAuthors').innerHTML = s;
+
+               dojo.removeClass(dojo.byId("authors_loading"), "lotusLoading");
+
+               if(typeof(SemTagSvc) != "undefined" && reload) {
+					SemTagSvc.parseDom(null, dojo.byId('blogAuthors'));
+               }
+           };
+				blogAuthors.load = function(url) {
+               dojo.addClass(dojo.byId("authors_loading"), "lotusLoading");
+					dojo.xhrGet({url: url, handleAs: 'json', load: function(data){dojo.byId('blogAuthors').render(data, true);}, error: function(err){dojo.removeClass(dojo.byId("authors_loading"), "lotusLoading");}});
+           };
+
+				           					blogAuthors.render({offset: 1, end: 3, total: 8, authors: [{"userState":"active","name":"joongloger","fullName":"joongloger","photo":"\/photo.do?userid=502VV7KY20","id":"8fc20198-90be-43fe-a2c1-525feaa5055d","extid":"502VV7KY20","state":"0","userIDForDisplay":"502VV7KY20"},{"userState":"active","name":"cir","fullName":"cir","photo":"\/photo.do?userid=110000JCBQ","id":"179df64c-8660-490e-94b2-c83b62c5c610","extid":"110000JCBQ","state":"0","userIDForDisplay":"110000JCBQ"},{"userState":"active","name":"mannie","fullName":"mannie","photo":"\/photo.do?userid=0100002BC7","id":"2ed1d14b-131f-48d9-b5eb-1e60f73fd34b","extid":"0100002BC7","state":"0","userIDForDisplay":"0100002BC7"}]});
+                      </script>
+				</div>
+			</div>
+	   </div> <!-- end colRight -->
+
+		<!-- content -->
+		<!-- <td valign="top"> -->
+         <div id="lotusContent" class="lotusContent" role="main">
+         <div id="messageContainer" aria-live="assertive"></div>
+         <a id="mainContent" name="mainContent"></a>
+           <script type="text/javascript">
+var renderMessagesOnLoad = function() {
+			}
+</script>
+
+<script>
+	if(dojo.byId('lotusColLeft')!=null && dojo.byId('lotusContent')!=null){
+		var has = lconn.core.config.features;
+		if(!has("hikari-default-theme"))
+			dojo.byId('lotusContent').style.marginLeft="220px";
+		else
+			dojo.byId('lotusContent').style.marginLeft="250px";
+	}
+</script>
+		   				    
+           <div class="lotusLayout lotusHeader blogsWrapText">
+              	              	<h1 role="presentation"><a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?lang=en">IBM Services Assets</a></h1>
+                           </div>
+
+		   <div class="lotusActionBar lotusBtnContainer aria_toolbar" role="toolbar" style="float:none" aria-label="Blog Actions">
+	           			   			       <span class="lotusBtn lotusLeft"><a role="button" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?lang=en">View All Entries</a></span>
+		       		   </div>
+           
+           
+		   		   
+		   		 	
+ 		    <div id="entries">
+
+		        
+		        			    <span id="list_prompt" style="display:none">Clicking the button causes a full page refresh. The user could go to the "Entry list" region to view the new content.)</span>
+			    <span id="list_labelledby" style="display:none">Entry list</span>
+				<div role="region" aria-label="Entry list" aria-labelledby="list_labelledby">
+					<!-- Dont show paging when there are no entries -->
+												            	
+	
+	
+					<!-- Dont show sort control when there are no entries -->
+						 		        				   	
+			       
+    
+        <div>
+	    <table class="lotusTable blogsFixedTable" border="0" cellspacing="0" cellpadding="0" summary="" role="presentation">
+		<tbody>
+	
+	
+	
+	        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+    <tr  class="lotusFirst" >
+	    <!-- Entry title and info -->
+		<td  class="entryContentContainerTD blogsWrapText" ><a name="October_24_2017_at_11_56_59_PM" id="October_24_2017_at_11_56_59_PM"></a>
+							<h4 class="bidiAware" id="entry_title" role="heading" aria-level=1 aria-labelledby="entry_title">
+					What is mSpy parental control and why do you need it?
+				</h4>
+						<!-- User name, date, meta info -->
+			<div class="lotusMeta lotusLeft" role="list">
+				<span class="vcard" role="listitem">
+					<a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=502VV7KY20" title="joongloger">joongloger</a>
+				    <span class="x-lconn-userid" style="display: none;">502VV7KY20</span>
+				    				</span>
+								<span class="lotusDivider" role="img" aria-hidden="true">|</span>
+				<span role="listitem">
+				<script type='text/javascript'> document.write(blogsDate.date.localize (1508914804000));</script>
+				</span>
+		        		            		        	<span class="lotusDivider" role="img" aria-hidden="true">|</span>
+		        	<span role="listitem">
+					<span class="lotusTags" role="list">
+						Tags:&nbsp
+			        				        		<span role="listitem">
+					       		<a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?tags=latest&amp;lang=en" title="latest">latest</a>
+					       	</span>
+					    			        		<span role="listitem">
+					       		<a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?tags=news&amp;lang=en" title="news">news</a>
+					       	</span>
+					    			        		<span role="listitem">
+					       		<a class="bidiAware" href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?tags=information&amp;lang=en" title="information">information</a>
+					       	</span>
+					    					</span>
+					</span>
+																	  					&lrm;
+  					                	<span class="lotusDivider" role="img" aria-hidden="true">|</span>
+                	<span role="listitem">
+                	                	10,922 Views
+                	                	</span>
+                	        </div>
+			<!-- Rating -->
+			        	<span class="lotusRight">
+<span class="rating lotusRating" id="entry_rating_286ff449-7d33-4cfa-9a1c-e59215aa6c61" >
+<div id="entry_rating_286ff449-7d33-4cfa-9a1c-e59215aa6c61_widget"></div>
+<script language="javascript">
+	dojo.addOnLoad(function(){
+	var store_data = {
+	id: currentLogin.extid,
+	identifier: "userId",
+	items: [
+			]
+	};
+	var store = new lconn.blogs.recommend.RecommendDataStore({
+		data:store_data, 
+		type:'entry', 
+		itemId:'286ff449-7d33-4cfa-9a1c-e59215aa6c61', 
+		currentLogin: currentLogin,
+		recommendationsCount: 0
+	});
+	objRecommend = new lconn.blogs.recommend.Inline(
+			{
+				debug: false,
+				editable: true,
+				loadIndividualStyles: false,
+									currentUserId: currentLogin.extid,
+								dataStore: store			
+			},
+			dojo.byId('entry_rating_286ff449-7d33-4cfa-9a1c-e59215aa6c61_widget')
+	);
+	});
+</script>
+
+
+</span>
+</span>
+	        <!-- Entry content -->
+	        <div class="entryContentContainer blogsWrapText" user_content="true" role="article" aria-label="What is mSpy parental control and why do you need it?">
+	        						<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%">&nbsp;</p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><a href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/resource/BLOGS_UPLOADED_IMAGES/mSpyparentalcontrolapp.jpg" target="_blank"><img alt="image" src="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/resource/BLOGS_UPLOADED_IMAGES/mSpyparentalcontrolapp.jpg" style="  display:block; margin: 1em 1em 0pt 0pt; float: left;"></img></a></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Nowadays parents face new challenges coming from technology and the Internet. Both compete for the kid&rsquo;s time, health, and productivity. </span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Technology produced the tech-addiction and the abnormal screen time problem. In addition, the Internet raised questions of child online safety and mental health. Laws, policies, initiatives are being implemented to fight online dangers. However, there is the need of practical steps parents can make every day in order to protect their kids. This is why the monitoring market offers parental control apps. </span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">One of the most effective parental control applications is <a href="../../../../../../www.mspy.com/index.html">mSpy</a>. The software allows parents to be fully engaged in their child&rsquo;s life remotely. It allows to monitor the child&rsquo;s internet activity and get updates about their current GPS location. Besides, it is a powerful tool to prevent social media dangers like cyberbullying, sexting, participation in unhealthy secret groups, etc. The target audience of the application may be different:</span></font></font></p>
+
+<ul dir="ltr">
+	<li>
+	<p style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Kids who used to wonder or mess around after school</span></font></font></p>
+	</li>
+	<li>
+	<p style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Kids with special needs (autism)</span></font></font></p>
+	</li>
+	<li>
+	<p style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Troubled teens who don&rsquo;t want to open up to parents</span></font></font></p>
+	</li>
+	<li>
+	<p style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Kids who faced situations like parents&rsquo; divorce, family member&rsquo;s death and shut off oneself from the world</span></font></font></p>
+	</li>
+	<li>
+	<p style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Every kid who has access to the Internet</span></font></font></p>
+	</li>
+	<li>
+	<p style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Etc.</span></font></font></p>
+	</li>
+</ul>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Let us have a look at every feature the app provides and review their benefits for caregivers. </span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font color="#333333"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><b><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Physical Safety </span></b></span></font></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font color="#333333"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Raising an easy-going teen? Getting worried every time they announce the sleepover or the studying? Of course, these concerns make sense since it is not always 100 % sure that children are where they told they are. Thus, how can you be sure that your child is not messing around somewhere? mSpy GPS location tracker informs you about your child&rsquo;s current GPS location with the exact address, date and time stamps. It might be extremely helpful in emergency cases. Also, with the geo</span></span></font></font></font><font color="#333333"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="uk-UA"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">-</span></span></font></font></font><font color="#333333"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">fencing feature, you can set safe zones for your child on a virtual map and get notified every time they are breached.</span></span></font></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font color="#333333"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">In addition, caregivers can monitor text messages, call logs as well as people from a contact book. Why is it useful? It allows to identify bullies, so-called friends from social media who call for meeting in person. </span></span></font></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0.11in; line-height: 108%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><b>Digital safety </b></span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Teens spend 5.38 hours a day on the Internet. According to Pew Research Center, 93% of the USA teens use Facebook among top 3 social media like Snapchat and Instagram. All of that makes them more liable to online exposure and personal information leak that come in handy to pedophiles. That is why parents need to monitor their children&rsquo;s online activity, be aware of the sites a child visits, bookmarks, search history, and even keywords they type. </span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">The parents whose kids committed a suicide after participating in the Blue Whale Challenge (the online game whose agents operate via social media chatting) would have appreciated the Keywords Alerts feature to know their kid typed the request for participating. </span></font></font></p>
+
+<p dir="ltr" lang="en-US" style="margin-bottom: 0in; line-height: 100%">&nbsp;</p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><b>Screen time control</b></span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">mSpy understands the parents&rsquo; worries about how much time a child spends on that particular app. Besides, WhatsApp, Viber or Telegram chatting became a great distraction machine. Devices stuffed with apps literally devour time and harm health because it is usually at the expense of eyesight, outdoor activities and sleep hours. </span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">From now on, parents can manage the device and apps usage. They can limit access to certain apps, including social media messengers and Internet-based apps like YouTube. In a nutshell, get back your child to a school desk and to a family get-together. </span></font></font></p>
+
+<p dir="ltr" lang="en-US" style="margin-bottom: 0in; line-height: 100%">&nbsp;</p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US"><b>What makes mSpy a stronghold on the monitoring market?</b></span></font></font></p>
+
+<p dir="ltr" lang="en-US" style="margin-bottom: 0in; line-height: 100%">&nbsp;</p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">mSpy parental control app included all angles of the monitoring. The device usage becomes visible to a caregiver, which provides tangible chances for an effective parenting. By using it, parents turn the device and the Internet into safe platforms for education and fun. The websites become healthy sources for the mental and intellectual development of your child. </span></font></font></p>
+
+<p dir="ltr" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman, serif"><font style="font-size: 12pt"><span lang="en-US">Besides, this is one of the few parental control application companies which provides 24/7 customer support in 8 languages. The staff offers a sort of mAssistance, accompanying from the installation process till the complete usage. The software is a sort of digital assistant helping parents with their daily routines, releasing time for what is more important for them. </span></font></font></p>
+
+<p dir="ltr" lang="en-US" style="margin-bottom: 0.11in; line-height: 108%"><br>
+&nbsp;</p>
+	            	        </div>
+		    			<span class="lotusChunk lotusMeta lotusItalic blogsUpdatedTimeInfo">
+							    			    				    Modified on <script type='text/javascript'> document.write(blogsDate.date.localize (1508915006000, undefined, true));</script> by <span class='vcard'><a class="lotusPerson fn bidiAware" href="https://www.ibm.com/developerworks/community/profiles/html/profileView.do?userid=502VV7KY20" title="joongloger">joongloger</a> <span class='x-lconn-userid' style='display:none;'>502VV7KY20</span> </span>
+			    				    		    </span>
+					</td>
+    </tr>
+	
+	
+	
+	    </tbody>
+	
+	    </table>
+    </div>
+
+				   
+				   				   	
+			       			        <script language="javascript">if(!currentLogin.auth) {document.write('<div style="display:none">');}</script>
+			        <ul class="lotusInlinelist aria_toolbar" role="toolbar" aria-label="Entry Actions">
+				        <li class="lotusFirst">
+				        <nobr>
+					            		<a id="AddWeblogEntryCommentLink" class="lotusAction" href="#" role="button" title="" onclick="dijit.byId('blogCommentPanel').replyToEntry(); return false; ">Add a Comment</a>
+		<a id="AddWeblogEntryCommentDisableLink" class="disabledLink" style="display:none;" role="button" aria-disabled="true" title="Comment is disallowed for this entry">Add a Comment</a>
+    					    </nobr>
+				        </li>
+	
+			        	<script language="javascript">if(!currentLogin.edit) document.write('<li style="display:none">'); else document.write('<li>');</script>
+			        	<nobr>
+			        		<a class="lotusAction" role="button" href="https://www.ibm.com/developerworks/community/blogs/roller-ui/authoring/weblog.do?method=edit&amp;entry=October_24_2017_at_11_56_59_PM&amp;weblog=bae6a745-faab-4ee8-8c3b-0ce483a04daf&amp;lang=en">Edit</a>
+			        	</nobr>
+			        	</li>
+			        	<li>
+			        	<nobr>
+				        	<a id="focusMoreActionsLink" class="lotusAction" role="button" aria-haspopup="true" href="#" title="" onclick="if(!event){event=window.event;}menuUtility.openMenu(event, 'actionmenu_moreactions', this);return false;">More Actions 
+								<img alt="" src="https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999" class="lconnSprite lconnSprite-iconDropDown5x3" role="presentation"><span class="lotusAltText">v</span></a>
+			        	</nobr>
+			        	</li>
+			        	<script language="javascript">if(!currentLogin.globalModerator) document.write('<li style="display:none">'); else document.write('<li>');</script>
+			        	<nobr>
+			        		<a id="quarantineThisEntryLink" role="button" href="#" onclick="WeblogEntryActionForms.toggle('quarantineForm', 'comment');return false;" class="lotusAction" style="color: #f00;">Quarantine this Entry</a>
+			        	</nobr>
+			        	</li>
+			        </ul>
+				   <script language="javascript">
+	                   function submitDeleteForm() {
+					   		lconn.blogs.utils.confirm("Are you sure you want to delete this entry?", function(){
+								postDelete();
+							}, {title:'Delete Entry'}, "focusMoreActionsLink");
+					   }
+	               </script>
+			        <div id="actionmenu_moreactions_container">
+				        <div dojoType="dijit.Menu" id="actionmenu_moreactions" style="display: none;">
+						    <div dojoType="dijit.MenuItem" id="focusAddNotificationLink" onClick="WeblogEntryActionForms.toggle('notificationForm', 'notificationForm_typeahead,Type_in_a_Name_LINK,Pick_from_Community_LINK');return false;">Notify Other People</div>
+						    						</div>
+					</div>
+			        <script language="javascript">if(!currentLogin.auth) document.write('</div>');</script>
+					<script language="javascript">
+					dojo.addOnLoad(function() {
+						if(currentLogin.edit){
+							var more_menu = dijit.byId("actionmenu_moreactions");
+							var delete_item = new dijit.MenuItem({"id":"deleteEntryLink","label":'Delete Entry', "onClick":function(){submitDeleteForm();return false;}});
+							more_menu.addChild(delete_item);
+						}
+						lconn.core.globalization.bidiUtil.enforceTextDirectionOnPage(); // Enforce base text direction if Bidi is enabled
+					});
+					</script>
+					
+					<div style="margin-top:10px">
+<div id="actionforms_globalmsgs" style="display:none" aria-live="assertive">
+</div>
+<div id="actionforms_forms" aria-live="assertive">
+<form id="NotificationFormEx" name="notificationForm" aria-labelledby="notificationFormLabel" style="display:none" action="https://www.ibm.com/developerworks/community/blogs/roller-services/json/notify" class="lotusForm" dojoInit="false" role="application" onsubmit="return false;">
+	<span name="_type" style="display:none">notification_ex</span>
+	<div name="notificationForm_messages"></div>
+	<input type="hidden" name="entry" value="286ff449-7d33-4cfa-9a1c-e59215aa6c61"/>
+	<input type="hidden" name="dangerousurlnonce" value=""/>
+	<input type="hidden" name="lang" value="en" />
+	<input type="hidden" name="version" value="250" />
+	<fieldset>
+		<table class="lotusFormTable" cellSpacing=0 role="presentation">
+		    <tbody>
+		    	<tr><td class="lotusFormTitle" colspan="2"><h2 id="notificationFormLabel">Send Email Notification</h2></td></tr>
+		    	<tr class="lotusFormFieldRow">
+		    		<td class="lotusFormField" colSpan=2>
+		    			<div id="notificationForm_tabContainer" dojoType="lconn.blogs.TabContainer" selected="Type_in_a_Name">
+		    			    		    				<div dojoType="lconn.blogs.TabContent" name="Type_in_a_Name" title="Type in a Name">
+		    					<div class="fieldborder">
+		    						<div class="fieldcontent">
+		    							<span style="display:none" dojoType="lconn.core.PeopleDataStore" queryParam="name" url="https://www.ibm.com/developerworks/community/blogs/roller-services/json/typeaheadpeople?website=0e52daf9-d51b-43b9-b52a-d56a2f1b187f" jsId="peopleStore"></span>
+		    							<div dojoType="lconn.core.PeopleTypeAhead" class="typeAheadPeople" title="Enter a blog user" id="notificationForm_typeahead" style="width:50%" minChars="2" searchDelay="400" multipleValues="false" token="," store="peopleStore" ></div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    						    				<div dojoType="lconn.blogs.TabContent" name="Pick_from_Community" title="Pick Community Members">
+		    					<input type="checkbox" id="notify_all" onclick="selectAllMembers();" style="display:none;"/><label for="notify_all" style="display:none;">All individual community members</label>
+		    					<script type="text/javascript">
+		    					function selectAllMembers(){
+										var checked=dojo.byId("notify_all").checked;
+										var filter_W = dijit.byId("notificationForm_filteringcheckbox");
+										var receivers_W = dijit.byId("notificationForm_receivers");
+										filter_W.setDisabled(checked);
+										if(checked){
+											receivers_W.add('All individual community members', -1);
+										}else{
+											receivers_W.remove(-1);
+										}
+		    					}
+		    					</script>
+		    					<div dojoType="lconn.blogs.notification.FilteringCheckbox" id="notificationForm_filteringcheckbox">
+		    						<script type='dojo/method' event='feedFunction' args="page,callback">
+		    						    var notifyList_AP = this.notifyList_AP;
+				    		 		 	dojo.xhrGet({
+				    		 		 		url: '/developerworks/community/blogs/roller-services/json/container_members?blogUuid=0e52daf9-d51b-43b9-b52a-d56a2f1b187f&ps=500&offset=' + (page - 1) * 500,
+				    		 		 		handleAs: 'json',
+				    		 		 		load: function(data){
+				    		 		 		    if(data.success) {
+				    		 		 				callback(data);
+				    		 		 			}
+				    		 		 			else {
+				    		 		 				notifyList_AP.innerHTML = '<'+'img class=\"lconnSprite lconnSprite-iconAttention16\" src=\"https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999\" alt=\"Information icon\" />' + ' ' + '<span>' + data.error + '</span>';
+				    		 		 			}
+				    		 		 		},
+				    		 		 		error: function(err){
+				    		 		 			notifyList_AP.innerHTML = '<'+'img class=\"lconnSprite lconnSprite-iconAttention16\" src=\"https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999\" alt=\"Information icon\" />' + ' ' + '<span>' + 'Fail to get member list. Server error.' + '</span>';
+				    		 		 		}
+				    		 		 	});
+				    		 		</script>
+				    		 		<script type='dojo/method' event='feedFunctionForFilterName' args="page,userName,callback">
+		    						    var notifyList_AP = this.notifyList_AP;
+				    		 		 	dojo.xhrGet({
+				    		 		 		url: '/developerworks/community/blogs/roller-services/json/container_members?blogUuid=0e52daf9-d51b-43b9-b52a-d56a2f1b187f&ps=500&userName=' + userName + '&offset=0&useNewAPI=1',
+				    		 		 		handleAs: 'json',
+				    		 		 		load: function(data){
+				    		 		 		    if(data.success) {
+				    		 		 				callback(data);
+				    		 		 			}
+				    		 		 			else {
+				    		 		 				notifyList_AP.innerHTML = '<'+'img class=\"lconnSprite lconnSprite-iconAttention16\" src=\"https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999\" alt=\"Information icon\" />' + ' ' + '<span>' + data.error + '</span>';
+				    		 		 			}
+				    		 		 		},
+				    		 		 		error: function(err){
+				    		 		 			notifyList_AP.innerHTML = '<'+'img class=\"lconnSprite lconnSprite-iconAttention16\" src=\"https://www.ibm.com/developerworks/community/connections/resources/web/com.ibm.lconn.core.styles.oneui3/images/blank.gif?etag=20181207.134999\" alt=\"Information icon\" />' + ' ' + '<span>' + 'Fail to get member list. Server error.' + '</span>';
+				    		 		 		}
+				    		 		 	});
+				    		 		</script>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</td>
+		    	</tr>
+		    	<tr class="lotusFormFieldRow" name="notifyLabelTR" style="display:none">
+		    		<td nowrap style="padding-bottom:0px;"><div><label class="" for="notify">Notify:</label></div></td>
+		    	</tr>
+		    	<tr class="lotusFormFieldRow" name="notifyFieldTR" style="display:none">
+		    		<td class="lotusFormField">
+		    		 	<div dojoType="lconn.blogs.notification.receivers" id="notificationForm_receivers">
+		    		 		 <script type='dojo/method' event='onChange' args="person,op">
+		    		 		  if(this.receivers.length == 0){
+		    		 		 		this.form().sendBtn.disabled = true;
+		    		 		 		this.form().sendBtn.className = "lotusFormButton lotusBtnDisabled";
+
+		    		 		 		dojo.query('[name="notifyLabelTR"]', this.form())[0].style.display = "none";
+		    		 		 		dojo.query('[name="notifyFieldTR"]', this.form())[0].style.display = "none";
+		    		 		 	}else{
+		    		 		 		this.form().sendBtn.disabled = false;
+		    		 		 		this.form().sendBtn.className = "lotusFormButton lotusBtnSpecial";
+
+									dojo.query('[name="notifyLabelTR"]', this.form())[0].style.display = "";
+									dojo.query('[name="notifyFieldTR"]', this.form())[0].style.display = "";
+		    		 		 	}
+		    		 		 	if(person) {
+		    		 		 	    var filteringcheckbox = dijit.byId(this.form().name+'_filteringcheckbox');
+		    		 		 	    if(op == 'add') {
+		    		 		 	        filteringcheckbox.peopleSelected[person.extid] = person.fullname;
+		    		 		 	    }
+		    		 		 	    else if(op == 'remove') {
+		    		 		 	    	delete filteringcheckbox.peopleSelected[person.extid];
+		    		 		 	    	if(person.extid == -1){
+		    		 		 	    		var notify_all_check = dojo.byId("notify_all");
+		    		 		 	    			if(notify_all_check.checked){
+		    		 		 	    				notify_all_check.checked = false;
+		    		 		 	    				selectAllMembers();
+		    		 		 	    			}
+		    		 		 	    	}
+		    		 		 	    }
+		    		 		 	    if(!dojo.byId("notify_all").checked)
+		    		 		 	    	filteringcheckbox.setDisabled(false);
+		    		 		 	}
+		    		 		 </script>
+		    		 		 <script type='dojo/connect' event='startup'>
+		    		 		 	dojo.connect(dijit.byId(this.form().name+'_typeahead'),
+		    		 		 		"onChange",
+		    		 		 		this,
+		    		 		 		function(){
+		    		 		 		    var x = dijit.byId(this.form().name+'_typeahead');
+		    		 		 			var obj = x.getItem();
+		    		 		 			if(obj) {
+		    		 		 				if(obj.type != "-1"){
+			    		 		 				this.add(obj.name, obj.userid);
+			    		 		 				x.reset();
+		    		 		 				}
+		    		 		 			}
+		    		 		 		}
+		    		 		 	);
+		    		 		 	dojo.connect(dijit.byId(this.form().name+'_filteringcheckbox'),
+		    		 		 		"personSelected",
+		    		 		 		this,
+		    		 		 		function(person, selected){
+		    		 		 		    if(person) {
+			    		 		 		    if(selected) {
+			    		 		 		    	this.add(person.name, person.uuid);
+			    		 		 		    }
+			    		 		 		    else {
+			    		 		 		    	this.remove(person.uuid);
+			    		 		 		    }
+		    		 		 		    }
+		    		 		 		}
+		    		 		 	);
+		    		 		 	this.receiverList_AP.setAttribute('aria-label', 'Notify:');
+								this.inputBox = dojo.query('a', dijit.byId(this.form().name + '_tabContainer').domNode)[0];
+		    		 		 </script>
+		    		 	</div>
+		    		 </td>
+		    	</tr>
+		    	<tr class="lotusFormFieldRow">
+		    		<td nowrap style="padding-bottom:0px;"><label for="notification_message">Message:</label></td>
+		    	</tr>
+		    	<tr class="lotusFormFieldRow">
+		    		<td class="lotusFormField"><textarea id="notification_message" class="bidiAware" style="width: 100%" name="description" rows="10" title="Message:"></textarea></td>
+		    	</tr>
+		    	<tr>
+		    		<td class="lotusFormFooter" colSpan=2>
+		    			<div class="submitArea">
+		    				<input disabled="true" class="lotusFormButton lotusBtnDisabled blogsPaddingRight" name="sendBtn" type="button" onclick="return postNotificaton();" value='Send'></input>
+		    				<input class="lotusFormButton blogsPaddingRight" name="cancelBtn" type="button" onclick="return WeblogEntryActionForms.cancel('notificationForm', 'focusMoreActionsLink');" value='Cancel'></input>
+		    			</div>
+		    		</td>
+		    	</tr>
+		    </tbody>
+		</table>
+	</fieldset>
+</form>
+<form name="quarantineForm" style="display:none" action="https://www.ibm.com/developerworks/community/blogs/roller-services/json/quarantine_entry" class="lotusForm" role="application" aria-labelledby="quarantineFormLabel" onsubmit="return false;">
+	<div id="quarantineForm_messages">
+	</div>
+	<input type="hidden" name="entry" value="286ff449-7d33-4cfa-9a1c-e59215aa6c61"/>
+	<input type="hidden" name="dangerousurlnonce" value=""/>
+	<input type="hidden" name="lang" value="en" />
+	<input type="hidden" name="version" value="250" />
+	<table width="100%" class="lotusFormTable" role="presentation"><tbody>
+		<tr><td colspan="2" class="lotusFormTitle"><h2 id="quarantineFormLabel">Quarantine this entry</h2></td></tr>
+		<tr>
+			<td width="5%"> </td>
+			<td><label for="quarantine_comment">Provide a reason for quarantining this blog entry (optional):</label></td>
+		</tr>
+		<tr>
+			<td width="5%"> </td>
+			<td><textarea id="quarantine_comment" name="comment" rows="10" style="width:80%" title='Provide a reason for quarantining this blog entry (optional):'></textarea></td>
+		</tr>
+		<tr><td colspan="2" class="lotusFormFooter">
+			<div class="submitArea">
+				<input class="lotusFormButton" name="submitBtn" type="button" onclick="return postQuarantine();" value='Submit'/>
+				<input class="lotusFormButton" name="cancelBtn" type="button" onclick="return WeblogEntryActionForms.cancel('quarantineForm', 'quarantineThisEntryLink');" value='Cancel'/>
+			</div>
+		</td></tr>
+	</tbody></table>
+</form>
+<form name="deleteForm" style="display:none" action="https://www.ibm.com/developerworks/community/blogs/roller-services/json/delete_entry" class="lotusForm">
+	<span name="_type" style="display:none">deleteEntry</span>
+	<input type="hidden" name="entry" value="286ff449-7d33-4cfa-9a1c-e59215aa6c61"/>
+	<input type="hidden" name="dangerousurlnonce" value=""/>
+	<input type="hidden" name="lang" value="en" />
+</form>
+<form aria-live="assertive" name="duplicateForm" class="lotusForm2" style="display:none"  method="post" action="https://www.ibm.com/developerworks/community/blogs/roller-ui/rendering/idea/duplicate" class="lotusForm" role="application" aria-labelledby="duplicateFormTitle" aria-label="Mark as Duplicate">
+	<span name="_type" style="display:none">duplicateEntry</span>
+	<div id="duplicateForm_messages">
+	</div>
+	<input type="hidden" name="entryId" value="286ff449-7d33-4cfa-9a1c-e59215aa6c61"/>
+	<input type="hidden" name="oldEntryTitle" value="What is mSpy parental control and why do you need it?"/>
+	<input type="hidden" name="dangerousurlnonce" value=""/>
+	<div id="findDuplicate">
+		<div style="border-top: 2px solid black;"></div>
+		<div class="lotusFormTitle">
+			<h1 id="duplicateFormTitle" class="lotusHeading">Mark as Duplicate</h1>
+        </div>
+		<div class="lotusFormBody" id="findDupInput">
+    		<div class="lotusFormField" >
+                <label for="ideasAsString" id="formDesc">Find the duplicate idea:</label>
+                <div class="lotusFieldWrapper">
+					<span dojoType="lconn.blogs.duplicateIdea.IdeasDataStore" jsId="ideasTypeAheadStore" queryParam="ideas" url="https://www.ibm.com/developerworks/community/blogs/roller-services/json/typeaheadIdeas?handle=bae6a745-faab-4ee8-8c3b-0ce483a04daf&amp;exclude=286ff449-7d33-4cfa-9a1c-e59215aa6c61"></span>
+            		<div dojoType="lconn.blogs.duplicateIdea.IdeasTypeAhead" id="ideasAsString" name="ideasAsString" style="width: 30em;" size="40" maxlength="255" autoComplete="false" store="ideasTypeAheadStore" searchDelay="400" minChars="2" searchAttr="idea" nameAttr="idea" token=" " multipleValues="false">
+            		</div>
+                </div>
+            </div>
+		</div>
+		<div id="remainEntryContent" >
+		</div>
+		<div class="lotusFormFooter" style="border: 0 none;">
+			<input disabled class="lotusBtn lotusBtnDisabled" aria-disabled="true" id="dupIdeaSaveBtn" onclick="javascript:;" type="button" value="Save" name="saveDuplicate">
+			<input class="lotusBtn" type="button" onclick="return WeblogEntryActionForms.cancel('duplicateForm', 'focusMoreActionsLink');" value="Cancel" name="calcelDulicate">
+        </div>
+	</div>
+</form>
+</div>
+
+<script language="javascript">
+function keepSessionAlive(){dojo.xhrGet({url: '/developerworks/community/blogs/roller-services/json/authcheck'});}
+WeblogEntryActionForms = {
+    opened: {count:0},
+	type: function(form) {
+		t=dojo.query('[name="_type"]', form);
+		if(t.length>0){
+			return t[0].innerHTML;
+		}
+		else {
+			return '';
+		}
+	},
+	close: function(form) {
+		form.style.display='none';
+		this.reset(form);
+
+		if(this.opened[form.name]) {
+	    	this.opened[form.name] = false;
+	    	this.opened.count--;
+	    	if(this.opened.count == 0) {
+	    		if(this.keepAliveTimer.isRunning) {
+					this.keepAliveTimer.stop();
+				}
+	    	}
+	    }
+	},
+    reset: function(form) {
+    	form.reset();
+    	
+    	// clear action forms global msgs
+    	var t = dojo.byId('actionforms_globalmsgs');
+    	if(t) {
+    	    t.style.display = 'none';
+    	}
+
+    	// clear messages
+    	var mt = ['error', 'warning', 'info'];
+    	for(var i=0; i<mt.length; i++) {
+    	    var x=dojo.query('[name="' + mt[i] + '_messages"]', form);
+	    	if(x.length > 0) {
+	    	    x[0].style.display='none';
+	    	    x=dojo.query('[name="message"]', x[0]);
+	    	    if(x.length > 0) x[0].innerHTML='';
+	    	}
+    	}
+
+        var t=this.type(form);
+        if(t=='comment') {
+        	form.content.innerHTML='';
+        	var x = dojo.byId("commentspanel_preview");
+        	if(x) dojo.byId("commentspanel_preview").style.display = "none";
+        }
+        else if(t=='notification') {
+            form.receivers.clear();
+        }
+        else if(t=='notification_ex') {
+        	form.receivers.clear();
+
+        	var fcb = dijit.byId(form.name+'_filteringcheckbox');
+        	fcb.peopleSelected = new Object();
+        	if (fcb.currPage > 1) {
+        	    fcb.currPage = 1;
+        	    fcb.gotList = false;
+        	}
+        	fcb.clearSearch();
+        }
+    },
+    init: function(form) {
+        var t=this.type(form);
+        if(t=='notification') {
+            var dojoInit = form.getAttribute('dojoInit');
+            if(dojoInit == 'false') {
+                dojo.parser.parse(form);
+								form.setAttribute('dojoInit', 'true');
+            }
+            if(form.description.value == '') {
+                form.description.value = 'Hi-  I thought you might be interested in this blog entry.';
+            }
+    	}
+    	else if(t=='notification_ex') {
+    	    var dojoInit = form.getAttribute('dojoInit');
+            if(dojoInit == 'false') {
+            	dojo.parser.parse(form);
+            	            	form.setAttribute('dojoInit', 'true');
+            }
+
+        	var fcb = dijit.byId(form.name+'_filteringcheckbox');
+        	if(!fcb.gotList) fcb.getList();
+        	fcb.setDisabled(false);
+
+        	if(form.description.value == '') {
+                form.description.value = 'Hi-  I thought you might be interested in this blog entry.';
+            }
+        }else if(t='duplicateEntry') {
+			if(lconn.blogs.duplicateIdea.entrywidget)lconn.blogs.duplicateIdea.entrywidget.findAnother();
+		}
+    },
+    hideAll: function() {
+    	document.forms['notificationForm'].style.display='none';
+    	    	document.forms['quarantineForm'].style.display='none';
+		document.forms['duplicateForm'].style.display='none';
+
+    	var t = dojo.byId('actionforms_globalmsgs');
+    	if(t) {
+    	    t.style.display = 'none';
+    	}
+    },
+    toggle: function(name, fc) {
+    	var f = document.forms[name];
+    	if(f.style.display != 'none'){
+    	    return;
+    	}
+
+    	this.init(f);
+
+    	this.hideAll();
+	    f.style.display='';
+	    if(typeof fc != 'undefined') {
+		    var fcs = fc.split(",");
+			var bFocused = false;
+			for(var i = 0; i < fcs.length; i++) {
+			    var tfc = fcs[i];
+				var x = dojo.query('[name="'+tfc+'"]', f);
+	            if(x.length>0) {
+				    x[0].focus();
+					bFocused = true;
+					break;
+				}
+			}
+			for(var i = 0; i < fcs.length; i++) {
+			    var tfc = fcs[i];
+				var x = dojo.query('[id="'+tfc+'"]', f);
+	            if(x.length>0) {
+				    x[0].focus();
+					bFocused = true;
+					break;
+				}
+			}
+	    }
+
+	    if(!this.opened[name]) {
+	    	this.opened[name] = true;
+	    	this.opened.count++;
+	    }
+
+	    if(typeof this.keepAliveTimer == 'undefined') {
+			this.keepAliveTimer = new dojox.timing.Timer(180000);
+			this.keepAliveTimer.onTick = function() {keepSessionAlive();};
+		}
+		if(!this.keepAliveTimer.isRunning) {
+			this.keepAliveTimer.start();
+		}
+    },
+    cancel: function(name, fc) {
+    	WeblogEntryActionForms.close(document.forms[name]);
+    	if(typeof fc != 'undefined') dojo.byId(fc).focus();
+
+    	return false;
+    },
+    clearMessage: function(messageContainerId){
+    	lconn.blogs.utils.clearMessage(messageContainerId);
+    },
+    message: function(form, data, type) {
+		var messageContainer;
+		if(form && form.name){
+			messageContainer = dojo.byId(form.name+ '_messages');
+		}
+		if(!messageContainer) {
+			messageContainer = dojo.byId('actionforms_globalmsgs');
+		}
+		this.clearMessage(messageContainer.id);
+    	
+		lconn.blogs.utils.showMessage(messageContainer.id, data, type, true);
+		
+		messageContainer.style.display='';
+    },
+    showCommentMessage: function(data) {
+        var messageContainer = dojo.byId('actionforms_globalmsgs');
+		this.clearMessage(messageContainer.id);
+    	
+		lconn.blogs.utils.showMessage(messageContainer.id, data, type, true);
+		
+		messageContainer.style.display='';
+    },
+    disable: function(form, b) {
+        var t=dojo.query('[name$="Btn"]');
+        for(var i=0; i<t.length; i++) t[i].disabled=b;
+    },
+    ajaxPost: function(form, postExec, msgs) {
+    	form.dangerousurlnonce.value=window.__security_nonce;
+    	this.message(form, msgs.running + '<div class="lotusLoading lotusLeft"></div>', 'info');
+    	this.disable(form, true);
+    	dojo.xhrPost({
+	        url: form.action,
+	        form: form,
+	        handleAs: 'json-comment-optional',
+	        load: function (data, ioArgs) {
+	        	WeblogEntryActionForms.clearMessage(form.name+ '_messages');
+	            if(data.success) {
+	            	WeblogEntryActionForms.close(form);
+
+	            	var gm = dojo.byId('actionforms_globalmsgs');
+	            	gm.style.display='none';
+	            	lconn.blogs.utils.clearMessage(gm.id);
+
+	            	var t=WeblogEntryActionForms.type(form);
+	            	var msgText;
+	            	if(t=='notification' || t=='notification_ex') {
+	            		msgText = 'The notification has been sent.';
+	            	}
+	            	if(t=='flagInappropriateEntry') {
+					    msgText= 'The blog entry has been flagged and submitted for review.';
+
+	            	}
+					if(t=='deleteEntry') {
+					    msgText= 'The blog entry has been deleted.';
+	            	}
+	            	lconn.blogs.utils.showMessage(gm.id, msgText, 'confirm', true);
+				    gm.style.display='';
+	            }
+	            else {
+	                if(data.error) {
+	                    if('session timeout' == data.error) {
+	                        window.__security_nonce = data.nonce;
+	                        WeblogEntryActionForms.message(form, 'We were unable to process your request due to a session timeout.  Please try again.', 'error');
+	                    } else {
+	            			WeblogEntryActionForms.message(form, data.error, 'error');
+	            		}
+	            	}
+	            	else {
+	            		WeblogEntryActionForms.message(form, 'This function is only available to authenticated users. Please log in first.', 'error');
+	            	}
+	            }
+	            WeblogEntryActionForms.disable(form, false);
+	            if(data.success && typeof postExec != 'undefined') postExec(data);
+	        },
+	        error: function (error, ioArgs) {
+	            WeblogEntryActionForms.message(form, msgs.fail, 'error');
+	            WeblogEntryActionForms.disable(form, false);
+	        }
+	    });
+    }
+};
+function postNotificaton(){
+	WeblogEntryActionForms.ajaxPost(document.forms['notificationForm'], function(){dojo.byId('focusMoreActionsLink').focus();},
+		{fail: 'Failed to send the notification.',
+		 running: 'Sending Notification...:'});
+	return false;
+};
+function postQuarantine(){
+	 	WeblogEntryActionForms.ajaxPost(document.forms['quarantineForm'], function(){window.location = 'https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?lang=en';},
+		{fail: 'Fail to submit the request. Server error.',
+		 running: 'Submitting...'});
+	return false;
+};
+
+function postDelete(){
+	 	WeblogEntryActionForms.ajaxPost(document.forms['deleteForm'], function(){window.location = 'https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?lang=en';},
+		{fail: 'Fail to submit the request. Server error.',
+		 running: 'Submitting...'});
+	return false;
+};
+
+if(window.location.hash == '#action=send_notification') {
+    dojo.addOnLoad(function(){WeblogEntryActionForms.toggle('notificationForm', 'description');});
+}
+</script>
+</div>
+	
+					<p></p>
+					<a name="commentsTarget"></a>
+	
+					<!-- CommentPanel -->
+										
+						<div dojoType="lconn.blogs.comment.CommentPanel" id="blogCommentPanel" entryId="286ff449-7d33-4cfa-9a1c-e59215aa6c61" blogId="0e52daf9-d51b-43b9-b52a-d56a2f1b187f" isPublicBlog="true" isCommunity="true" 
+				 allowComment="true" 				commentCount="0"
+		isIdeaBlog="false"
+	>
+	</div>
+	<div id="addCommentFormContainer">
+	<div dojoType="lconn.blogs.comment.AddCommentForm" id="blogAddCommentForm" entryId="286ff449-7d33-4cfa-9a1c-e59215aa6c61" mentionsEnabled="true" autoMention="false" blogId="0e52daf9-d51b-43b9-b52a-d56a2f1b187f"
+		 trackbackEnabled = "false" 		isIdeaBlog="false"
+		 communityId="bae6a745-faab-4ee8-8c3b-0ce483a04daf" 		isPublicBlog="true"
+		organization="a"
+	></div>
+	</div>
+						
+			    			    </div> <!-- end entries -->
+	
+			<!-- Dont show paging when there are no entries -->
+											<div class="" role="navigation" style="font-size: 0.9em;" aria-label="Page navigation">
+				                <ul class="inlinelist lotusInlinelist">
+    	<li class="lotusFirst">
+	    			<span class="disabled">Previous Entry</span>
+	        	</li>
+    	<li>
+        <a href="https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf?maxresults=15&amp;lang=en">Main</a>
+        </li>
+        <li>
+	    			<span class="disabled">Next Entry</span>
+	            </li>
+    </ul>
+			    </div>
+									</div>
+
+		<div class="lotusFeeds" role="list">
+								<span role="listitem">
+				<a id="entryFeedLink" href='https://www.ibm.com/developerworks/community/blogs/roller-ui/rendering/feed/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entries/atom?lang=en' title="Entries feed for this blog" class="lotusFeed lotusAction" >Feed for Blog Entries</a>
+			</span>
+			<span class="lotusDivider" role="img" aria-hidden="true">|</span>
+			<span role="listitem">
+				<a id="commentFeedLink" href='https://www.ibm.com/developerworks/community/blogs/roller-ui/rendering/feed/bae6a745-faab-4ee8-8c3b-0ce483a04daf/comments/atom?lang=en' title="Comments feed for this blog" class="lotusFeed lotusAction"  style="background: transparent; padding-left:7px;">Feed for Blog Comments</a>
+		    </span>
+		    		
+					<span class="lotusDivider" role="img" aria-hidden="true">|</span>
+			<span role="listitem">
+				<a id="entryCommentFeedLink" href='https://www.ibm.com/developerworks/community/blogs/roller-ui/rendering/feed/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entrycomments/October_24_2017_at_11_56_59_PM/atom?contentFormat=html&amp;lang=en' title="Atom Entry Comments" class="lotusFeed lotusAction"  style="background: transparent; padding-left:7px;">Feed for Comments for this Entry</a>
+			</span>
+				</div>
+
+       </div> <!-- end content -->
+</div><!-- end main -->
+
+ 	<script language="javascript">  
+		 var isEntry = true;
+		 
+		 dojo.addOnLoad(function(){
+			var t = document.getElementById('TOGGLE_comment_rating_${item.id}_widget');
+			if(t) {
+				var p = t.parentNode;
+				p.removeAttribute('aria-live');
+				var h = t.innerHTML;
+				p.innerHTML = '<a class="lotusLikeAction" aria-disabled="true" href="javascript:;" onclick="return false" title="' + 'Like is disabled in comment preview.' + '">' + h + '</a>';
+			}
+		});
+ 	</script>
+
+	<script language="javascript">  
+		 var isComm = true;
+ 	</script>
+
+<script language="javascript">  
+if(isEntry){
+	readTrackerMetrics = {};
+	readTrackerMetrics.contentId = "286ff449-7d33-4cfa-9a1c-e59215aa6c61";
+	readTrackerMetrics.contentTitle = "What is mSpy parental control and why do you need it?";
+	readTrackerMetrics.contentContainerId = "0e52daf9-d51b-43b9-b52a-d56a2f1b187f";
+	readTrackerMetrics.contentContainerTitle = "IBM Services Assets";
+	readTrackerMetrics.itemType="ENTRY";
+
+}else{
+	// metrics variables, it will be used in footer
+	readTrackerMetrics = {};  
+	readTrackerMetrics.contentId="0e52daf9-d51b-43b9-b52a-d56a2f1b187f";
+	readTrackerMetrics.contentTitle = "IBM Services Assets";
+	readTrackerMetrics.itemType="BLOG";
+	}
+		
+if(isComm){
+	readTrackerMetrics.communityId = "bae6a745-faab-4ee8-8c3b-0ce483a04daf";
+}
+</script>
+
+    
+        
+    
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="lotusFooter" class="lotusFooter" role="contentinfo">
+	
+
+						
+			<script type="text/javascript">
+(function() {
+   function handleHeaderInit(info) {
+      lconn.core.header.decorateUser( /*user*/ {
+         displayName: info.user,
+         id: info.userId
+      }, /*urls*/ {
+         logout: 'https:\/\/www.ibm.com\/developerworks\/community\/blogs\/roller-ui\/logout-redirect.jsp',
+         user_jsp: '/developerworks/community/blogs/static/20181207.134999!en/nav/templates/menu/user.jsp?appName=blogs&username=&userid=',
+         communities_jsp: '\/developerworks\/community\/blogs\/static\/20181207.134999!en\/nav\/templates\/menu\/communities.jsp?authenticated=true'
+      }, /*strings*/ {
+         logout: 'Log Out'
+      });
+   }
+   //dojo.subscribe("lconn/core/header/init", handleHeaderInit);
+})();
+</script><script type="text/javascript">
+(function(){
+   function loadConnectionsLanguageSelector() {
+      try {
+         dojo.require("lconn.core.header");
+         lconn.core.header.enableLanguageSelector("languageSelectorText", {"en":"English","BD":"BD"},
+            "conxnsCookie", "", -1);
+      } catch (e) {
+         console.error(e);
+      }
+   }
+   if (dojo.exists("lconn.core.header") && !dojo.exists("_skipConnectionsLanguageSelector"))
+      dojo.addOnLoad(loadConnectionsLanguageSelector);
+})();
+</script><script type="text/javascript">
+      dojo.require("lconn.core.header.apps");
+      dojo.require("lconn.core.auth");
+
+    </script><script type="text/javascript">
+(function() {
+   function checkShareDisplay(info) {if (dojo.cookie("blogsUser")) {var node = dojo.byId("headerSharebox");
+		   dojo.removeClass(node,"lotusFirst");
+		   dojo.removeClass(node,"lotusHidden");
+		   dojo.style(node, "display", "block");
+	   }
+   }
+   dojo.addOnLoad(checkShareDisplay);
+})();
+</script>
+
+<div id="ibm-footer1"></div>
+<div id="footer_div"></div>
+<div id="footer_scripts_div"></div>
+		
+<!--script type="text/javascript" src="//dw1.s81c.com/common/stats/stats.js"></script>
+<script id="stats" type="text/javascript"></script>
+<script>if (window.location.href.search(/\/(mydeveloperworks|community)\/(wikis)/i) == -1){ document.getElementById("stats").src="//dw1.s81c.com/common/stats/stats.js";}</script-->
+<noscript><img src="http://stats.www.ibm.com/rc/images/uc.GIF?R=noscript" width="1" height="1" alt="" border="0" /></noscript>
+<!--<script type="text/javascript" src="/developerworks/community/connections/resources/web/_js/?include=dojo.io.script.js~&etag=W8wd1eA_en_US&lang=en&country=us">//</script> -->
+<!--<script type="text/javascript" src="/developerworks/js/dw-mf/viper-www.js">//</script>-->
+<script type="text/javascript" src="https://www.ibm.com/developerworks/js/dw-mf/viper-www-v2.js">//</script>
+<script type="text/javascript" src="https://www.ibm.com/developerworks/js/dw-lc/xmlc.js">//</script>
+<script type="text/javascript">
+// turn social bookmarking on
+ibmweb.config.set({ sbs: { enabled: true }});
+ibmweb.config.sbs.print = true;
+ibmweb.config.sbs.email = true;
+ibmweb.config.noDojoLocaleOverride = true;
+</script>
+	
+</div><!--end footer-->
+
+<script language="javascript">
+if(!(typeof currentLogin.name == 'undefined' || currentLogin.name == null || currentLogin.name == '')) {
+	dojo.publish("lconn/core/header/init", [{
+		user: currentLogin.name, 
+		userId: currentLogin.extid, 
+		isModerator: currentLogin.globalModerator
+	}]);
+}
+
+lconn.core.auth.setAuthCheck(function() {
+	if(!(typeof window.currentLogin.name == 'undefined' || window.currentLogin.name == null || window.currentLogin.name == '')) {
+		return true;
+	}
+	return false;
+});
+</script>
+
+<!-- build 20180606094911 -->
+	
+<div id="datetagdiv" 
+   style="position:absolute;visibility:hidden;background-color:white;layer-background-color:white;">
+</div>
+
+<script language="javascript">
+if(currentLogin.globalAdmin) activateFooterLinks();
+
+var metricsLinks = dojo.query('.lotusMetricsReaderLink');
+for(var i = 0; i < metricsLinks.length; i++) {
+    metricsLinks[i].style.display = currentLogin.metricsReader ? '' : 'none';
+}
+
+if(typeof openHelpWindow == 'undefined') {
+    var helpWindow;
+	window.openHelpWindow = function (url, width, height) {
+		 if (!width) {
+			 width = window.screen.width / 4;
+			 if (width < 950) width = 950;
+		 }
+		 if (!height) {
+			 height = window.screen.height / 4;
+			 if (height < 550) height = 550;
+		 }
+		 if (typeof(helpWindow) != "undefined") helpWindow.close();
+		 var options = 'height=' + height + ',width=' + width + ',status=yes,toolbar=yes,menubar=no,location=yes,scrollbars=yes,resizable=yes';
+		 helpWindow = window.open(BlogsBaseUrl + url, 'help', options);
+		 if (window.focus) helpWindow.focus();
+	};
+}
+
+// metrics read tracker
+if (!dojo.exists("com.ibm.lconn.layout.track"))
+{
+dojo.require("com.ibm.lconn.layout.track"); // load track js api, each application should already load the common js jar that include this api
+}
+
+	// metrics read tracker
+	var metrics = {};
+	var extra = {};
+	metrics.source=appName; // retrieve from the common header
+	extra.contentLink = window.location.href; 
+	
+	if(!(typeof readTrackerMetrics == "undefined")){
+		metrics.itemType = readTrackerMetrics.itemType;
+		metrics.communityId = readTrackerMetrics.communityId;
+		metrics.contentId = readTrackerMetrics.contentId;
+		extra.contentTitle = readTrackerMetrics.contentTitle;
+		extra.contentContainerId = readTrackerMetrics.contentContainerId;
+		extra.contentContainerTitle = readTrackerMetrics.contentContainerTitle;
+	}
+	
+	if(typeof metrics.itemType == "undefined"){
+		metrics.itemType="BLOGS"; // define for each web page
+	} 
+	
+	if(typeof metrics.contentId == "undefined"){
+		metrics.contentId="BLOGS"; // define for each web page
+	}
+	
+	if(typeof currentLogin.extid != "undefined"){
+		metrics.userId = currentLogin.extid;
+	}
+	
+	metrics.extra = extra;
+	
+	var track = com.ibm.lconn.layout.track;
+	track.read(metrics.contentId, metrics.itemType, metrics); // call tracker js to send read event
+</script>
+
+<script type="text/javascript">
+if(typeof dojo.getObject('com.ibm.ajax.auth.interceptDojoXhr') == 'function') {
+	dojo.addOnLoad(function() {
+    var ciaa = com.ibm.ajax.auth;
+    ciaa.interceptDojoXhr(function(){return true;});
+    ciaa.setAuthenticationHandler(function(response, ioArgs, onauthenticated){
+        var racp = window.location.href.replace(/,/g,"%2C");
+        window.location.replace(getLoginRedirectURL(racp));
+    });
+	});
+}
+</script>
+
+<script type="text/javascript">
+	var lconn_core_thirdPartySearchEngines = []
+</script>
+<script type="text/javascript">
+	/* 4.5 to 5.0 changes */
+	var dwBlogsUpdateTitleBarClassNameInterval = window.setInterval(function() {
+		if (!dojo) return;
+		var lotusTitleBar = dojo.byId("lotusTitleBar");
+		if (lotusTitleBar!=null) { 
+			dojo.addClass("lotusTitleBar", "lotusTitleBar2");
+			dojo.addClass("lotusTitleBar", "lotusTitleBar2Tabs");
+			window.clearInterval(dwBlogsUpdateTitleBarClassNameInterval);
+		}
+	},500);
+</script>
+
+    
+</div><!-- frame -->
+
+</body>
+<script language="javascript">
+if(dojo.isIE && lconn.blogs.utils.applyDojoOnLoads) {lconn.blogs.utils.applyDojoOnLoads();}
+dojo.addOnLoad(function(){
+    if(dojo.byId("blogsWelcomeMsg")) {
+		dojo.connect(dojo.byId("blogsWelcomeMsg"),"onclick", function(){
+			lconn.blogs.utils.openHelpWindow("https://www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entry/community_blog_frame.html"); 
+		});
+	}
+});
+
+</script>
+
+
+
+
+<!-- Mirrored from www.ibm.com/developerworks/community/blogs/bae6a745-faab-4ee8-8c3b-0ce483a04daf/entry/October_24_2017_at_11_56_59_PM?lang=en by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:14:18 GMT -->
+</html>

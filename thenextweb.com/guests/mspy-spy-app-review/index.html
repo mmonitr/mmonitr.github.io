@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<!--
+ _________   _______       ___     ___    ___      _____      _                  _      _ _
+|         | |        \    |   |   |   |  |   |    / ____|    | |                | |    | (_)
+|__     __| |    _    \   |   |   '   |  '   '   | |    _   _| |__   ___ _ __ __| | ___| |_  __ _
+   |   |    |   |  \   \  |   '_ /    '_/   /    | |   | | | | '_ \ / _ \ '__/ _` |/ _ \ | |/ _` |
+   |   |    |   |   |   | |         /      /     | |___| |_| | |_) |  __/ | | (_| |  __/ | | (_| |
+   '___'    '___'   '___' '_______ / '____/       \_____\__, |_.__/ \___|_|  \__,_|\___|_|_|\__,_|
+                                                         __/ |
+                                                        |___/
+Design by:
+——————————
+
+    ALEXANDER GRIFFIOEN
+   ✉alexander🐺thenextweb.com
+   ✎@oscaralexander
+   ✈Amsterdam, NL
+
+Implementation by:
+——————————————————
+
+    LAURA GONZÁLEZ          |   PABLO ROMÁN             |   JAVIER NEGRE
+   ✉laura🐧thenextweb.com    |  ✉pablo🐵thenextweb.com   |  ✉javi🐻thenextweb.com
+   ✎@freezydorito           |  ✎@pabloroman             |  ✎@javi_negre
+   ✈Oviedo, ES              |  ✈Amsterdam, NL           |  ✈Barcelona, ES
+
+    GORDAN KONDEV           |   JULIO FOULQUIÉ
+   ✉gordan🦁thenextweb.com  |  ✉julio🐼thenextweb.com
+   ✈Amsterdam, NL           |  ✎@julioelpoeta
+                            |  ✈Montevideo, UY
+
+🍺 Aren't you thirsty? Why don't you cyberdelia.knock() on the door? 🍻
+
+-->
+<html lang="en-us" prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#" itemscope itemtype="https://schema.org/">
+
+<!-- Mirrored from thenextweb.com/guests/mspy-spy-app-review/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:14:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="referrer" content="unsafe-url">
+<meta name="apple-mobile-web-app-title" content="The Next Web">
+<meta name="msvalidate.01" content="EBA9DC0DD4E376AF9708F73323680AB1" />
+<!-- Awin verification 001 -->
+<title>mSpy – an App For Your Child’s Online Safety</title>
+
+<link rel="manifest" href="https://thenextweb.com/manifest.json">
+
+<link rel="stylesheet" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/css/style.css?v=1549273325" type="text/css"/>
+
+<link rel="dns-prefetch" href="http://cdn0.tnwcdn.com/">
+<link rel="dns-prefetch" href="http://www.googletagmanager.com/">
+<link rel="preconnect" href="http://cdn0.tnwcdn.com/">
+<link rel="preconnect" href="http://www.googletagmanager.com/">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-57x57.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-60x60.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-72x72.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-76x76.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-120x120.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-144x144.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-152x152.png?v=1549273258">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-180x180.png?v=1549273258">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-32x32.png?v=1549273258" sizes="32x32">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-194x194.png?v=1549273258" sizes="194x194">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-96x96.png?v=1549273258" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/android-chrome-192x192.png?v=1549273258" sizes="192x192">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-16x16.png?v=1549273258" sizes="16x16">
+<link rel="shortcut icon" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon.png?v=1549273258">
+<link rel="alternate" type="application/rss+xml" title="The Next Web RSS Feed" href="http://feeds2.feedburner.com/thenextweb">
+<!--  WP_HEAD   -->
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v9.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<link rel="publisher" href="https://plus.google.com/+thenextweb"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="mSpy – an App For Your Child’s Online Safety" />
+<meta property="og:description" content="Whenever your kid is late from a friend’s house you cannot but worry that he/she might be in trouble, rubbed or simply get lost. Kid’s offline safety is very important to every parent, nevertheless it is not the only aspect you should think of. Online security for children is now in the rise. With online &hellip;" />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="The Next Web" />
+<meta property="article:publisher" content="https://www.facebook.com/thenextweb" />
+<meta property="article:author" content="http://www.facebook.com/thenextweb" />
+<meta property="og:image" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2Fmspy-480x270.png&amp;signature=3091be5db31e89fbf4253967beeb6bc1" />
+<meta property="og:image:secure_url" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2Fmspy-480x270.png&amp;signature=3091be5db31e89fbf4253967beeb6bc1" />
+<meta property="og:image:width" content="480" />
+<meta property="og:image:height" content="270" />
+<meta property="og:image:alt" content="mspy" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Whenever your kid is late from a friend’s house you cannot but worry that he/she might be in trouble, rubbed or simply get lost. Kid’s offline safety is very important to every parent, nevertheless it is not the only aspect you should think of. Online security for children is now in the rise. With online [&hellip;]" />
+<meta name="twitter:title" content="mSpy – an App For Your Child’s Online Safety" />
+<meta name="twitter:site" content="@thenextweb" />
+<meta name="twitter:image" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2Fmspy.png&amp;signature=517211a813e93199560b21b00cb4cd81" />
+<meta name="twitter:creator" content="@qasimexpert" />
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript' src='https://thenextweb.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://thenextweb.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://thenextweb.com/wp-content/plugins/wordlift-tnw/public/js/wordlift-tnw-public.js?ver=1.5.0-dev'></script>
+<link rel='https://api.w.org/' href='https://thenextweb.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thenextweb.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thenextweb.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://thenextweb.com/?p=1037136' />
+<link rel="alternate" type="application/json+oembed" href="https://thenextweb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thenextweb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F&amp;format=xml" />
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@id":"#Breadcrumb","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/thenextweb.com\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"name":null,"@id":"https:\/\/thenextweb.com\/"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/thenextweb.com\/guests\/mspy-spy-app-review\/","name":"mSpy \u2013 an App For Your Child\u2019s Online Safety"}}]}</script>
+        <!-- JSON-LD cached: no-->
+        <script type="application/ld+json">[{"@context":"http:\/\/schema.org","@id":"http:\/\/data.thenextweb.com\/tnw\/tnw_guest_post\/mspy_-_an_app_for_your_childs_online_safety","@type":"WebPage","description":"Whenever your kid is late from a friend\u2019s house you cannot but worry that he\/she might be in trouble, rubbed or simply get lost. Kid\u2019s offline safety is very important to every parent, nevertheless it is not the only aspect you should think of. Online security for children is now in the rise. With online...","mainEntityOfPage":"https:\/\/thenextweb.com\/guests\/mspy-spy-app-review\/","image":[{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2017\/04\/mspy.png","width":1200,"height":675},{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2017\/04\/mspy.png","width":1404,"height":790}],"headline":"mSpy \u2013 an App For Your Child\u2019s Online Safety","datePublished":"2017-04-10T10:06","dateModified":"2017-04-10T10:06","wordCount":852,"publisher":{"@type":"Organization","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/the_next_web","name":"The Next Web","sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","index.html\/\/www.facebook.com\/thenextweb","index.html\/\/www.twitter.com\/thenextweb","index.html\/\/plus.google.com\/+TheNextWeb\/","index.html\/\/instagram.com\/thenextweb","index.html\/\/www.youtube.com\/user\/thenextweb","index.html\/\/www.pinterest.com\/thenextweb\/","index.html\/\/www.linkedin.com\/company\/the-next-web","index.html\/\/vine.co\/thenextweb","index.html\/\/thenextweb.tumblr.com","index.html\/\/soundcloud.com\/thenextweb","index.html\/\/vimeo.com\/thenextweb","index.html\/\/vk.com\/thenextweb","index.html\/\/www.slideshare.net\/thenextweb","index.html\/\/flipboard.com\/@thenextweb","index.html\/\/storify.com\/thenextweb","index.html\/\/www.stumbleupon.com\/channel\/thenextweb","index.html\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"]},"author":{"@type":"Person","@id":"http:\/\/data.thenextweb.com\/tnw\/user\/syed-abbas","name":"Syed Qasim Abbas"}}]</script>
+		
+<link rel="amphtml" href="https://thenextweb.com/guests/mspy-spy-app-review/amp/" />
+<script>
+  (function (s,o,n,a,r,i,z,e) {s['StackSonarObject']=r;s[r]=s[r]||function(){
+  (s[r].q=s[r].q||[]).push(arguments)},s[r].l=1*new Date();i=o.createElement(n),
+  z=o.getElementsByTagName(n)[0];i.async=1;i.src=a;z.parentNode.insertBefore(i,z)
+  })(window,document,'script','https://www.stack-sonar.com/ping.js','stackSonar');
+
+  stackSonar('stack-connect-wp', "xbcLoqGe2L037SCrJ_Im4A");
+</script>
+<!--  WP_HEAD   -->
+
+<meta property="twitter:account_id" content="10876852">
+<meta property="fb:app_id" content="378011798897423">
+<link href="https://plus.google.com/115081025762845243709/" rel="publisher">
+<meta property="fb:pages" content="106976563522"><!-- TNW -->
+<meta property="fb:pages" content="136548879865026"><!-- TNW Conference -->
+<meta property="fb:pages" content="252857631761065"><!-- TNW NYC -->
+<meta property="fb:pages" content="665773266831844"><!-- Deals -->
+<meta name="yandex-verification" content="66df89eec58f9170">
+
+<meta property="bt:body" content="Whenever your kid is late from a friend’s house you cannot but worry that he/she might be in trouble, rubbed or simply get lost. Kid’s offline safety is very important to every parent, nevertheless it is not the only aspect you should think of.
+
+Online security for children is now in the rise. With online dangers like cyberbullying, sexting, online predators and simple online theft you have to think of the ways how you can prevent it. Every parent has to take necessary actions because internet is no more a safe place for kids. It’s your responsibility to direct your kids towards the good and pleasant side of the internet. Using a parental control app will surely help you protect your child from any kind of harassment and involvement in suspicious activities.
+
+Technology is here to help with several parental control apps available, we have reviewed 10 most popular monitoring apps for children and decided to pay special attention to mSpy parental control app.
+
+mSpy has prepared an social ad regarding parental control awareness &amp;amp; kid’s online safety. They have decided to send this commercial to Cannes Lions (Global Campaign for Creativity).Be the first to watch it...
+
+[video width=&quot;1280&quot; height=&quot;720&quot; mp4=&quot;https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2017/04/mSpy-best-parental-control-app-for-your-kid’s-online-safety.mp4&quot;][/video]
+
+Monitoring Benefits You Can Achieve From mSpy Parental Control App
+The internet world has now become a scary place where hounding is the norm.  This is the major cause of anxiety and suicide among the kids. Nevertheless, parents can save them from this miserable situation by monitoring them with the help of a parental control app, through the whole time they surf the internet.
+
+While choosing a parental control app, users always want to know about its features and installation criteria. A monitoring app should be perfectly compatible with available platforms and devices.  Enhanced software and hardware compatibility means you can flawlessly achieve desired monitoring benefits.  mSPY is compatible with both iOS and Android platforms and perform precise monitoring of your kid’s online activities. mSpy  parental control app delivers the following  monitoring benefits to its users.
+
+Know Their Exact GPS Location:  
+
+With mSpy parental control app, you can locate the place where your kids are at every point of time. This app will help you track their GPS location any time you want. As a parent you will always know which function or extra circular activities they are performing.
+
+View Call Logs Conveniently:
+
+You can easily manage calls of your kids in a convenient fashion with the help of mSpy parental control app. You have an easy access to all call logs and contact history to prevent your kids from communicating with starngers.
+
+Track You Kids Activities:
+
+mSpy helps you track all the suspicious activities and restrict your kids’ before they are engaged in any activity which can  affect your  status and credibility among your  friend’s circle and community. With this parent control app, you can be sure that your kids are now with the right crowd.
+
+Complete Control Of Content: 
+
+Parents can now have a complete control of the content, which their kids watch online. They can easily get the precise information about the websites, apps and media which their kids browse on smartphones or tablets. They can track the following content via mspy parental control app.
+
+ 	Facebook Messenger
+ 	WhatsApp
+ 	Skype
+ 	Viber
+ 	Emails
+ 	Keylogger
+ 	Tinder
+ 	Snapchat
+ 	LINE
+ 	Viber
+ 	Keyword search
+
+ Your Consent is Essential
+As the guardian of your house it’s your duty to make sure that every time your child purchases any suspicious app or surfs internet for connecting friends, your consent must be there. Never allow your child to purchase any internet item without your permission. A parental control app can help you to restrict your children from purchasing such apps without your consent. mSpy parental control app is there for you to prevent any acceptance of malicious app by your child through which inappropriate media is being exchanged, and your phone contacts &amp;amp; personal information is exposed to potential intruder.
+Effects of Leaving Kids without Parent Control App
+Leaving your child unguarded can simply affect your inner peace. If you love them, you have to take every step to protect them from any kind of online unethical or sexual activity that can cause trouble for you. Kids always want to make new friends, but it’s your obligation to address them before they meet a new friend. You must know, what they are doing online and whom they are chatting or texting with. Online predators are always in search of those kids, whom are unguarded from their parents.
+
+mSpy is close to be best parental control app available worldwide, which is especially designed for guardians and parents to monitor their kid’s online activities and control them before they become the victims of online harassment.
+
+mSpy parental control app is available in three several packages with the most popular: Basic, Premium and No Jailbreak solution.  It’s the best available solution for you to save your kids from any kind of online harassment and cyberbullying. 24/7 customer care service is a big plus when it comes to installation and support while using mSpy products.">
+<meta name="author" content="Syed Qasim Abbas">
+<!-- Cookie consent -->
+<script>
+    function hideCookieConsent() {
+        document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace(/(?:^|\s)no-cookies(?!\S)/g, '');
+    }
+
+    function showCookieConsent() {
+        document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className += " no-cookies";
+    }
+
+    function setCookieConsentCookie() {
+        var exdays = 365;
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value = escape("1") + ((exdays == null) ? "" : "; path=/; expires=" + exdate.toUTCString());
+        document.cookie = "tnw_cookie_consent" + "=" + c_value;
+    }
+
+    function cookiesAccepted() {
+        setCookieConsentCookie();
+        hideCookieConsent();
+    }
+
+    (function() {
+        var cookie = "tnw_cookie_consent";
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + cookie + "=");
+        if (parts.length == 1) {
+            showCookieConsent();
+        }
+    })();
+</script>
+<script type="text/javascript">
+var Phoenix = window.Phoenix || {};
+Phoenix.EQ = window.Phoenix.EQ || [];
+
+(function() {
+    var purl = window.location.href;
+    var url = '//ads.pubmatic.com/AdServer/js/pwt/156315/938';
+    var profileVersionId = '';
+    if(purl.indexOf('pwtv=')>0){
+                    var regexp = /pwtv=(.*?)(&|$)/g;
+                    var matches = regexp.exec(purl);
+                    if(matches.length >= 2 && matches[1].length > 0){
+                        profileVersionId = '/'+matches[1];
+                    }
+    }
+    var wtads = document.createElement('script');
+    wtads.async = true;
+    wtads.type = 'text/javascript';
+    wtads.src = url+profileVersionId+'/pwt.js';
+    var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(wtads, node);
+})();
+
+</script>
+
+<script type="text/javascript">
+Phoenix.EQ.push(
+    function(){
+        <!-- enableSingleRequestCallMode enables to make single request -->
+        Phoenix.enableSingleRequestCallMode();
+        Phoenix.setInfo('ACCID', '156315');
+        Phoenix.setInfo('SEC', '1');
+
+                Phoenix.setCommonTargeting('postId', ['1037136']);
+        Phoenix.setCommonTargeting('sponsorName', ['']);
+        Phoenix.setCommonTargeting('isSponsoredPost', ['No']);
+        Phoenix.setCommonTargeting('isSponsoredCategory', ['No']);
+    }
+);
+</script>
+
+<script type="text/javascript">
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+
+	window.dataLayer = window.dataLayer || [];
+</script>
+
+ <script type="text/javascript">
+
+    var IS_MOBILE = false;
+
+    var APP_LOCALE = {
+        country: "FR",
+        region: "EU",
+        city: ""
+    };
+
+    dataLayer.push({
+        'location': [
+            APP_LOCALE
+        ]
+    });
+</script> 
+<!-- DataLayer -->
+    <script type="text/javascript">dataLayer.push({"version":"4 \/ 4.9.8","page":[{"template":"article","ads":[{"siteskin":0,"sponsored":0}]}],"user":[{"shares":[{"fb":0,"tw":0,"li":0,"go":0,"re":0}]}]});</script>
+    <script type="text/javascript">dataLayer.push({"page":[{"id":1037136,"url":"https:\/\/thenextweb.com\/guests\/mspy-spy-app-review\/","words":917,"time":"12:06 pm","column":0,"fyi":0,"author":"Syed Qasim Abbas","date":"2017-04-10","date_published":"2017-04-10 12-06","date_published_week":"2017-15","type":"Article","post-status":"publish","videos":1,"tags":[],"categories":[],"sections":[],"companies":[],"profiles":[],"events":[],"topics":[],"wordlift":[],"comments":"0","social_title":"mSpy \u2013 an App For Your Child\u2019s Online Safety","shares":{"fb":"","tw":"","li":"","go":"","re":""},"ads":{"roadblocked":0,"sponsor":"","sponsoredCategory":"No","sponsored":"No","client":null,"campaign_name":null,"product_type":null}}]});</script>
+
+<!-- Google Tag Manager -->
+<script>
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-MHDDSC');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe height="0" src="http://www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+    <link rel="next" href="https://thenextweb.com/plugged/2019/02/05/valentines-day-boyfriend-girlfriend-husband-wife/" />
+
+<script type='text/javascript'>
+    
+    if(APP_LOCALE.country == 'UK'){
+       var wamid = '5906';
+    }
+    else if(APP_LOCALE.country == 'FR'){
+       var wamid = '6189';
+    }
+    else if(APP_LOCALE.country == 'DE'){
+       var wamid = '6190';
+    }
+    else{
+       var wamid = '4925';
+    }
+    
+    var typ = '1';
+    var Wvar ={    
+       "tnw-keywords": [],
+       "tnw-category": ["thenextweb"]
+    };
+    
+    
+
+    (function(){
+        var w = document.createElement("script");
+        w.type = "text/javascript";
+        w.src = document.location.protocol + "//cstatic.weborama.fr/js/wam/customers/wamfactory_dpm.wildcard.min.js?rnd="+new Date().getTime();
+        w.async = true;
+        var body = document.getElementsByTagName('script')[0];
+        body.parentNode.insertBefore(w,body);
+    })();
+</script>
+    
+<script>
+/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-touch-cssclasses-teststyles-prefixes
+ */
+;window.Modernizr=function(a,b,c){function w(a){j.cssText=a}function x(a,b){return w(m.join(a+";")+(b||""))}function y(a,b){return typeof a===b}function z(a,b){return!!~(""+a).indexOf(b)}function A(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:y(f,"function")?f.bind(d||b):f}return!1}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n={},o={},p={},q=[],r=q.slice,s,t=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},u={}.hasOwnProperty,v;!y(u,"undefined")&&!y(u.call,"undefined")?v=function(a,b){return u.call(a,b)}:v=function(a,b){return b in a&&y(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=r.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(r.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(r.call(arguments)))};return e}),n.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:t(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var B in n)v(n,B)&&(s=B.toLowerCase(),e[s]=n[B](),q.push((e[s]?"":"no-")+s));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)v(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},w(""),i=k=null,e._version=d,e._prefixes=m,e.testStyles=t,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+q.join(" "):""),e}(this,this.document);
+</script>
+</head>
+
+    <body class="is-article with-nav-message">
+        
+<nav class="nav">
+    <div class="nav-logo">
+        <a href="https://thenextweb.com/" title="The Next Web"  data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">
+            <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+        </a>
+        <ul class="nav-logo-popout">
+            <li><a class="is-active" href="https://thenextweb.com/"  data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+            <li><a href="https://thenextweb.com/conference/" ref="" target="_blank"  data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Events</a>
+            </li>
+            <li><a href="https://index.co/" rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li>
+            <li><a href="https://tq.co/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="TQ" data-event-non-interaction="true">TQ</a></li>
+            <li><a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=navbar" rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li>
+            <li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li>
+            <li><a href="https://thenextweb.com/x/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="TNW X" data-event-non-interaction="true">TNW X</a></li>
+        </ul>
+    </div>
+    <ul class="nav-tnw" role="navigation">
+        <li><a class="is-active" href="https://thenextweb.com/"  data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+        <li><a href="https://thenextweb.com/conference/"  target="_blank"  data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Events ▾</a>
+            <ul class="nav-tnw-dropdown-menu">
+                <li>
+                    <a href="https://thenextweb.com/conference/">TNW Conference 2019</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/hardfork-decentralized/">Hard Fork Decentralized 2018</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://index.co/"  target="_blank"  data-event-category="Top" data-event-action="Navigation" data-event-label="Business" data-event-non-interaction="true">Business ▾</a>
+            <ul class="nav-tnw-dropdown-menu">
+                <li>
+                    <a href="https://index.co/">Index</a>
+                </li>
+                <li>
+                    <a href="https://thenextweb.com/x/">TNW X</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">AMAs</a></li>
+        <li><a href="https://tq.co/" rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Navigation" data-event-label="TQ" data-event-non-interaction="true">Spaces</a></li>
+     </ul>
+    <div class="u-clear" role="navigation">
+
+                    <ul class="nav-sections">
+        <li class="nav-sections-section"><a href="https://thenextweb.com/latest"  data-event-category="Top" data-event-action="Channels" data-event-label="Latest" data-event-non-interaction="true">Latest</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/hardfork"  data-event-category="Top" data-event-action="Channels" data-event-label="Hard Fork" data-event-non-interaction="true">Hard Fork</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/plugged"  data-event-category="Top" data-event-action="Channels" data-event-label="Plugged" data-event-non-interaction="true">Plugged</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/the-next-police"  data-event-category="Top" data-event-action="Channels" data-event-label="The Next Police" data-event-non-interaction="true">The Next Police</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/adobe-fundamentals"  data-event-category="Top" data-event-action="Channels" data-event-label="Fundamentals" data-event-non-interaction="true">Fundamentals</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/iot-lab"  data-event-category="Top" data-event-action="Channels" data-event-label="IoT Lab" data-event-non-interaction="true">IoT Lab</a></li>
+        <li class="nav-sections-section"><a href="https://thenextweb.com/investing-2-0"  data-event-category="Top" data-event-action="Channels" data-event-label="Investing 2.0" data-event-non-interaction="true">Investing 2.0</a></li>
+    </ul>
+ 
+        <div class="nav-countdown tnw-countdown" data-deadline="1557388800">
+	<div class="nav-countdown-wrapper">
+		<div class="nav-countdown-conf-ams17">
+			<img alt="TNW Conference" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/conf-ams17-logo-red.svg">
+			<div class="nav-countdown-conf-ams17-text">
+				STARTS IN
+			</div>
+                       <a href="https://thenextweb.com/conference/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=nav-link" target="_blank">
+                               <div class="nav-countdown-conf-ams17-timer">
+                                       <span class="nav-countdown-conf-ams17-item countdown-timer-unit-d">
+                                               <span class="nav-countdown-conf-ams17-timer-count countdown-timer-count">&#183;</span>
+                                       </span>
+                                      :
+                                       <span class="nav-countdown-conf-ams17-item countdown-timer-unit-h">
+                                               <span class="nav-countdown-conf-ams17-timer-count countdown-timer-count">&#183;</span>
+                                       </span>
+                                       :
+                                       <span class="nav-countdown-conf-ams17-item countdown-timer-unit-m">
+                                               <span class="nav-countdown-conf-ams17-timer-count countdown-timer-count">&#183;</span>
+                                       </span>
+                                       :
+                                       <span class="nav-countdown-conf-ams17-item countdown-timer-unit-s">
+                                               <span class="nav-countdown-conf-ams17-timer-count countdown-timer-count">&#183;</span>
+                                       </span>
+                               </div>
+                       </a>
+                       <a href="https://thenextweb.com/conference/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=nav-link" class="btn" target="_blank">GET TICKETS</a>
+
+		</div>
+	</div>
+</div>
+
+        <ul class="nav-icons">
+            <li class="cookieConsent">
+                <a href="#"><i class="icon icon--cookie"></i></a>
+                <div class="cookieConsent-popOut">
+                    <header>
+                        <h2>Have a cookie</h2>
+                    </header>
+                    <main>
+                        <p>
+                            TNW uses cookies to personalize content and ads to
+                            make our site easier for you to use.
+                            We do also share that information with third parties for
+                            advertising &amp; analytics.
+                        </p>
+                    </main>
+                    <footer>
+                        <a class="button button--small" onclick="cookiesAccepted();"  data-event-category="Top" data-event-action="Cookies" data-event-label="OK" data-event-non-interaction="true">Got it!</a>
+                        <span>
+                            or <a href="https://thenextweb.com/privacy-policy/"  data-event-category="Top" data-event-action="Cookies" data-event-label="More information" data-event-non-interaction="true">More info</a>
+                        </span>
+                    </footer>
+                </div>
+            </li>
+            <li><a id="search--open" href="#"><i class="icon icon--search--dark"></i></a>
+                <!--
+                <li><a href="#"><i class="icon icon--user--dark"></i></a>
+                -->
+            <li>
+                <a class="nav-mob-toggle" id="nav-mob-toggle" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+        <!--
+        <ul class="nav-follow">
+            <li><a  data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true" href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank"  rel="noopener"><i class="icon icon--facebook--dark"></i></a>
+            <li><a  data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true" href="https://www.twitter.com/thenextweb" title="Follow us on Twitter" target="_blank"  rel="noopener"><i class="icon icon--twitter--dark"></i></a>
+            <li class="nav-follow-extra">
+                <ul>
+                    <li><a href="https://plus.google.com/+TheNextWeb" title="Follow us on Google+" target="_blank"  rel="noopener"  data-event-category="Top" data-event-action="Social" data-event-label="Google+" data-event-non-interaction="true"><i class="icon icon--google--dark"></i></a>
+                    <li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn"  rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--dark"></i></a>
+                    <li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube"  rel="noopener" target="_blank"  data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--dark"></i></a>
+                    <li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank"  rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--dark"></i></a>
+                    <li><a href="http://pinterest.com/thenextweb/" title="Follow us on Pinterest" target="_blank"  rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--dark"></i></a>
+                    <li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank"  rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="RSS" data-event-non-interaction="true"><i class="icon icon--rss--dark"></i></a>
+                </ul>
+            </li>
+            <li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--dark"></i></a>
+            <li class="nav-follow-more nav-follow-toggle"><a href="#"><i class="icon icon--more--dark"></i></a>
+            <li class="nav-follow-less nav-follow-toggle"><a href="#"><i class="icon icon--close"></i></a>
+        </ul>
+        -->
+
+    </div>
+
+    <div class="nav-mob">
+        <div class="nav-mob-content">
+            <ul class="nav-mob-follow">
+                <li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--light"></i></a>
+                <li><a href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a></li><li><a href="https://twitter.com/thenextweb" title="Follow us on Twitter" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a></li><li><a href="https://plus.google.com/+TheNextWeb" title="Follow us on Google+" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Google+" data-event-non-interaction="true"><i class="icon icon--google--light"></i></a></li><li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--light"></i></a></li><li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a></li><li><a href="https://pinterest.com/thenextweb" title="Follow us on Pinterest" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a></li><li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a></li><li><a href="http://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="RSS Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a></li>            </ul>
+            <div class="u-row">
+                <div class="u-col-xs-6">
+                    <h5>Sections</h5>
+                    <ul class="nav-mob-menu">
+                        <li><a href="https://thenextweb.com/latest"  data-event-category="Top" data-event-action="Sections" data-event-label="Latest" data-event-non-interaction="true">Latest</a></li>
+                        <li><a href="https://thenextweb.com/section/insights"  data-event-category="Top" data-event-action="Sections" data-event-label="Insights" data-event-non-interaction="true">Insights</a></li>
+                        <li><a href="https://thenextweb.com/hardfork/"  data-event-category="Top" data-event-action="Sections" data-event-label="Hard Fork" data-event-non-interaction="true">Hard Fork</a></li>
+                        <li><a href="https://thenextweb.com/plugged/"  data-event-category="Top" data-event-action="Sections" data-event-label="Plugged" data-event-non-interaction="true">Plugged</a></li>
+                        <li><a href="https://thenextweb.com/the-next-police/"  data-event-category="Top" data-event-action="Sections" data-event-label="The Next Police" data-event-non-interaction="true">The Next Police</a></li>
+                        <li><a href="https://thenextweb.com/adobe-fundamentals/"  data-event-category="Top" data-event-action="Sections" data-event-label="Fundamentals" data-event-non-interaction="true">Fundamentals</a></li>
+                        <li><a href="https://thenextweb.com/iot-lab/"  data-event-category="Top" data-event-action="Sections" data-event-label="IoT Lab" data-event-non-interaction="true">IoT Lab</a></li>
+                        <li><a href="https://thenextweb.com/investing-2-0/"  data-event-category="Top" data-event-action="Sections" data-event-label="Investing 2.0" data-event-non-interaction="true">Investing 2.0</a></li>
+                    </ul>
+                </div>
+                <div class="u-col-xs-6">
+                    <h5>About TNW</h5>
+                    <ul class="nav-mob-menu">
+                    <li><a href="https://thenextweb.com/about" data-event-category="Top" data-event-action="Navigation" data-event-label="About" data-event-non-interaction="true">About</a></li><li><a href="https://thenextweb.com/team" data-event-category="Top" data-event-action="Navigation" data-event-label="Team" data-event-non-interaction="true">Team</a></li><li><a href="https://tnwads.typeform.com/to/ofLLXt" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a></li><li><a href="https://thenextweb.com/jobs" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li><li><a href="https://thenextweb.com/about#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a></li>                    </ul>
+                    <h5>TNW Sites</h5>
+                    <ul class="nav-mob-menu">
+                        <li><a href="https://thenextweb.com/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li><li><a href="https://thenextweb.com/conference/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Conference</a></li><li><a href="https://thenextweb.com/hardfork-decentralized/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Hard Fork Decentralized" data-event-non-interaction="true">Hard Fork Decentralized</a></li><li><a href="https://index.co/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li><li><a href="https://tq.co/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="TQ" data-event-non-interaction="true">TQ</a></li><li><a href="http://deals.thenextweb.com/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li><li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li><li><a href="http://cc.thenextweb.com/" target="_blank" rel="noopener"  data-event-category="Top" data-event-action="Navigation" data-event-label="Cyberspace Culture" data-event-non-interaction="true">Cyberspace Culture</a></li>                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a data-event-category="Top" data-event-action="Announcement bar" data-event-label="TNW Answers" href="https://thenextweb.com/conference/speakers" target="_blank"  rel="noopener">
+	<div class="nav-message nav-message-answers">
+			The inventor of the hashtag is speaking at TNW2019! Check out the full lineup so far →	</div>
+</a>
+
+</nav>
+        <main class="main">
+
+        <div class="tnw-ad TNW_MS_ARTL_RM"></div>
+
+    
+
+
+
+    <div id="TNW_DSKT_ARTL_BB_1037136" class="tnw-ad TNW_DSKT_ARTL_BB"></div>
+
+    
+
+
+
+    <div class="sheet " id="sheet-1037136">
+        
+        <div class="wrapper">
+            <div class="split">
+                <div class="content">
+                    <article class="post">
+                        
+<header class="post-header">
+    <h1 class="u-m-0_25">mSpy – an App For Your Child’s Online Safety</h1>
+    <div class="post-byline u-m-1_5">
+        <a  data-event-category="Article" data-event-action="Author - Syed Qasim Abbas" data-event-label="Profile" data-event-non-interaction="true" class="lazy post-authorPhoto"  data-src="https://secure.gravatar.com/avatar/b894095c5a695e059f0ad8bd669b79b1?s=64&d=blank&r=g" data-src-hd="https://secure.gravatar.com/avatar/b894095c5a695e059f0ad8bd669b79b1?s=128&d=blank&r=g"           href="https://thenextweb.com/author/syed-abbas/" title="Syed Qasim Abbas"></a>
+
+        <p>
+            by <a class="post-authorName" href="https://thenextweb.com/author/syed-abbas/"  data-event-category="Article" data-event-action="Author - Syed Qasim Abbas" data-event-label="Profile" data-event-non-interaction="true">Syed Qasim Abbas</a>
+            &mdash; <time datetime="2017-04-10T12:06:48+00:00" class="timeago"></time>
+                    </p>
+    </div>
+</header>
+                        <div class="post-imageBleed">
+                                                                <div class="post-featuredImage u-m-1_5">
+                                                                                    <img alt="mspy" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/04/mspy-796x448.png">
+                                                                                                                    </div>
+                                                            </div>
+                        <ul class="post-actions post-actions--top u-m-1_5">
+    <li class="post-actions-shares">
+        <div class="post-actions-shares-count">27</div>
+        <div class="post-actions-shares-label">shares</div>
+    </li>
+
+        <li class="multi-btn multi-btn--first">
+        
+	<a class="post-actions-share post-actions-share--facebook popitup gtm-social-top"
+		data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F#shared-facebook"
+		data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-network="Facebook"
+		data-url="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F%3Futm_source%3Dfacebook%26utm_medium%3Dreferral%26utm_content%3DmSpy%252B%2525E2%252580%252593%252Ban%252BApp%252BFor%252BYour%252BChild%2525E2%252580%252599s%252BOnline%252BSafety&amp;p[title]=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2Fmspy.png&amp;p[summary]=Whenever+your+kid+is+late+from+a+friend%E2%80%99s+house+you+cannot+but+worry+that+he%2Fshe+might+be+in+trouble%2C+rubbed+or+simply+get+lost.+Kid%E2%80%99s+offline+safety+is+very+important+to+every+...&amp;u=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F%3Futm_source%3Dfacebook%26utm_medium%3Dreferral%26utm_content%3DmSpy%252B%2525E2%252580%252593%252Ban%252BApp%252BFor%252BYour%252BChild%2525E2%252580%252599s%252BOnline%252BSafety&amp;t=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-width="850"
+		data-height="500"
+		href="#"
+		 data-event-category="Article" data-event-action="Share" data-event-label="Facebook" data-event-non-interaction="true" >
+		<i class="icon icon--facebook--light"></i>
+	</a>
+
+	    </li>
+        <li class="multi-btn multi-btn--last post-actions-dropdown-toggle"  data-event-category="Article" data-event-action="Share" data-event-label="Facebook - Bookmark" data-event-non-interaction="true">
+        <div class="post-actions-share post-actions-share--facebook with-tooltip" data-tooltip="Save to Facebook">
+            <i class="icon icon--bookmark--light"></i>
+        </div>
+        <div class="post-actions-dropdown">
+            <div class="fb-save" data-uri="https://thenextweb.com/guests/mspy-spy-app-review/" data-size="large"></div>
+        </div>
+    </li>
+ <li> 
+	<a class="post-actions-share post-actions-share--twitter popitup gtm-social-top"
+		data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F#shared-twitter"
+		data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-network="Twitter"
+		data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F%3Futm_source%3Dtwitter%26utm_medium%3Dreferral%26utm_content%3DmSpy%252B%2525E2%252580%252593%252Ban%252BApp%252BFor%252BYour%252BChild%2525E2%252580%252599s%252BOnline%252BSafety&amp;via=thenextweb&amp;related=thenextweb&amp;text=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-width="685"
+		data-height="500"
+		href="#"
+		 data-event-category="Article" data-event-action="Share" data-event-label="Twitter" data-event-non-interaction="true" >
+		<i class="icon icon--twitter--light"></i>
+	</a>
+
+	 </li>  <li> 
+	<a class="post-actions-share post-actions-share--linkedin popitup gtm-social-top"
+		data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F#shared-linkedin"
+		data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-network="LinkedIn"
+		data-url="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F%3Futm_source%3Dlinkedin%26utm_medium%3Dreferral%26utm_content%3DmSpy%252B%2525E2%252580%252593%252Ban%252BApp%252BFor%252BYour%252BChild%2525E2%252580%252599s%252BOnline%252BSafety"
+		data-width="510"
+		data-height="500"
+		href="#"
+		 data-event-category="Article" data-event-action="Share" data-event-label="LinkedIn" data-event-non-interaction="true" >
+		<i class="icon icon--linkedin--light"></i>
+	</a>
+
+	 </li>  <li> 
+	<a class="post-actions-share post-actions-share--reddit popitup gtm-social-top"
+		data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F#shared-reddit"
+		data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-network="Reddit"
+		data-url="http://www.reddit.com/submit?url=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F%3Futm_source%3Dreddit%26utm_medium%3Dreferral%26utm_content%3DmSpy%252B%2525E2%252580%252593%252Ban%252BApp%252BFor%252BYour%252BChild%2525E2%252580%252599s%252BOnline%252BSafety"
+		data-width="860"
+		data-height="500"
+		href="#"
+		 data-event-category="Article" data-event-action="Share" data-event-label="Reddit" data-event-non-interaction="true" >
+		<i class="icon icon--reddit--light"></i>
+	</a>
+
+	 </li> 
+        <li>
+            <a class="post-actions-share post-actions-share--whatsapp gtm-social-top"
+                href="whatsapp://send?text=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety - https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F"
+                target="_blank">
+                <i class="icon icon--whatsapp--light"  data-event-category="Article" data-event-action="Share" data-event-label="whatsapp" data-event-non-interaction="true"></i>
+            </a>
+        </li>
+
+         <li> 
+	<a class="post-actions-share post-actions-share--flipboard popitup gtm-social-top"
+		data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F#shared-flipboard"
+		data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety"
+		data-network="Flipboard"
+		data-url="https://share.flipboard.com/bookmarklet/popout?url=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F%3Futm_source%3Dflipboard%26utm_medium%3Dreferral%26utm_content%3DmSpy%252B%2525E2%252580%252593%252Ban%252BApp%252BFor%252BYour%252BChild%2525E2%252580%252599s%252BOnline%252BSafety"
+		data-width="600"
+		data-height="500"
+		href="#"
+		 data-event-category="Article" data-event-action="Share" data-event-label="Flipboard" data-event-non-interaction="true" >
+		<i class="icon icon--flipboard--light"></i>
+	</a>
+
+	 </li> 
+        <li>
+            <a class="post-actions-share post-actions-share--mail gtm-social-top"
+                href="mailto:?subject=mSpy – an App For Your Child’s Online Safety&body=https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F"
+                target="_blank">
+                <i class="icon icon--mail--light"  data-event-category="Article" data-event-action="Share" data-event-label="mail" data-event-non-interaction="true"></i>
+            </a>
+        </li>
+
+            <li class="post-actions-shortUrl with-tooltip" data-clipboard-text="https://tnw.to/2nZvmI2" data-tooltip="Copy to Clipboard" data-tooltip-success="Copied">
+        <i class="icon icon--share"></i>
+        <input class="shortUrl gtm-social-top" name="short_url_top" type="text" value="https://tnw.to/2nZvmI2"   data-event-category="Article" data-event-action="Share" data-event-label="Copy Paste Link" data-event-non-interaction="true">
+    </li>
+</ul>
+    
+    <div id="TNW_DSKT_ARTL_LB_ATF_1037136" class="tnw-ad TNW_DSKT_ARTL_LB_ATF"></div>
+
+    
+
+
+    <div class="tnw-ad TNW_MS_ARTL_MPU_ATF"></div>
+
+    
+
+
+
+                        <div class="post-body fb-quotable u-m-3">
+                            <p>Whenever your kid is late from a friend’s house you cannot but worry that he/she might be in trouble, rubbed or simply get lost. Kid’s offline safety is very important to every parent, nevertheless it is not the only aspect you should think of.</p>
+<p>Online security for children is now in the rise. With online dangers like cyberbullying, sexting, online predators and simple online theft you have to think of the ways how you can prevent it. Every parent has to take necessary actions because internet is no more a safe place for kids. It’s your responsibility to direct your kids towards the good and pleasant side of the internet. Using a parental control app will surely help you protect your child from any kind of harassment and involvement in suspicious activities.</p>
+<p>Technology is here to help with several parental control apps available, we have reviewed 10 most popular monitoring apps for children and decided to pay special attention to <a href="../../../www.mspy.com/index.html" rel="nofollow noopener" target="_blank">mSpy</a> parental control app.</p>
+<p><strong>mSpy has prepared an social ad regarding parental control awareness &amp; kid’s online safety. They have decided to send this commercial to Cannes Lions (Global Campaign for Creativity).Be the first to watch it…</strong></p>
+<div style="width: 1280px;" class="wp-video">
+<!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
+<video class="wp-video-shortcode" id="video-1037136-1" width="1280" height="720" preload="metadata" controls="controls"><source type="video/mp4" src="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2017/04/mSpy-best-parental-control-app-for-your-kid’s-online-safety.mp4?_=1"></source><a href="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2017/04/mSpy-best-parental-control-app-for-your-kid’s-online-safety.mp4">https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2017/04/mSpy-best-parental-control-app-for-your-kid’s-online-safety.mp4</a></video>
+</div>
+<h2></h2>
+<h2>Monitoring Benefits You Can Achieve From mSpy Parental Control App</h2>
+<p>The internet world has now become a scary place where hounding is the norm.  This is the major cause of anxiety and suicide among the kids. Nevertheless, parents can save them from this miserable situation by monitoring them with the help of a parental control app, through the whole time they surf the internet.</p>
+<p>While choosing a parental control app, users always want to know about its features and installation criteria. A monitoring app should be perfectly compatible with available platforms and devices.  Enhanced software and hardware compatibility means you can flawlessly achieve desired monitoring benefits.  mSPY is compatible with both iOS and Android platforms and perform precise monitoring of your kid’s online activities. mSpy  parental control app delivers the following  monitoring benefits to its users.</p>
+<p><strong>Know Their Exact GPS Location:  </strong></p>
+<p>With mSpy parental control app, you can locate the place where your kids are at every point of time. This app will help you track their GPS location any time you want. As a parent you will always know which function or extra circular activities they are performing.</p>
+<p><strong>View Call Logs Conveniently:</strong></p>
+<p>You can easily manage calls of your kids in a convenient fashion with the help of mSpy parental control app. You have an easy access to all call logs and contact history to prevent your kids from communicating with starngers.</p>
+<p><strong>Track You Kids Activities:</strong></p>
+<p>mSpy helps you track all the suspicious activities and restrict your kids’ before they are engaged in any activity which can  affect your  status and credibility among your  friend’s circle and community. With this parent control app, you can be sure that your kids are now with the right crowd.</p>
+<p><strong>Complete Control Of Content: </strong></p>
+<p>Parents can now have a complete control of the content, which their kids watch online. They can easily get the precise information about the websites, apps and media which their kids browse on smartphones or tablets. They can track the following content via mspy parental control app.</p>
+<ul>
+<li>Facebook Messenger</li>
+<li>WhatsApp</li>
+<li>Skype</li>
+<li>Viber</li>
+<li>Emails</li>
+<li>Keylogger</li>
+<li>Tinder</li>
+<li>Snapchat</li>
+<li>LINE</li>
+<li>Viber</li>
+<li>Keyword search</li>
+</ul>
+<h3> Your Consent is Essential</h3>
+<p>As the guardian of your house it’s your duty to make sure that every time your child purchases any suspicious app or surfs internet for connecting friends, your consent must be there. Never allow your child to purchase any internet item without your permission. A parental control app can help you to restrict your children from purchasing such apps without your consent. mSpy parental control app is there for you to prevent any acceptance of malicious app by your child through which inappropriate media is being exchanged, and your phone contacts &amp; personal information is exposed to potential intruder.</p>
+<h3>Effects of Leaving Kids without Parent Control App</h3>
+<p>Leaving your child unguarded can simply affect your inner peace. If you love them, you have to take every step to protect them from any kind of online unethical or sexual activity that can cause trouble for you. Kids always want to make new friends, but it’s your obligation to address them before they meet a new friend. You must know, what they are doing online and whom they are chatting or texting with. Online predators are always in search of those kids, whom are unguarded from their parents.</p>
+<p>mSpy is close to be best parental control app available worldwide, which is especially designed for guardians and parents to monitor their kid’s online activities and control them before they become the victims of online harassment.</p>
+<p>mSpy parental control app is available in three several packages with the most popular: Basic, Premium and No Jailbreak solution.  It’s the best available solution for you to save your kids from any kind of online harassment and cyberbullying. 24/7 customer care service is a big plus when it comes to installation and support while using mSpy products.</p>
+<p style="font-size:13px;color:#999">This post is part of our contributor series. It is written and published independently of TNW.</p>                            
+
+<p class="post-article-read-next">
+    <b>Read next:</b>
+    <a class="gtm-article-read-next"  data-event-category="Article" data-event-action="Next post" data-event-label="" data-event-non-interaction="true" href="https://thenextweb.com/guests/positive-quotes-change-life/">
+        How do positive quotes change your life?    </a>
+</p>
+
+
+                            <div class="post-in-content-tags">
+                                                            </div>
+
+                        </div>
+
+                        
+<ul class="post-share u-row">
+    <li class="u-col-xs-6">
+        <a class="button button--facebook u-w-xs-100 popitup gtm-social-bottom"  data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F" data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety" data-network="Facebook" data-url="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A%2F%2Ftnw.to%2F2nZeP6Y&p[title]=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety&p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2Fmspy.png&p[summary]=Whenever+your+kid+is+late+from+a+friend%E2%80%99s+house+you+cannot+but+worry+that+he%2Fshe+might+be+in+trouble%2C+rubbed+or+simply+get+lost.+Kid%E2%80%99s+offline+safety+is+very+important+to+every+...&u=https%3A%2F%2Ftnw.to%2F2nZeP6Y&t=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety" data-width="850" data-height="500" href="#"   data-event-category="Article" data-event-action="Share" data-event-label="Facebook - Bottom" data-event-non-interaction="true">
+            <i class="icon icon--inline icon--facebook--light"></i> Share<span class="u-showFrom-m"> on Facebook (7)</span>
+        </a>
+    </li>
+    <li class="u-col-xs-6">
+        <a class="button button--twitter u-w-xs-100 popitup gtm-social-bottom"  data-permalink="https%3A%2F%2Fthenextweb.com%2Fguests%2Fmspy-spy-app-review%2F" data-title="mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety" data-network="Facebook" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftnw.to%2F2nZBaRI&via=thenextweb&related=thenextweb&text=mSpy+%E2%80%93+an+App+For+Your+Child%E2%80%99s+Online+Safety" data-width="685" data-height="500" href="#"   data-event-category="Article" data-event-action="Share" data-event-label="Twitter - Bottom" data-event-non-interaction="true">
+            <i class="icon icon--inline icon--twitter--light"></i> Share<span class="u-showFrom-m"> on Twitter (20)</span>
+        </a>
+    </li>
+</ul>
+
+    <div id="TNW_DSKT_ARTL_LB_BTF_1037136" class="tnw-ad TNW_DSKT_ARTL_LB_BTF"></div>
+
+    
+
+
+    <div class="tnw-ad TNW_MS_ARTL_MPU_BTF"></div>
+
+    
+
+
+                    </article>
+                                    </div>
+
+                <aside class="sidebar">
+
+        <div class="tnw-ad TNW_DSKT_ARTL_NLIFT"></div>
+
+    
+
+
+	
+    <div id="TNW_DSKT_ARTL_MPU_ATF_1037136" class="tnw-ad TNW_DSKT_ARTL_MPU_ATF"></div>
+
+    
+
+
+	<section class="most-popular u-m-2" id="most-popular">
+		<h2 class="u-m-1">Most popular</h2>
+		<ul class="u-row">
+			<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/portugal_tech5-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/portugal_tech5-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/portugal_tech5-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/portugal_tech5-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/portugal_tech5-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Most Popular'  data-event-label='1' 	 
+		   href="https://thenextweb.com/business/2019/02/07/here-are-the-5-hottest-startups-in-portugal/"
+		   ></a>
+						<span class="story-rank">1</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='1'  class="gtm-mostpopular" href="https://thenextweb.com/business/2019/02/07/here-are-the-5-hottest-startups-in-portugal/">
+				Here are the 5 hottest startups in Portugal			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='1'  href="https://thenextweb.com/author/andrea-hak/">Andrea Hak</a>
+			</li>
+			<li>
+				<time datetime="2019-02-07T09:00:35+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Google-Password-checkup-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Google-Password-checkup-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Google-Password-checkup-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Google-Password-checkup-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Google-Password-checkup-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Most Popular'  data-event-label='2' 	 
+		   href="https://thenextweb.com/apps/2019/02/06/googles-new-extension-tells-you-if-your-passwords-have-been-compromised/"
+		   ></a>
+						<span class="story-rank">2</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='2'  class="gtm-mostpopular" href="https://thenextweb.com/apps/2019/02/06/googles-new-extension-tells-you-if-your-passwords-have-been-compromised/">
+				Google’s new extension tells you if your passwords have been compromised			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='2'  href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a>
+			</li>
+			<li>
+				<time datetime="2019-02-06T11:36:07+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/WhatsApp-police-hed-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/WhatsApp-police-hed-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/WhatsApp-police-hed-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/WhatsApp-police-hed-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/WhatsApp-police-hed-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Most Popular'  data-event-label='3' 	 
+		   href="https://thenextweb.com/facebook/2019/02/06/how-whatsapp-fights-spam-without-ever-reading-your-messages/"
+		   ></a>
+						<span class="story-rank">3</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='3'  class="gtm-mostpopular" href="https://thenextweb.com/facebook/2019/02/06/how-whatsapp-fights-spam-without-ever-reading-your-messages/">
+				How WhatsApp fights spam without ever reading your messages			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='3'  href="https://thenextweb.com/author/ivanmehta/">Ivan Mehta</a>
+			</li>
+			<li>
+				<time datetime="2019-02-06T11:20:26+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Skype-Background-blur-hed-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Skype-Background-blur-hed-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Skype-Background-blur-hed-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Skype-Background-blur-hed-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Skype-Background-blur-hed-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Most Popular'  data-event-label='4' 	 
+		   href="https://thenextweb.com/basics/2019/02/07/how-to-blur-your-background-on-skype-video-calls/"
+		   ></a>
+						<span class="story-rank">4</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='4'  class="gtm-mostpopular" href="https://thenextweb.com/basics/2019/02/07/how-to-blur-your-background-on-skype-video-calls/">
+				How to blur your background on Skype video calls			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='4'  href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a>
+			</li>
+			<li>
+				<time datetime="2019-02-07T06:03:00+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Most Popular" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-mostpopular"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/blackbox-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Most Popular'  data-event-label='5' 	 
+		   href="https://thenextweb.com/artificial-intelligence/2019/02/07/why-the-criminal-justice-system-should-abandon-algorithms/"
+		   ></a>
+						<span class="story-rank">5</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='5'  class="gtm-mostpopular" href="https://thenextweb.com/artificial-intelligence/2019/02/07/why-the-criminal-justice-system-should-abandon-algorithms/">
+				Why the criminal justice system should abandon algorithms			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Most Popular'  data-event-label='5'  href="https://thenextweb.com/author/tristangreen/">Tristan Greene</a>
+			</li>
+			<li>
+				<time datetime="2019-02-07T01:02:56+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+		</ul>
+	</section>
+    <section class="newsletter u-m-2">
+    <header class="newsletter-header u-m-1">
+        <h2>Never miss out</h2>
+        <p class="u-fontSize-s">Stay tuned with our weekly recap of what’s hot &amp; cool by our CEO <a href="https://thenextweb.com/author/boris">Boris</a>.</p>
+    </header>
+    <form action="https://thenextweb.com/wp-content/themes/cyberdelia/ajax/form/newsletter.php" class="u-m-0_5" data-xhr data-xhr-success="newsletterSuccess" data-xhr-fail="newsletterFail" method="post" onsubmit="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Sign up','eventLabel':'Sidebar','eventNonInteraction':1} );">
+        <div class="newsletter-success">
+            <b>T</b><b>h</b><b>a</b><b>n</b><b>k</b><b>&nbsp;</b><b>y</b><b>o</b><b>u</b><b>!</b>
+        </div>
+        <div class="formField">
+            <div class="formField-withButton">
+                <div class="formField-withIcon u-float-left u-w-xs-75">
+                                    <input class="" name="source" hidden id="source-sidebar-newsletter" style="display: none" value="thenextweb.com/guests/mspy-spy-app-review/">
+                    <input class="formInput formInput--text" name="email" placeholder="Email" type="email" required="">
+                    <i class="icon icon--mail"></i>
+                </div>
+                <button class="button u-float-left u-w-xs-25" type="submit">Do it</button>
+            </div>
+        </div>
+    </form>
+    <p class="u-color-light u-fontSize-s">
+        Join over 260,000 subscribers!
+    </p>
+</section>	    <section class="u-m-1_5" id="whos-hiring">
+		<h2 class="u-m-1">
+			Who's Hiring
+			<div class="whos-hiring-contactus"><a href="mailto:harmen@thenextweb.com?subject=Who’s Hiring">Add your company</a></div>
+		</h2>
+
+		<ul class="u-row">
+                <div class="tnw-ad TNW_DSKT_ARTL_WIH"></div>
+
+    
+
+
+                <div class="tnw-ad TNW_DSKT_ARTL_WIH_2"></div>
+
+    
+
+
+        </ul>
+		</section>
+
+
+	<section class="u-m-1_5" id="latest-stories">
+		<h2 class="u-m-1"><a href="https://thenextweb.com/latest/"  data-event-category="Article" data-event-action="Latest News" data-event-label="Headline" data-event-non-interaction="true">Latest</a></h2>
+		<ul class="u-row">
+			<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Fusion-of-Instagram-Messenger-and-Whatsapp-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Fusion-of-Instagram-Messenger-and-Whatsapp-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Fusion-of-Instagram-Messenger-and-Whatsapp-192x192.jpg 192w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Latest News'  data-event-label='1' 	 
+		   href="https://thenextweb.com/facebook/2019/02/08/why-germany-wants-to-block-facebooks-messenger-instagram-whatsapp-merger/"
+		   ></a>
+						<span class="story-rank">1</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='1'  class="gtm-latestnews" href="https://thenextweb.com/facebook/2019/02/08/why-germany-wants-to-block-facebooks-messenger-instagram-whatsapp-merger/">
+				Why Germany wants to block Facebook's Messenger-Instagram-WhatsApp merger			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='1'  href="https://thenextweb.com/author/vishwamsankaran/">Vishwam Sankaran</a>
+			</li>
+			<li>
+				<time datetime="2019-02-08T09:27:07+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/italy_tech5-96x96.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/italy_tech5-96x96.png 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/italy_tech5-192x192.png 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/italy_tech5-550x550.png 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/italy_tech5-470x470.png 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Latest News'  data-event-label='2' 	 
+		   href="https://thenextweb.com/business/2019/02/08/here-are-the-5-hottest-startups-in-italy/"
+		   ></a>
+						<span class="story-rank">2</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='2'  class="gtm-latestnews" href="https://thenextweb.com/business/2019/02/08/here-are-the-5-hottest-startups-in-italy/">
+				Here are the 5 hottest startups in Italy			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='2'  href="https://thenextweb.com/author/andrea-hak/">Andrea Hak</a>
+			</li>
+			<li>
+				<time datetime="2019-02-08T09:15:15+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/exploding-moon-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/exploding-moon-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/exploding-moon-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/exploding-moon-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/exploding-moon-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Latest News'  data-event-label='3' 	 
+		   href="https://thenextweb.com/space/2019/02/08/project-a119-inside-the-united-states-secret-plan-to-blow-up-the-moon/"
+		   ></a>
+						<span class="story-rank">3</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='3'  class="gtm-latestnews" href="https://thenextweb.com/space/2019/02/08/project-a119-inside-the-united-states-secret-plan-to-blow-up-the-moon/">
+				Project A119: Inside the United States' secret plan to blow up the Moon			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='3'  href="https://thenextweb.com/author/bryanclark/">Bryan Clark</a>
+			</li>
+			<li>
+				<time datetime="2019-02-08T01:59:40+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/gamifylove_header-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/gamifylove_header-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/gamifylove_header-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/gamifylove_header-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/gamifylove_header-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Latest News'  data-event-label='4' 	 
+		   href="https://thenextweb.com/apps/2019/02/08/can-you-gamify-love/"
+		   ></a>
+						<span class="story-rank">4</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='4'  class="gtm-latestnews" href="https://thenextweb.com/apps/2019/02/08/can-you-gamify-love/">
+				Can you gamify love?			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='4'  href="https://thenextweb.com/author/tristangreen/">Tristan Greene</a>
+			</li>
+			<li>
+				<time datetime="2019-02-08T00:46:39+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+	<div
+		class="story story--small"  data-event-category="Article" data-event-action="Latest News" data-event-label="Post" data-event-non-interaction="true">
+		<a class="lazy story-image gtm-latestnews"  data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Optoma-2-of-4-96x96.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Optoma-2-of-4-96x96.jpg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Optoma-2-of-4-192x192.jpg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Optoma-2-of-4-550x550.jpg 550w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/02/Optoma-2-of-4-470x470.jpg 470w" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96"		    data-event-category='Article'  data-event-action='Latest News'  data-event-label='5' 	 
+		   href="https://thenextweb.com/plugged/2019/02/08/review-optomas-uhl55-is-a-versatile-and-flawed-4k-projector-with-google-assistant-and-alexa/"
+		   ></a>
+						<span class="story-rank">5</span>
+						<h4 class="story-title">
+			<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='5'  class="gtm-latestnews" href="https://thenextweb.com/plugged/2019/02/08/review-optomas-uhl55-is-a-versatile-and-flawed-4k-projector-with-google-assistant-and-alexa/">
+				Review: Optoma's UHL55 is a versatile and flawed 4K projector with Google Assistant and Alexa			</a>
+		</h4>
+		<ul class="story-byline">
+			<li>
+				<a  data-event-category='Article'  data-event-action='Latest News'  data-event-label='5'  href="https://thenextweb.com/author/napierlopez/">Napier Lopez</a>
+			</li>
+			<li>
+				<time datetime="2019-02-08T00:09:05+00:00" class="timeago"></time>
+			</li>
+		</ul>
+	</div>
+</li>
+		</ul>
+	</section>
+
+    
+    <div id="TNW_DSKT_ARTL_MPU_BTF_1037136" class="tnw-ad TNW_DSKT_ARTL_MPU_BTF"></div>
+
+    
+
+
+
+</aside>
+
+            </div>
+        </div>
+
+        <script id="sheet-next-article-btn" type="x-tmpl-tnw">
+    <div class="sheet sheet-next-article">
+        <div class="sheet-next-article-wrapper wrapper">
+            <a href="">
+                <span class="sheet-next-article-label">Read Next</span>
+                <span class="sheet-next-article-title"></span>
+            </a>
+        </div>
+    </div>
+</script>
+    </div>
+    <script type="text/javascript" class="teads"  src="http://a.teads.tv/page/74911/tag" async="true"></script>
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-links">
+                <div class="wrapper">
+                    <ul class="footer-links-social">
+                        <li><a href="https://www.facebook.com/thenextweb" target="_blank" rel="noopener"  data-event-category="Footer" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a>
+                        <li><a href="https://twitter.com/thenextweb" target="_blank" rel="noopener"   data-event-category="Footer" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a>
+                        <li><a href="https://www.youtube.com/user/thenextweb" target="_blank" rel="noopener"   data-event-category="Footer" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a>
+                        <li><a href="https://www.instagram.com/thenextweb" target="_blank" rel="noopener"   data-event-category="Footer" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a>
+                        <li><a href="https://www.pinterest.com/thenextweb" target="_blank" rel="noopener"   data-event-category="Footer" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a>
+                        <li><a href="https://thenextweb.com/feed/" target="_blank" rel="noopener"   data-event-category="Footer" data-event-action="Social" data-event-label="Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a>
+                        <li><a data-modal="modalStayTuned" href="#"  data-event-category="Footer" data-event-action="Social" data-event-label="Newsletter" data-event-non-interaction="true"><i class="icon icon--mail--light"></i></a>
+                    </ul>
+                    <ul class="footer-links-menu">
+                        <li><a href="https://thenextweb.com/conference/"  data-event-category="Footer" data-event-action="Conference" data-event-label="" data-event-non-interaction="true">Events</a></li>
+                        <li><a href="https://thenextweb.com/about"  data-event-category="Footer" data-event-action="About" data-event-label="" data-event-non-interaction="true">About</a></li>
+                        <li class="u-showFrom-m"><a href="https://thenextweb.com/team"  data-event-category="Footer" data-event-action="Team" data-event-label="" data-event-non-interaction="true">Team</a></li>
+                        <li><a href="https://thenextweb.com/advertise" target="_blank"  data-event-category="Footer" data-event-action="Advertise" data-event-label="" data-event-non-interaction="true">Advertise</a></li>
+                        <li><a href="https://thenextweb.homerun.hr/" target="_blank" rel="noopener"   data-event-category="Footer" data-event-action="Jobs" data-event-label="" data-event-non-interaction="true">Jobs</a></li>
+                        <li><a href="https://thenextweb.com/about#contact"  data-event-category="Footer" data-event-action="Contact" data-event-label="" data-event-non-interaction="true">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <div class="wrapper">
+                        <span>
+                            <a href="https://thenextweb.com/"><img alt="The Next Web" class="footer-legal-logoTNW" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"></a>
+                            &copy; 2006&ndash;2019 The Next Web B.V.
+                        </span>
+                        <span>Made with <b>&hearts;</b> in Amsterdam.</span>
+                        <span>
+                            Powered by
+                            <a href="https://www.stackpath.com/?utm_campaign=Partner%20Display&amp;utm_source=Partner%20Display&amp;utm_medium=thenextweb" target="_blank" rel="noopener"><img alt="StackPath" class="footer-legal-logoStackPath" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"></a>
+                        </span>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <div class="js-modal modal modalStayTuned" id="modalStayTuned">
+    <div class="modal-window modal-window--noFooter">
+        <header class="modal-header">
+            <h3>Stay tuned</h3>
+            <a href="#close" title="Esc"><i class="ss-pika ss-delete" onclick="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3"/></svg></i></a>
+        </header>
+        <div class="modal-body">
+            <h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+                Treat yourself
+            </h2>
+            <p class="lead u-m-1_5 u-text-center">
+                Sit back and let the hottest tech news come to you by the magic of electronic mail.
+            </p>
+            <form action="https://thenextweb.com/wp-content/themes/cyberdelia/ajax/form/newsletter.php" class="u-m-1" method="post" data-xhr data-xhr-fail="newsletterFail" data-xhr-success="newsletterSuccess" onsubmit="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Sign up','eventLabel':'Modal','eventNonInteraction':1} );">
+                <div class="modalStayTuned-success">
+                    <b>T</b><b>h</b><b>a</b><b>n</b><b>k</b><b>&nbsp;</b><b>y</b><b>o</b><b>u</b><b>!</b>
+                </div>
+                <div class="formField">
+                    <div class="formField-withButton">
+                        <div class="formField-withIcon u-float-left u-w-xs-75">
+                            <input class="formInput formInput--text" name="email" placeholder="Email" type="email" required="">
+                                                        <input class="" name="source" hidden id="source-newsletter" style="display: none" value="thenextweb.com/guests/mspy-spy-app-review/">
+                            <i class="icon icon--mail"></i>
+                        </div>
+                        <button class="button u-float-left u-w-xs-25" type="submit">Sign up</button>
+                    </div>
+                </div>
+            </form>
+            <p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+                Prefer to get the news as it happens? Follow us on social media.
+            </p>
+            <ul class="modalStayTuned-channels u-row">
+                <li class="u-col-xs-6 u-m-0">
+                    <div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--twitter">
+                    <div class="modalStayTuned-channels-icon"><a href="https://twitter.com/thenextweb" target="_blank" rel="noopener"><img alt="Twitter" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icon-twitter.svg"></a></div>
+                        <p class="modalStayTuned-channels-followers">
+                            <b>1.76M</b> followers
+                        </p>
+                        <a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/thenextweb"></a>
+                    </div>
+                </li>
+                <li class="u-col-xs-6 u-m-0">
+                    <div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--facebook">
+                        <div class="modalStayTuned-channels-icon"><a href="https://www.facebook.com/thenextweb" target="_blank" rel="noopener"><img alt="Facebook" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icon-facebook.svg"></a></div>
+                        <p class="modalStayTuned-channels-followers">
+                            <b>1M</b> likes
+                        </p>
+                        <div class="fb-like" data-href="https://www.facebook.com/thenextweb" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="js-modal modal modalStayTuned" id="modalSurvey">
+    <div class="modal-window modal-window--noFooter">
+        <header class="modal-header">
+            <h3>Help us out</h3>
+            <a href="#close" title="Esc" rel="modal:close"><i class="ss-pika ss-delete" onclick="dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3"/></svg></i></a>
+        </header>
+        <div class="modal-body">
+            <h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+                Who are you?
+            </h2>
+            <p class="lead u-m-1_5 u-text-center">
+                Got two minutes to spare? We'd love to know a bit more about our readers.<br /><br />
+                <a class="button u-w-xs-25" href="#">Start!</a>
+            </p>
+            <p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+                All data collected in the survey is anonymous.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div> -->
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><div class="search" id="search">
+    <header class="search-header">
+        <a class="search-header-logo" href="https://thenextweb.com/">
+            <img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw-red.svg">
+        </a>
+        <a id="search--close" class="search--close" href="#"><i class="icon icon--close"></i></a>
+    </header>
+    <form action="https://thenextweb.com/" class="search-form" method="get">
+        <input autocomplete="off" id="search-input" name="q" value="" placeholder="Search" type="text" onfocus="this.value = this.value;">
+        <a id="search-clear" class="search-clear" href="#"><i class="icon icon--close icon--close-white icon--close-small"></i></a>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+
+    <div class="search-nav-hints">
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">↑</span> <span class="search-nav-hint-key">↓</span> Navigate up/down
+        </div>
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">Enter</span> Go to article
+        </div>
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">/</span> Search new term
+        </div>
+        <div class="search-nav-hint">
+            <span class="search-nav-hint-key">Esc</span> Close search
+        </div>
+    </div>
+
+</div>
+
+    <!-- Pubmatic native templates: Content lift -->
+    <script id="tmpl_TNW_DSKT_ARTL_NLIFT" type="text/x-handlebars-template">
+        <section class="recommended u-m-2" id="recommended">
+            <h2 class="u-m-1">Recommended</h2>
+            <ul class="u-row">
+                <li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+                    <div class="story story--small" data-event-category="Article" data-event-action="Recommended" data-event-label="Post" data-event-non-interaction="true">
+                    <a class="story-image gtm-recommended" sizes="(max-width: 96px) 100vw, 96px" width="96" height="96" data-event-category="Article" data-event-action="Recommended" href="{{ linkUrl }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url(&quot;{{ imgUrl }}&quot;);" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;"></a>
+        			<h4 class="story-title">
+                        <a data-event-category="Article" data-event-action="Recommended" class="gtm-recommended" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;" href="{{ linkUrl }}">{{ title }}</a>
+        	        </h4>
+        	        <ul class="story-byline">
+                        <li>
+                            <span>{{ author }}</span>
+                        </li>
+		            </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </script>
+
+    <!-- Pubmatic native template: Who's hiring -->
+    <script id="tmpl_TNW_DSKT_ARTL_WIH" type="text/x-handlebars-template">
+		<li class="u-col-xs-12 u-col-m-6 u-col-l-12">
+    		<div class="story story--x-small">
+    			<a target="_blank" class="story-image" data-event-category="Article" data-event-action="Whos Hiring" data-event-label="{{ title }}" data-event-non-interaction="true" sizes="" width="80" height="80" href="{{ linkUrl }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="background-image: url(&quot;{{ imgUrl }}&quot;);" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;"></a>
+    			<h4 class="story-title">
+    				<a href="{{ linkUrl }}" target="_blank" data-event-category="Article" data-event-action="Whos Hiring" data-event-label="{{ title }}" data-event-non-interaction="true" onclick="app.pubmatic.triggerTracking(['{{ linkTracker }}']); return true;"> {{ titleText }} </a>
+    			</h4>
+    			<ul class="story-byline story-byline--noPadding">
+    				<li>
+    					{{ title }}
+    				</li>
+    			</ul>
+    		</div>
+    	</li>
+    </script>
+
+    <script type="text/javascript" src="https://thenextweb.com/wp-content/advertisement.js" async></script>
+
+    <script type="text/javascript">
+        var adBlocker = true;
+        var APP_ENV = {"theme":"cyberdelia","permalink":"https:\/\/thenextweb.com\/guests\/mspy-spy-app-review","template":"article","paths":{"site":"https:\/\/thenextweb.com\/","base":"https:\/\/thenextweb.com\/wp-content\/themes\/cyberdelia\/","assets":"https:\/\/cdn0.tnwcdn.com\/wp-content\/themes\/cyberdelia\/assets\/"},"pageIdx":1,"currentPost":1037136,"activePostIdx":0,"postRack":[{"id":1037136,"permalink":"https:\/\/thenextweb.com\/guests\/mspy-spy-app-review\/","title":"mSpy \u2013 an App For Your Child\u2019s Online Safety","socialTitle":"mSpy \u2013 an App For Your Child\u2019s Online Safety","datetime":"2017-04-10T12:06:48+00:00","author":"Syed Qasim Abbas","category":"","categoryId":"","section":null,"sectionId":null,"wordCount":917,"canvasSlug":null,"adTargeting":{"postId":1037136,"sponsorName":null,"isSponsoredPost":"No","isSponsoredCategory":"No"}}],"layout":{"siteskin":null},"category":null,"categoryId":null,"section":null,"sectionId":null,"adTargeting":{"postId":1037136,"sponsorName":null,"isSponsoredPost":"No","isSponsoredCategory":"No"}}    </script>
+
+    <script type="text/javascript">
+
+        function getTheCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        if (getTheCookie("tuid") !== "") {
+            dataLayer.push({
+                'tuid': getTheCookie("tuid")
+            });
+        }
+
+    </script>
+	
+<!-- monotote.com tag -->
+<script>
+  var _mnt = {
+    publisherKey: '2y10yxouwhhatktoejvkmccjeytzlfga20eounqcqvxsf54aqtxfcga'
+  };
+  (function (document) { var s = document.createElement('script'); s.async = true; s.src = 'https://plugin.monotote.com/plugin.min.js?' + Date.now(); document.body.appendChild(s); })(document)
+</script>
+<!-- End monotote.com tag -->
+
+    <script src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/js/app.min.js?v=1549273329" type="text/javascript" async></script>
+
+  		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thenextweb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<link rel='stylesheet' id='mediaelement-css'  href='https://thenextweb.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://thenextweb.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=4.9.8' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wlSettings = {"ajaxUrl":"https:\/\/thenextweb.com\/wp-admin\/admin-ajax.php","apiUrl":"https:\/\/thenextweb.com\/wl-api\/","postId":"1037136","jsonld_enabled":""};
+var wordlift = {"version":"3.19.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thenextweb.com/wp-content/plugins/wordlift/js/dist/bundle.js?ver=3.19.5'></script>
+<script type='text/javascript'>
+var mejsL10n = {"language":"en","strings":{"mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen-off":"Turn off Fullscreen","mejs.fullscreen-on":"Go Fullscreen","mejs.download-video":"Download Video","mejs.fullscreen":"Fullscreen","mejs.time-jump-forward":["Jump forward 1 second","Jump forward %1 seconds"],"mejs.loop":"Toggle Loop","mejs.play":"Play","mejs.pause":"Pause","mejs.close":"Close","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.time-skip-back":["Skip back 1 second","Skip back %1 seconds"],"mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.mute-toggle":"Mute Toggle","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.ad-skip":"Skip ad","mejs.ad-skip-info":["Skip in 1 second","Skip in %1 seconds"],"mejs.source-chooser":"Source Chooser","mejs.stop":"Stop","mejs.speed-rate":"Speed Rate","mejs.live-broadcast":"Live Broadcast","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://thenextweb.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1'></script>
+<script type='text/javascript' src='https://thenextweb.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=4.9.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thenextweb.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://thenextweb.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.6-78496d1'></script>
+        <iframe width="0" height="0" frameborder="0" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=156315"></iframe>
+        <script>
+                (new Image()).src = "http://sync.search.spotxchange.com/partner?source=204258";
+        </script>
+            </body>
+
+<!-- Mirrored from thenextweb.com/guests/mspy-spy-app-review/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Feb 2019 15:14:13 GMT -->
+</html>
